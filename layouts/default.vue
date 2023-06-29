@@ -1,3 +1,4 @@
+
 <template>
   <v-app dark>
     <v-app-bar :clipped-left="clipped" fixed app>
@@ -9,8 +10,6 @@
       <v-btn @click="switchLanguage('fr')">Français</v-btn>
       <v-btn @click="switchLanguage('en')">English</v-btn>
 
-
-
       <v-menu offset-y>
         <template v-slot:activator="{ on }">
           <v-btn icon v-on="on">
@@ -21,9 +20,7 @@
           <v-list-item v-for="(item, index) in menuItems" :key="index" @click="navigate(item.route)">
             <v-list-item-title>{{ $t(item.label) }}</v-list-item-title>
           </v-list-item>
-
         </v-list>
-
       </v-menu>
     </v-app-bar>
     <v-main>
@@ -34,14 +31,13 @@
   </v-app>
 </template>
 
-
 <script>
 export default {
   name: 'DefaultLayout',
   data() {
     return {
       clipped: false,
-      title: 'אתר של רב אבנר',
+      title: 'אתר של רב אבנר'
     };
   },
   computed: {
@@ -49,14 +45,9 @@ export default {
       return [
         { label: 'home', route: '/' },
         { label: 'about', route: '/about' },
-        { label: 'services', route: '/services' },
-      ].map(item => {
-        return {
-          ...item,
-          label: this.$t(item.label),
-        };
-      });
-    },
+        { label: 'services', route: '/services' }
+      ];
+    }
   },
   methods: {
     navigate(route) {
@@ -64,7 +55,8 @@ export default {
     },
     switchLanguage(locale) {
       this.$i18n.locale = locale;
-    },
-  },
+    }
+  }
 };
 </script>
+

@@ -2,6 +2,7 @@ import colors from 'vuetify/es5/util/colors'
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+ 
   head: {
     titleTemplate: '%s - ra-dating-nuxt-3',
     title: 'ra-dating-nuxt-3',
@@ -45,6 +46,7 @@ export default {
     '@nuxtjs/i18n',
 
   ],
+
   i18n: {
     locales: [
       { code: 'en', iso: 'en-US', name: 'English' },
@@ -56,68 +58,116 @@ export default {
       fallbackLocale: 'en',
       messages: {
         en: {
-          title: 'Rav Avner Dating Site',
-          welcome: 'Welcome',
-          home: 'Home',
-          about: 'About',
-          services: 'Services',
-          loginFormLabel: "Login Form",
-          usernameLabel: 'Username',
-          passwordLabel: 'Password',
-          loginLabel: 'Login',
+          "title": "Rav Avner Dating Site",
+          "welcome": "Welcome",
+          "home": "Home",
+          "Home": "zzzzz",
+          "about": "About",
+          "services": "Services",
+          "loginFormLabel": "Login Form",
+          "signUpFormLabel": "Sign Up Form",
+          "nameLabel": "Name",
+          "emailLabel": "Email",
+          "usernameLabel": "Username",
+          "passwordLabel": "Password",
+          "dobMonthLabel": "Month",
+          "dobDayLabel": "Day",
+          "dobYearLabel": "Year",
+          "loginLabel": "Login",
+          "signUpButtonLabel": "Sign Up",
+          "loginButtonLabel": "Login",
+          "banner": "Welcome, May You Be Blessed"
         },
         fr: {
-          title: 'le site de rav avner',
-          welcome: 'Bienvenue',
-          home: 'Accueil',
-          about: 'À propos',
-          services: 'Services',
-          loginFormLabel: "Formulaire de connexion",
-          usernameLabel: 'Nom d\'utilisateur',
-          passwordLabel: 'Mot de passe',
-          loginLabel: 'Connexion',
+          "title": "Site de rencontre Rav Avner",
+          "welcome": "Bienvenue",
+          "home": "Accueil",
+          "Home": "zzzzz",
+          "about": "À propos",
+          "services": "Services",
+          "loginFormLabel": "Formulaire de connexion",
+          "signUpFormLabel": "Formulaire d'inscription",
+          "nameLabel": "Nom",
+          "emailLabel": "Email",
+          "usernameLabel": "Nom d'utilisateur",
+          "passwordLabel": "Mot de passe",
+          "dobMonthLabel": "Mois",
+          "dobDayLabel": "Jour",
+          "dobYearLabel": "Année",
+          "loginLabel": "Connexion",
+          "signUpButtonLabel": "S'inscrire",
+          "loginButtonLabel": "Connexion",
+          "banner": "Bienvenue, Que Vous Soyez Béni(e)"
         },
         he: {
-          title: 'אתר של רב אבנר',
-          welcome: 'ברוך הבא',
-          home: 'בית',
-          about: 'אודות',
-          services: 'שירותים',
-          loginFormLabel: "טופס התחברות",
-          usernameLabel: 'שם משתמש',
-          passwordLabel: 'סיסמה',
-          loginLabel: 'התחברות',
-        },
+          "title": "אתר של רב אבנר",
+          "welcome": "ברוך הבא",
+          "home": "בית",
+          "Home": "ldkjfadsf",
+          "about": "אודות",
+          "services": "שירותים",
+          "loginFormLabel": "טופס התחברות",
+          "signUpFormLabel": "טופס הרשמה",
+          "nameLabel": "שם",
+          "emailLabel": "דוא\"ל",
+          "usernameLabel": "שם משתמש",
+          "passwordLabel": "סיסמה",
+          "dobMonthLabel": "חודש",
+          "dobDayLabel": "יום",
+          "dobYearLabel": "שנה",
+          "loginButtonLabel": "התחברות",
+          "signUpButtonLabel": "הרשמה",
+          "banner": "ברוכים הבאים, תהיו מבורכים"
+        }
       },
     },
   },
+  
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/'
+    baseURL: '/',
+    proxy: true // Can be also an object with default options
   },
 
-  // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
-  vuetify: {
-    rtl: true,
-    customVariables: ['~/assets/variables.scss'],
-    theme: {
-      dark: true,
-      themes: {
-        dark: {
-          primary: colors.blue.darken2,
-          accent: colors.grey.darken3,
-          secondary: colors.amber.darken3,
-          info: colors.teal.lighten1,
-          warning: colors.amber.base,
-          error: colors.deepOrange.accent4,
-          success: colors.green.accent3
-        }
-      }
-    }
+  proxy: {
+    '/api/': 'http://api.example.com',
+    '/api2/': 'http://api.another-website.com'
   },
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  }
+
+ 
+
+  serverMiddleware: [
+    '~/server/status.js'
+  ],
+  
+  
+  // vuetify: {
+    // rtl: true,
+  //   customVariables: ['~/assets/variables.scss'],
+  //   theme: {
+  //     dark: true,
+  //     themes: {
+  //       dark: {
+  //         primary: '#FF4081', // Set your primary color
+  //         secondary: '#9C27B0', // Set your secondary color
+  //         accent: '#FFC107', // Set your accent color
+  //         error: '#F44336', // Set your error color
+  //         warning: '#FF9800', // Set your warning color
+  //         info: '#2196F3', // Set your info color
+  //         success: '#4CAF50' // Set your success color
+  //       },
+  //       light: {
+  //         primary: '#FF4081', // Set your primary color
+  //         secondary: '#9C27B0', // Set your secondary color
+  //         accent: '#FFC107', // Set your accent color
+  //         error: '#F44336', // Set your error color
+  //         warning: '#FF9800', // Set your warning color
+  //         info: '#2196F3', // Set your info color
+  //         success: '#4CAF50' // Set your success color
+  //       }
+  //     }
+  //   }
+  // },
 }

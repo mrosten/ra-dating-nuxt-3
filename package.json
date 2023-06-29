@@ -6,21 +6,27 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
-    "lint": "npm run lint:js",
-    "lintfix": "npm run lint:js -- --fix"
+    "generate": "nuxt generate"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/i18n": "^7.3.1",
+    "@nuxtjs/proxy": "^2.1.0",
+    "body-parser": "^1.20.2",
     "core-js": "^3.25.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "gridfs-stream": "^1.1.1",
+    "mongodb": "^5.6.0",
+    "mongoose": "^7.3.1",
+    "multer": "^1.4.5-lts.1",
     "nuxt": "^2.15.8",
     "vue": "^2.7.14",
     "vue-i18n": "^8.28.2",
     "vue-server-renderer": "^2.7.10",
     "vue-template-compiler": "^2.7.10",
-    "vuetify": "^2.6.10"
+    "vuetify": "^2.6.15",
+    "winston": "^3.9.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.19.1",
@@ -29,6 +35,7 @@
     "@nuxtjs/vuetify": "^1.12.3",
     "eslint": "^8.24.0",
     "eslint-plugin-nuxt": "^4.0.0",
-    "eslint-plugin-vue": "^9.5.1"
+    "eslint-plugin-vue": "^9.5.1",
+    "nodemon": "^2.0.22"
   }
 }

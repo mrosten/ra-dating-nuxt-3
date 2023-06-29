@@ -81,3 +81,175 @@ export default {
   name: 'IndexPage'
 }
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------
+login 
+------------------------------------------------
+<template>
+  <v-app id="inspire" style="background: #007FFF">
+    <v-container fluid>
+      <v-row justify="center" align="end" class="login-row">
+        <v-col cols="12" sm="8" md="6" class="login-col">
+          <v-card class="elevation-12" :color="cardColor">
+            <v-card-text>
+              <v-toolbar :extended="true" extension-height="0">
+                <v-app-bar-nav-icon></v-app-bar-nav-icon>
+                <v-toolbar-title class="title">Dating Website</v-toolbar-title>
+                <v-spacer></v-spacer>
+              </v-toolbar>
+              <v-form>
+                <v-text-field :label="$t('usernameLabel')" name="username" prepend-icon="mdi-account"
+                  type="text" :color="fieldColor" outlined class="bordered-input"
+                  :class="{'custom-background': fieldBackground}"></v-text-field>
+                <v-text-field id="password" :label="$t('passwordLabel')" name="password" prepend-icon="mdi-lock"
+                  type="password" :color="fieldColor" outlined class="bordered-input"
+                  :class="{'custom-background': fieldBackground}"></v-text-field>
+              </v-form>
+            </v-card-text>
+            <v-card-actions>
+              <v-row align="end">
+                <v-col cols="auto">
+                  <v-btn color="primary" dark>התחברות</v-btn>
+                </v-col>
+                <v-col cols="auto">
+                  <v-img src="placeholder-image.jpg" height="100px" width="100px" class="image-placeholder"></v-img>
+                </v-col>
+              </v-row>
+            </v-card-actions>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-app>
+</template>
+
+<style scoped>
+#inspire {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.login-row {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.login-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.bordered-input .v-input__control {
+  border: 1px solid black !important;
+  border-radius: 4px;
+}
+
+.custom-background .v-input__control {
+  background-color: #FFC0CB !important; /* Specify the custom background color */
+}
+
+.image-placeholder {
+  margin-left: auto;
+  margin-bottom: 8px;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------
+original login i created
+-------------------------------
+
+
+<template>
+  <v-app id="inspire" style="background: #007FFF">
+    <v-container fluid>
+      <v-row align="center" justify="center">
+        <v-col cols="12" sm="8" md="6">
+          <v-card class="elevation-12" color="white">
+            <v-toolbar color="primary" dark>
+              <v-toolbar-title>{{ $t('loginFormLabel') }}</v-toolbar-title>
+              <v-spacer></v-spacer>
+            </v-toolbar>
+            <v-card-text>
+              <v-form>
+                <v-text-field :label="$t('usernameLabel')" name="username" prepend-icon="mdi-account"
+                  type="text"></v-text-field>
+                <v-text-field id="password" :label="$t('passwordLabel')" name="password" prepend-icon="mdi-lock"
+                  type="password"></v-text-field>
+              </v-form>
+            </v-card-text>
+            <v-card-actions>
+              <v-spacer></v-spacer>
+              <v-btn color="primary" dark>התחברות</v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-app>
+</template>
+
+<script>
+export default {
+  name: 'PAGESSSS',
+  data() {
+    return {
+      valid: false,
+      username: '',
+      password: ''
+    };
+  }
+};
+</script>
+
+<style scoped>
+#inspire {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+</style>

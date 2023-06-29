@@ -1,0 +1,65 @@
+info: Connecting to the database {"timestamp":"2023-06-28T20:28:25.981Z"}
+info: Connected to the database {"timestamp":"2023-06-28T20:28:28.411Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-06-28T20:28:28.424Z"}
+info: Connecting to the database {"timestamp":"2023-06-29T06:38:58.220Z"}
+info: Connected to the database {"timestamp":"2023-06-29T06:39:00.373Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-06-29T06:39:00.385Z"}
+info: am here {"timestamp":"2023-06-29T06:39:07.623Z"}
+info: am here {"timestamp":"2023-06-29T06:39:08.648Z"}
+info: am here {"timestamp":"2023-06-29T06:40:04.137Z"}
+info: am trying to sign up {"timestamp":"2023-06-29T06:40:31.102Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"hi","password":"yipa","username":"yipa@yipa.com"},"timestamp":"2023-06-29T06:40:31.121Z"}
+info: 1 {"timestamp":"2023-06-29T06:40:31.124Z"}
+info: 2 {"timestamp":"2023-06-29T06:40:31.312Z"}
+info: Document inserted: {"timestamp":"2023-06-29T06:40:31.313Z"}
+info: User registered successfully - id = 649d275f6e98c8381b328f17 {"timestamp":"2023-06-29T06:40:31.315Z"}
+info: am here {"timestamp":"2023-06-29T06:41:21.232Z"}
+info: am here {"timestamp":"2023-06-29T06:43:43.166Z"}
+info: am here {"timestamp":"2023-06-29T06:43:44.243Z"}
+info: am trying to sign up {"timestamp":"2023-06-29T06:43:57.268Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"","password":"yipa","username":"yipa@yipa.com"},"timestamp":"2023-06-29T06:43:57.287Z"}
+info: 1 {"timestamp":"2023-06-29T06:43:57.289Z"}
+info: 2 {"timestamp":"2023-06-29T06:43:57.842Z"}
+info: Document inserted: {"timestamp":"2023-06-29T06:43:57.843Z"}
+info: User registered successfully - id = 649d282d6e98c8381b328f18 {"timestamp":"2023-06-29T06:43:57.844Z"}
+info: am here {"timestamp":"2023-06-29T06:44:01.577Z"}
+info: am trying to sign up {"timestamp":"2023-06-29T06:44:04.480Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"","password":"yipa","username":"yipa@yipa.com"},"timestamp":"2023-06-29T06:44:04.499Z"}
+info: 1 {"timestamp":"2023-06-29T06:44:04.500Z"}
+info: 2 {"timestamp":"2023-06-29T06:44:04.668Z"}
+info: Document inserted: {"timestamp":"2023-06-29T06:44:04.669Z"}
+info: User registered successfully - id = 649d28346e98c8381b328f19 {"timestamp":"2023-06-29T06:44:04.669Z"}
+info: am here {"timestamp":"2023-06-29T06:44:08.997Z"}
+info: am trying to sign up {"timestamp":"2023-06-29T06:44:13.025Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"","password":"yipa","username":"yipa@yipa.com"},"timestamp":"2023-06-29T06:44:13.031Z"}
+info: 1 {"timestamp":"2023-06-29T06:44:13.034Z"}
+info: 2 {"timestamp":"2023-06-29T06:44:13.203Z"}
+info: Document inserted: {"timestamp":"2023-06-29T06:44:13.203Z"}
+info: User registered successfully - id = 649d283d6e98c8381b328f1a {"timestamp":"2023-06-29T06:44:13.204Z"}
+info: am here {"timestamp":"2023-06-29T06:44:14.474Z"}
+info: am here {"timestamp":"2023-06-29T06:44:46.369Z"}
+info: am here {"timestamp":"2023-06-29T06:44:47.426Z"}
+info: am here {"timestamp":"2023-06-29T06:46:34.156Z"}
+info: am here {"timestamp":"2023-06-29T06:46:35.928Z"}
+info: am here {"timestamp":"2023-06-29T06:46:36.919Z"}
+info: am trying to sign up {"timestamp":"2023-06-29T06:46:38.841Z"}
+info: am trying to sign up {"timestamp":"2023-06-29T06:46:45.428Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"llll","password":"yipa","username":"yipa@yipa.com"},"timestamp":"2023-06-29T06:46:45.441Z"}
+info: 1 {"timestamp":"2023-06-29T06:46:45.443Z"}
+info: 2 {"timestamp":"2023-06-29T06:46:45.621Z"}
+info: Document inserted: {"timestamp":"2023-06-29T06:46:45.622Z"}
+info: User registered successfully - id = 649d28d56e98c8381b328f1b {"timestamp":"2023-06-29T06:46:45.622Z"}
+info: am here {"timestamp":"2023-06-29T06:46:50.677Z"}
+info: am here {"timestamp":"2023-06-29T06:47:35.635Z"}
+info: am here {"timestamp":"2023-06-29T06:47:36.653Z"}
+info: am here {"timestamp":"2023-06-29T06:53:55.766Z"}
+info: am here {"timestamp":"2023-06-29T06:53:56.926Z"}
+info: db=[object Object] {"timestamp":"2023-06-29T07:07:02.830Z"}
+info: beginning of patch userId = 649d275f6e98c8381b328f17 updatedData = [object Object] {"timestamp":"2023-06-29T07:07:02.831Z"}
+info: Document updated: {"acknowledged":true,"matchedCount":1,"modifiedCount":0,"timestamp":"2023-06-29T07:07:03.010Z","upsertedCount":0,"upsertedId":null}
+info: db=[object Object] {"timestamp":"2023-06-29T07:07:11.233Z"}
+info: beginning of patch userId = 649d275f6e98c8381b328f17 updatedData = [object Object] {"timestamp":"2023-06-29T07:07:11.233Z"}
+info: Document updated: {"acknowledged":true,"matchedCount":1,"modifiedCount":0,"timestamp":"2023-06-29T07:07:11.409Z","upsertedCount":0,"upsertedId":null}
+info: Connecting to the database {"timestamp":"2023-06-29T07:13:56.426Z"}
+info: Connected to the database {"timestamp":"2023-06-29T07:13:58.968Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-06-29T07:13:58.977Z"}
