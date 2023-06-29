@@ -63,3 +63,288 @@ info: Document updated: {"acknowledged":true,"matchedCount":1,"modifiedCount":0,
 info: Connecting to the database {"timestamp":"2023-06-29T07:13:56.426Z"}
 info: Connected to the database {"timestamp":"2023-06-29T07:13:58.968Z"}
 info: Server running on http://localhost:4000 {"timestamp":"2023-06-29T07:13:58.977Z"}
+info: Connecting to the database {"timestamp":"2023-06-29T08:13:03.525Z"}
+info: Connected to the database {"timestamp":"2023-06-29T08:13:06.213Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-06-29T08:13:06.227Z"}
+info: Connecting to the database {"timestamp":"2023-06-29T08:19:46.043Z"}
+info: Connected to the database {"timestamp":"2023-06-29T08:19:51.009Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-06-29T08:19:51.131Z"}
+info: tryin to delete {"timestamp":"2023-06-29T08:20:01.257Z"}
+info: Connecting to the database {"timestamp":"2023-06-29T08:43:13.706Z"}
+info: Connected to the database {"timestamp":"2023-06-29T08:43:17.569Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-06-29T08:43:17.580Z"}
+info: User with ID 649d275f6e98c8381b328f17 not found {"timestamp":"2023-06-29T08:43:55.457Z"}
+info: Connecting to the database {"timestamp":"2023-06-29T08:49:10.759Z"}
+info: Connected to the database {"timestamp":"2023-06-29T08:49:13.720Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-06-29T08:49:13.735Z"}
+info: trying to delete: 649d275f6e98c8381b328f17 {"timestamp":"2023-06-29T08:49:22.888Z"}
+info: User with ID 649d275f6e98c8381b328f17 not found {"timestamp":"2023-06-29T08:49:23.098Z"}
+info: Connecting to the database {"timestamp":"2023-06-29T08:53:52.771Z"}
+info: Connected to the database {"timestamp":"2023-06-29T08:53:56.126Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-06-29T08:53:56.142Z"}
+info: trying to delete: 649d275f6e98c8381b328f17 {"timestamp":"2023-06-29T08:54:06.123Z"}
+error: Error deleting user: Class constructor ObjectId cannot be invoked without 'new' {"stack":"TypeError: Class constructor ObjectId cannot be invoked without 'new'\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\server.js:103:59\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:284:15\n    at param (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:365:14)\n    at param (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:376:14)\n    at Function.process_params (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:421:3)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:280:10)","timestamp":"2023-06-29T08:54:06.130Z"}
+info: Connecting to the database {"timestamp":"2023-06-29T08:55:13.835Z"}
+info: Connected to the database {"timestamp":"2023-06-29T08:55:17.006Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-06-29T08:55:17.025Z"}
+info: trying to delete: 649d275f6e98c8381b328f17 {"timestamp":"2023-06-29T08:55:19.337Z"}
+error: Error deleting user: Class constructor ObjectId cannot be invoked without 'new' {"stack":"TypeError: Class constructor ObjectId cannot be invoked without 'new'\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\server.js:106:59\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:284:15\n    at param (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:365:14)\n    at param (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:376:14)\n    at Function.process_params (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:421:3)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:280:10)","timestamp":"2023-06-29T08:55:19.340Z"}
+info: Connecting to the database {"timestamp":"2023-06-29T08:55:53.495Z"}
+info: Connected to the database {"timestamp":"2023-06-29T08:55:56.450Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-06-29T08:55:56.462Z"}
+info: trying to delete: 649d275f6e98c8381b328f17 {"timestamp":"2023-06-29T08:56:01.019Z"}
+info: User with ID 649d275f6e98c8381b328f17 deleted successfully {"timestamp":"2023-06-29T08:56:01.274Z"}
+info: trying to delete: 649d275f6e98c8381b328f17 {"timestamp":"2023-06-29T08:56:07.716Z"}
+info: User with ID 649d275f6e98c8381b328f17 not found {"timestamp":"2023-06-29T08:56:07.887Z"}
+info: trying to delete: 649d275f6e98c8381b328f17 {"timestamp":"2023-06-29T08:56:09.180Z"}
+info: User with ID 649d275f6e98c8381b328f17 not found {"timestamp":"2023-06-29T08:56:09.423Z"}
+info: trying to delete: 649d275f6e98c8381b328f17 {"timestamp":"2023-06-29T08:56:09.832Z"}
+info: User with ID 649d275f6e98c8381b328f17 not found {"timestamp":"2023-06-29T08:56:09.998Z"}
+info: trying to delete: 649d275f6e98c8381b328f17 {"timestamp":"2023-06-29T08:56:10.297Z"}
+info: User with ID 649d275f6e98c8381b328f17 not found {"timestamp":"2023-06-29T08:56:10.481Z"}
+info: trying to delete: 649d282d6e98c8381b328f18 {"timestamp":"2023-06-29T08:56:11.514Z"}
+info: User with ID 649d282d6e98c8381b328f18 deleted successfully {"timestamp":"2023-06-29T08:56:11.809Z"}
+info: trying to delete: 649d28346e98c8381b328f19 {"timestamp":"2023-06-29T08:56:13.172Z"}
+info: User with ID 649d28346e98c8381b328f19 deleted successfully {"timestamp":"2023-06-29T08:56:13.469Z"}
+info: trying to delete: 64985cc637f9f180be03683a {"timestamp":"2023-06-29T08:56:16.661Z"}
+info: User with ID 64985cc637f9f180be03683a deleted successfully {"timestamp":"2023-06-29T08:56:16.829Z"}
+info: trying to delete: 649d283d6e98c8381b328f1a {"timestamp":"2023-06-29T08:58:15.210Z"}
+info: User with ID 649d283d6e98c8381b328f1a deleted successfully {"timestamp":"2023-06-29T08:58:15.414Z"}
+info: trying to delete: 649d28d56e98c8381b328f1b {"timestamp":"2023-06-29T08:58:16.753Z"}
+info: User with ID 649d28d56e98c8381b328f1b deleted successfully {"timestamp":"2023-06-29T08:58:17.046Z"}
+info: trying to delete: 64985d8fd61efc9c20bef5da {"timestamp":"2023-06-29T08:58:18.171Z"}
+info: User with ID 64985d8fd61efc9c20bef5da deleted successfully {"timestamp":"2023-06-29T08:58:18.405Z"}
+info: trying to delete: 64985da0d61efc9c20bef5db {"timestamp":"2023-06-29T08:58:19.392Z"}
+info: User with ID 64985da0d61efc9c20bef5db deleted successfully {"timestamp":"2023-06-29T08:58:19.615Z"}
+info: trying to delete: 64985dc1d61efc9c20bef5dc {"timestamp":"2023-06-29T08:58:21.208Z"}
+info: User with ID 64985dc1d61efc9c20bef5dc deleted successfully {"timestamp":"2023-06-29T08:58:21.450Z"}
+info: trying to delete: 64985dc9d61efc9c20bef5dd {"timestamp":"2023-06-29T08:58:22.119Z"}
+info: User with ID 64985dc9d61efc9c20bef5dd deleted successfully {"timestamp":"2023-06-29T08:58:22.573Z"}
+info: trying to delete: 64985e08d61efc9c20bef5de {"timestamp":"2023-06-29T08:58:23.750Z"}
+info: User with ID 64985e08d61efc9c20bef5de deleted successfully {"timestamp":"2023-06-29T08:58:23.952Z"}
+info: trying to delete: 64986ac9f450c4f99a89d3cc {"timestamp":"2023-06-29T08:58:25.476Z"}
+info: User with ID 64986ac9f450c4f99a89d3cc deleted successfully {"timestamp":"2023-06-29T08:58:25.687Z"}
+info: trying to delete: 64986b8f2e82f978e12807ac {"timestamp":"2023-06-29T08:58:27.266Z"}
+info: User with ID 64986b8f2e82f978e12807ac deleted successfully {"timestamp":"2023-06-29T08:58:27.491Z"}
+info: trying to delete: 6498648ff347556c402bb74d {"timestamp":"2023-06-29T08:58:28.146Z"}
+info: User with ID 6498648ff347556c402bb74d deleted successfully {"timestamp":"2023-06-29T08:58:28.412Z"}
+info: trying to delete: 6498666ff318efd91a510851 {"timestamp":"2023-06-29T08:58:29.039Z"}
+info: User with ID 6498666ff318efd91a510851 deleted successfully {"timestamp":"2023-06-29T08:58:29.232Z"}
+info: trying to delete: 649866a60ac232cd7d7a092e {"timestamp":"2023-06-29T08:58:35.273Z"}
+info: User with ID 649866a60ac232cd7d7a092e deleted successfully {"timestamp":"2023-06-29T08:58:35.497Z"}
+info: trying to delete: 649868a9f592ec05da92ca3a {"timestamp":"2023-06-29T08:58:37.388Z"}
+info: User with ID 649868a9f592ec05da92ca3a deleted successfully {"timestamp":"2023-06-29T08:58:37.635Z"}
+info: trying to delete: 6498692df88dce3d854e885a {"timestamp":"2023-06-29T08:59:03.279Z"}
+info: User with ID 6498692df88dce3d854e885a deleted successfully {"timestamp":"2023-06-29T08:59:03.535Z"}
+info: trying to delete: 6491b7c0db954eb320104ec0 {"timestamp":"2023-06-29T08:59:04.175Z"}
+info: User with ID 6491b7c0db954eb320104ec0 deleted successfully {"timestamp":"2023-06-29T08:59:04.457Z"}
+info: trying to delete: 6491c1e43532e1a846f2b831 {"timestamp":"2023-06-29T08:59:05.068Z"}
+info: User with ID 6491c1e43532e1a846f2b831 deleted successfully {"timestamp":"2023-06-29T08:59:05.379Z"}
+info: trying to delete: 6491c1e43532e1a846f2b831 {"timestamp":"2023-06-29T08:59:05.617Z"}
+info: trying to delete: 64986c932e82f978e12807ad {"timestamp":"2023-06-29T08:59:06.304Z"}
+info: User with ID 64986c932e82f978e12807ad deleted successfully {"timestamp":"2023-06-29T08:59:06.472Z"}
+info: trying to delete: 64999b0c0978ef62d17fe56e {"timestamp":"2023-06-29T08:59:06.853Z"}
+info: User with ID 64999b0c0978ef62d17fe56e deleted successfully {"timestamp":"2023-06-29T08:59:07.119Z"}
+info: User with ID 6491c1e43532e1a846f2b831 not found {"timestamp":"2023-06-29T08:59:07.334Z"}
+info: trying to delete: 649426ff8e2beb4404196637 {"timestamp":"2023-06-29T08:59:07.485Z"}
+info: User with ID 649426ff8e2beb4404196637 deleted successfully {"timestamp":"2023-06-29T08:59:07.741Z"}
+info: trying to delete: 649426ff8e2beb4404196637 {"timestamp":"2023-06-29T08:59:07.806Z"}
+info: User with ID 649426ff8e2beb4404196637 not found {"timestamp":"2023-06-29T08:59:07.993Z"}
+info: trying to delete: 649432228e2beb4404196639 {"timestamp":"2023-06-29T08:59:08.225Z"}
+info: User with ID 649432228e2beb4404196639 deleted successfully {"timestamp":"2023-06-29T08:59:08.395Z"}
+info: trying to delete: 649432228e2beb4404196639 {"timestamp":"2023-06-29T08:59:08.647Z"}
+info: User with ID 649432228e2beb4404196639 not found {"timestamp":"2023-06-29T08:59:08.806Z"}
+info: trying to delete: 649434d18e2beb440419663a {"timestamp":"2023-06-29T08:59:08.966Z"}
+info: User with ID 649434d18e2beb440419663a deleted successfully {"timestamp":"2023-06-29T08:59:09.132Z"}
+info: trying to delete: 649436b48e2beb440419663b {"timestamp":"2023-06-29T08:59:09.451Z"}
+info: User with ID 649436b48e2beb440419663b deleted successfully {"timestamp":"2023-06-29T08:59:09.621Z"}
+info: trying to delete: 649852fe3c72ddab3ab71b46 {"timestamp":"2023-06-29T08:59:36.592Z"}
+info: User with ID 649852fe3c72ddab3ab71b46 deleted successfully {"timestamp":"2023-06-29T08:59:36.824Z"}
+info: trying to delete: 649853063c72ddab3ab71b48 {"timestamp":"2023-06-29T08:59:38.000Z"}
+info: User with ID 649853063c72ddab3ab71b48 deleted successfully {"timestamp":"2023-06-29T08:59:38.248Z"}
+info: trying to delete: 6498530b3c72ddab3ab71b49 {"timestamp":"2023-06-29T08:59:45.022Z"}
+info: User with ID 6498530b3c72ddab3ab71b49 deleted successfully {"timestamp":"2023-06-29T08:59:45.314Z"}
+info: trying to delete: 6499b3366aed4522bbc48af5 {"timestamp":"2023-06-29T09:00:09.917Z"}
+info: trying to delete: 6499b3366aed4522bbc48af5 {"timestamp":"2023-06-29T09:00:10.129Z"}
+info: User with ID 6499b3366aed4522bbc48af5 deleted successfully {"timestamp":"2023-06-29T09:00:10.198Z"}
+info: User with ID 6499b3366aed4522bbc48af5 not found {"timestamp":"2023-06-29T09:00:10.405Z"}
+info: trying to delete: 6499b3366aed4522bbc48af5 {"timestamp":"2023-06-29T09:00:10.520Z"}
+info: User with ID 6499b3366aed4522bbc48af5 not found {"timestamp":"2023-06-29T09:00:10.917Z"}
+info: trying to delete: 6499b3ad6aed4522bbc48af6 {"timestamp":"2023-06-29T09:00:11.009Z"}
+info: User with ID 6499b3ad6aed4522bbc48af6 deleted successfully {"timestamp":"2023-06-29T09:00:11.266Z"}
+info: trying to delete: 6499b3ad6aed4522bbc48af6 {"timestamp":"2023-06-29T09:00:11.288Z"}
+info: trying to delete: 6499b3ad6aed4522bbc48af6 {"timestamp":"2023-06-29T09:00:11.548Z"}
+info: User with ID 6499b3ad6aed4522bbc48af6 not found {"timestamp":"2023-06-29T09:00:12.064Z"}
+info: trying to delete: 6499b3ad6aed4522bbc48af6 {"timestamp":"2023-06-29T09:00:12.069Z"}
+info: trying to delete: 6499b3e26aed4522bbc48af7 {"timestamp":"2023-06-29T09:00:12.184Z"}
+info: User with ID 6499b3ad6aed4522bbc48af6 not found {"timestamp":"2023-06-29T09:00:12.321Z"}
+info: trying to delete: 6499b3e26aed4522bbc48af7 {"timestamp":"2023-06-29T09:00:12.424Z"}
+info: User with ID 6499b3e26aed4522bbc48af7 deleted successfully {"timestamp":"2023-06-29T09:00:12.587Z"}
+info: trying to delete: 6499b3e26aed4522bbc48af7 {"timestamp":"2023-06-29T09:00:12.718Z"}
+info: User with ID 6499b3e26aed4522bbc48af7 not found {"timestamp":"2023-06-29T09:00:12.917Z"}
+info: User with ID 6499b3ad6aed4522bbc48af6 not found {"timestamp":"2023-06-29T09:00:13.564Z"}
+info: User with ID 6499b3e26aed4522bbc48af7 not found {"timestamp":"2023-06-29T09:00:13.791Z"}
+info: trying to delete: 6499b5416aed4522bbc48af8 {"timestamp":"2023-06-29T09:00:17.093Z"}
+info: User with ID 6499b5416aed4522bbc48af8 deleted successfully {"timestamp":"2023-06-29T09:00:17.366Z"}
+info: am here {"timestamp":"2023-06-29T09:01:43.235Z"}
+info: am here {"timestamp":"2023-06-29T09:04:14.308Z"}
+info: am here {"timestamp":"2023-06-29T09:04:17.132Z"}
+info: am here {"timestamp":"2023-06-29T09:05:35.618Z"}
+info: am trying to sign up {"timestamp":"2023-06-29T09:08:50.693Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"08","month":"08","year":"1979"},"email":"mosherosten@gmail.com","gender":"male","name":"Moshe Yisrael Rosten","password":"Myrost4012","username":"mrosten"},"timestamp":"2023-06-29T09:08:50.785Z"}
+info: 1 {"timestamp":"2023-06-29T09:08:50.797Z"}
+info: 2 {"timestamp":"2023-06-29T09:08:51.033Z"}
+info: Document inserted: {"timestamp":"2023-06-29T09:08:51.035Z"}
+info: User registered successfully - id = 649d4a22b8c2c4f284f39063 {"timestamp":"2023-06-29T09:08:51.036Z"}
+info: am here {"timestamp":"2023-06-29T09:09:39.645Z"}
+info: am trying to sign up {"timestamp":"2023-06-29T09:13:42.965Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"21","month":"02","year":"1982"},"email":"yitzi@aol.com","gender":"male","name":"Yitzchak","password":"ntptez","username":"yitzi"},"timestamp":"2023-06-29T09:13:42.980Z"}
+info: 1 {"timestamp":"2023-06-29T09:13:42.982Z"}
+info: 2 {"timestamp":"2023-06-29T09:13:43.200Z"}
+info: Document inserted: {"timestamp":"2023-06-29T09:13:43.201Z"}
+info: User registered successfully - id = 649d4b46b8c2c4f284f39064 {"timestamp":"2023-06-29T09:13:43.203Z"}
+info: Connecting to the database {"timestamp":"2023-06-29T09:20:22.428Z"}
+info: Connected to the database {"timestamp":"2023-06-29T09:20:25.318Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-06-29T09:20:25.337Z"}
+info: Connecting to the database {"timestamp":"2023-06-29T09:24:16.560Z"}
+info: Connected to the database {"timestamp":"2023-06-29T09:24:20.242Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-06-29T09:24:20.262Z"}
+info: am here {"timestamp":"2023-06-29T10:13:09.478Z"}
+info: am trying to sign up {"timestamp":"2023-06-29T10:13:42.801Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"lj;lkj;lkj","password":"ntptez","username":"yitzi"},"timestamp":"2023-06-29T10:13:42.822Z"}
+info: 1 {"timestamp":"2023-06-29T10:13:42.863Z"}
+info: Error inserting document: username is not defined {"stack":"ReferenceError: username is not defined\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\server.js:281:17\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\body-parser\\lib\\read.js:137:5\n    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)","timestamp":"2023-06-29T10:13:42.888Z"}
+info: am trying to sign up {"timestamp":"2023-06-29T10:13:45.660Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"lj;lkj;lkj","password":"ntptez","username":"yitzi"},"timestamp":"2023-06-29T10:13:45.676Z"}
+info: 1 {"timestamp":"2023-06-29T10:13:45.688Z"}
+info: Error inserting document: username is not defined {"stack":"ReferenceError: username is not defined\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\server.js:281:17\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\body-parser\\lib\\read.js:137:5\n    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)","timestamp":"2023-06-29T10:13:45.689Z"}
+info: db=[object Object] {"timestamp":"2023-06-29T10:15:30.078Z"}
+info: beginning of patch userId = 649d4a22b8c2c4f284f39063 updatedData = [object Object] {"timestamp":"2023-06-29T10:15:30.106Z"}
+info: Document updated: {"acknowledged":true,"matchedCount":1,"modifiedCount":0,"timestamp":"2023-06-29T10:15:30.407Z","upsertedCount":0,"upsertedId":null}
+info: trying to delete: 649854323c72ddab3ab71b4a {"timestamp":"2023-06-29T10:15:39.414Z"}
+info: User with ID 649854323c72ddab3ab71b4a deleted successfully {"timestamp":"2023-06-29T10:15:39.865Z"}
+info: trying to delete: 649857a93c72ddab3ab71b4c {"timestamp":"2023-06-29T10:15:42.723Z"}
+info: User with ID 649857a93c72ddab3ab71b4c deleted successfully {"timestamp":"2023-06-29T10:15:42.987Z"}
+info: trying to delete: 6499b5e26aed4522bbc48af9 {"timestamp":"2023-06-29T10:15:46.788Z"}
+info: User with ID 6499b5e26aed4522bbc48af9 deleted successfully {"timestamp":"2023-06-29T10:15:47.071Z"}
+info: trying to delete: 6499b61e6aed4522bbc48afa {"timestamp":"2023-06-29T10:15:48.843Z"}
+info: User with ID 6499b61e6aed4522bbc48afa deleted successfully {"timestamp":"2023-06-29T10:15:49.221Z"}
+info: am here {"timestamp":"2023-06-29T10:16:10.703Z"}
+info: am trying to sign up {"timestamp":"2023-06-29T10:24:03.577Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"333","password":"ntptez","username":"yitzi"},"timestamp":"2023-06-29T10:24:03.643Z"}
+info: 1 {"timestamp":"2023-06-29T10:24:03.651Z"}
+info: Error inserting document: username is not defined {"stack":"ReferenceError: username is not defined\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\server.js:281:17\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\body-parser\\lib\\read.js:137:5\n    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)","timestamp":"2023-06-29T10:24:03.668Z"}
+info: am trying to sign up {"timestamp":"2023-06-29T10:24:09.109Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"333","password":"ntptez","username":"yitzi"},"timestamp":"2023-06-29T10:24:09.124Z"}
+info: 1 {"timestamp":"2023-06-29T10:24:09.127Z"}
+info: Error inserting document: username is not defined {"stack":"ReferenceError: username is not defined\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\server.js:281:17\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\body-parser\\lib\\read.js:137:5\n    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)","timestamp":"2023-06-29T10:24:09.128Z"}
+info: am here {"timestamp":"2023-06-29T10:24:12.832Z"}
+info: am here {"timestamp":"2023-06-29T10:24:16.338Z"}
+info: am trying to sign up {"timestamp":"2023-06-29T10:24:21.892Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"33333","password":"ntptez","username":"yitzi"},"timestamp":"2023-06-29T10:24:21.901Z"}
+info: 1 {"timestamp":"2023-06-29T10:24:21.904Z"}
+info: Error inserting document: username is not defined {"stack":"ReferenceError: username is not defined\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\server.js:281:17\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\body-parser\\lib\\read.js:137:5\n    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)","timestamp":"2023-06-29T10:24:21.905Z"}
+info: am trying to sign up {"timestamp":"2023-06-29T10:26:10.973Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"33333","password":"ntptez","username":"yitzi"},"timestamp":"2023-06-29T10:26:10.979Z"}
+info: 1 {"timestamp":"2023-06-29T10:26:10.981Z"}
+info: Error inserting document: username is not defined {"stack":"ReferenceError: username is not defined\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\server.js:281:17\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\body-parser\\lib\\read.js:137:5\n    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)","timestamp":"2023-06-29T10:26:10.982Z"}
+info: am trying to sign up {"timestamp":"2023-06-29T10:30:44.006Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"33333","password":"ntptez","username":"yitzi"},"timestamp":"2023-06-29T10:30:44.036Z"}
+info: 1 {"timestamp":"2023-06-29T10:30:44.043Z"}
+info: Error inserting document: username is not defined {"stack":"ReferenceError: username is not defined\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\server.js:281:17\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\body-parser\\lib\\read.js:137:5\n    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)","timestamp":"2023-06-29T10:30:44.047Z"}
+info: am trying to sign up {"timestamp":"2023-06-29T10:30:46.442Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"33333","password":"ntptez","username":"yitzi"},"timestamp":"2023-06-29T10:30:46.448Z"}
+info: 1 {"timestamp":"2023-06-29T10:30:46.450Z"}
+info: Error inserting document: username is not defined {"stack":"ReferenceError: username is not defined\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\server.js:281:17\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\body-parser\\lib\\read.js:137:5\n    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)","timestamp":"2023-06-29T10:30:46.451Z"}
+info: am trying to sign up {"timestamp":"2023-06-29T10:30:55.931Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"33333","password":"ntptez","username":"yitzi"},"timestamp":"2023-06-29T10:30:55.940Z"}
+info: 1 {"timestamp":"2023-06-29T10:30:55.943Z"}
+info: Error inserting document: username is not defined {"stack":"ReferenceError: username is not defined\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\server.js:281:17\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\body-parser\\lib\\read.js:137:5\n    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)","timestamp":"2023-06-29T10:30:55.945Z"}
+info: am trying to sign up {"timestamp":"2023-06-29T10:34:20.293Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"33333","password":"ntptez","username":"yitzi"},"timestamp":"2023-06-29T10:34:20.343Z"}
+info: 1 {"timestamp":"2023-06-29T10:34:20.351Z"}
+info: Error inserting document: username is not defined {"stack":"ReferenceError: username is not defined\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\server.js:281:17\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\body-parser\\lib\\read.js:137:5\n    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)","timestamp":"2023-06-29T10:34:20.357Z"}
+info: am trying to sign up {"timestamp":"2023-06-29T10:34:51.288Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"33333","password":"ntptez","username":"yitzi"},"timestamp":"2023-06-29T10:34:51.299Z"}
+info: 1 {"timestamp":"2023-06-29T10:34:51.300Z"}
+info: Error inserting document: username is not defined {"stack":"ReferenceError: username is not defined\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\server.js:281:17\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\body-parser\\lib\\read.js:137:5\n    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)","timestamp":"2023-06-29T10:34:51.301Z"}
+info: am trying to sign up {"timestamp":"2023-06-29T10:35:00.956Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"33333","password":"ntptez","username":"yitzi"},"timestamp":"2023-06-29T10:35:00.965Z"}
+info: 1 {"timestamp":"2023-06-29T10:35:00.968Z"}
+info: Error inserting document: username is not defined {"stack":"ReferenceError: username is not defined\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\server.js:281:17\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\body-parser\\lib\\read.js:137:5\n    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)","timestamp":"2023-06-29T10:35:00.971Z"}
+info: am trying to sign up {"timestamp":"2023-06-29T10:35:06.367Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"mosherosten@gmail.com","gender":"","name":"33333","password":"ntptez","username":"yitzi"},"timestamp":"2023-06-29T10:35:06.374Z"}
+info: 1 {"timestamp":"2023-06-29T10:35:06.375Z"}
+info: Error inserting document: username is not defined {"stack":"ReferenceError: username is not defined\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\server.js:281:17\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\body-parser\\lib\\read.js:137:5\n    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)","timestamp":"2023-06-29T10:35:06.377Z"}
+info: Connecting to the database {"timestamp":"2023-06-29T10:36:20.119Z"}
+info: Connected to the database {"timestamp":"2023-06-29T10:36:24.921Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-06-29T10:36:25.080Z"}
+info: am trying to sign up {"timestamp":"2023-06-29T10:36:28.644Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"mosherosten@gmail.com","gender":"","name":"33333","password":"ntptez","username":"yitzi"},"timestamp":"2023-06-29T10:36:28.670Z"}
+info: 1 {"timestamp":"2023-06-29T10:36:28.685Z"}
+info: 2 {"timestamp":"2023-06-29T10:36:28.979Z"}
+info: Document inserted: {"timestamp":"2023-06-29T10:36:28.981Z"}
+info: User registered successfully - id = 649d5eaca378144588481ab4 {"timestamp":"2023-06-29T10:36:28.982Z"}
+info: am here {"timestamp":"2023-06-29T10:38:14.369Z"}
+info: am here {"timestamp":"2023-06-29T10:38:20.452Z"}
+info: trying to delete: 6499af180978ef62d17fe570 {"timestamp":"2023-06-29T10:39:02.075Z"}
+info: User with ID 6499af180978ef62d17fe570 deleted successfully {"timestamp":"2023-06-29T10:39:02.579Z"}
+info: am here {"timestamp":"2023-06-29T10:39:11.925Z"}
+info: am here {"timestamp":"2023-06-29T10:39:28.628Z"}
+info: am here {"timestamp":"2023-06-29T10:46:21.620Z"}
+info: am here {"timestamp":"2023-06-29T10:46:29.520Z"}
+info: am here {"timestamp":"2023-06-29T10:46:37.143Z"}
+info: am trying to sign up {"timestamp":"2023-06-29T10:46:45.099Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"mkddd","password":"ntptez","username":"yitzi"},"timestamp":"2023-06-29T10:46:45.126Z"}
+info: 1 {"timestamp":"2023-06-29T10:46:45.134Z"}
+info: 2 {"timestamp":"2023-06-29T10:46:45.517Z"}
+info: Document inserted: {"timestamp":"2023-06-29T10:46:45.520Z"}
+info: User registered successfully - id = 649d6115a378144588481ab5 {"timestamp":"2023-06-29T10:46:45.523Z"}
+info: User details:{"name":"mkddd","email":"","username":"yitzi","password":"ntptez","dob":{"month":"","day":"","year":""},"gender":"","_id":"649d6115a378144588481ab5"} {"timestamp":"2023-06-29T10:46:45.606Z"}
+info: request userid: 649d6115a378144588481ab5 {"timestamp":"2023-06-29T10:47:21.270Z"}
+info: Connecting to the database {"timestamp":"2023-06-29T10:53:17.546Z"}
+info: Connected to the database {"timestamp":"2023-06-29T10:53:21.631Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-06-29T10:53:21.659Z"}
+info: request userid: 649d6115a378144588481ab5 {"timestamp":"2023-06-29T10:53:26.272Z"}
+info: ERROR{"message":"Request failed with status code 500","name":"Error","stack":"Error: Request failed with status code 500\n    at createError (webpack-internal:///./node_modules/axios/lib/core/createError.js:16:15)\n    at settle (webpack-internal:///./node_modules/axios/lib/core/settle.js:17:12)\n    at XMLHttpRequest.onloadend (webpack-internal:///./node_modules/axios/lib/adapters/xhr.js:54:7)","config":{"url":"http://localhost:4000/api/uploadProfilePicture","method":"post","data":{},"headers":{"Accept":"application/json, text/plain, */*"},"transformRequest":[null],"transformResponse":[null],"timeout":0,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN","maxContentLength":-1,"maxBodyLength":-1,"transitional":{"silentJSONParsing":true,"forcedJSONParsing":true,"clarifyTimeoutError":false}}} {"timestamp":"2023-06-29T10:53:26.761Z"}
+info: User details:{"name":"mkddd","email":"","username":"yitzi","password":"ntptez","dob":{"month":"","day":"","year":""},"gender":"","_id":"649d6115a378144588481ab5"} {"timestamp":"2023-06-29T10:54:48.972Z"}
+info: request userid: 649d6115a378144588481ab5 {"timestamp":"2023-06-29T10:54:59.262Z"}
+info: ERROR{"message":"Request failed with status code 500","name":"Error","stack":"Error: Request failed with status code 500\n    at createError (webpack-internal:///./node_modules/axios/lib/core/createError.js:16:15)\n    at settle (webpack-internal:///./node_modules/axios/lib/core/settle.js:17:12)\n    at XMLHttpRequest.onloadend (webpack-internal:///./node_modules/axios/lib/adapters/xhr.js:54:7)","config":{"url":"http://localhost:4000/api/uploadProfilePicture","method":"post","data":{},"headers":{"Accept":"application/json, text/plain, */*"},"transformRequest":[null],"transformResponse":[null],"timeout":0,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN","maxContentLength":-1,"maxBodyLength":-1,"transitional":{"silentJSONParsing":true,"forcedJSONParsing":true,"clarifyTimeoutError":false}}} {"timestamp":"2023-06-29T10:54:59.332Z"}
+info: Connecting to the database {"timestamp":"2023-06-29T10:56:12.433Z"}
+info: Connected to the database {"timestamp":"2023-06-29T10:56:30.124Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-06-29T10:56:30.135Z"}
+info: about to write to the picture : C:\Users\magnu\projects\ra-dating-nuxt-3\profilePics\649d6115a378144588481ab5 {"timestamp":"2023-06-29T10:56:54.749Z"}
+info: ERROR{"message":"Request failed with status code 500","name":"Error","stack":"Error: Request failed with status code 500\n    at createError (webpack-internal:///./node_modules/axios/lib/core/createError.js:16:15)\n    at settle (webpack-internal:///./node_modules/axios/lib/core/settle.js:17:12)\n    at XMLHttpRequest.onloadend (webpack-internal:///./node_modules/axios/lib/adapters/xhr.js:54:7)","config":{"url":"http://localhost:4000/api/uploadProfilePicture","method":"post","data":{},"headers":{"Accept":"application/json, text/plain, */*"},"transformRequest":[null],"transformResponse":[null],"timeout":0,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN","maxContentLength":-1,"maxBodyLength":-1,"transitional":{"silentJSONParsing":true,"forcedJSONParsing":true,"clarifyTimeoutError":false}}} {"timestamp":"2023-06-29T10:56:55.020Z"}
+info: Connecting to the database {"timestamp":"2023-06-29T11:00:35.136Z"}
+info: Connected to the database {"timestamp":"2023-06-29T11:00:44.996Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-06-29T11:00:45.006Z"}
+info: about to write to the picture : C:\Users\magnu\projects\ra-dating-nuxt-3\profilePics\649d6115a378144588481ab5\ALLY5g21.jpg {"timestamp":"2023-06-29T11:01:18.820Z"}
+info: User details:{"name":"mkddd","email":"","username":"yitzi","password":"ntptez","dob":{"month":"","day":"","year":""},"gender":"","_id":"649d6115a378144588481ab5"} {"timestamp":"2023-06-29T11:01:31.899Z"}
+info: User details:{"name":"mkddd","email":"","username":"yitzi","password":"ntptez","dob":{"month":"","day":"","year":""},"gender":"","_id":"649d6115a378144588481ab5"} {"timestamp":"2023-06-29T11:05:27.647Z"}
+info: am here {"timestamp":"2023-06-29T11:33:12.658Z"}
+info: am here {"timestamp":"2023-06-29T12:33:11.195Z"}
+info: am here {"timestamp":"2023-06-29T12:33:13.507Z"}
+info: am trying to sign up {"timestamp":"2023-06-29T12:33:59.792Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"myemail.@hotmail.com","gender":"","name":"my name","password":"testing","username":"myuser"},"timestamp":"2023-06-29T12:33:59.809Z"}
+info: 1 {"timestamp":"2023-06-29T12:33:59.821Z"}
+info: 2 {"timestamp":"2023-06-29T12:34:01.868Z"}
+info: Document inserted: {"timestamp":"2023-06-29T12:34:01.873Z"}
+info: User registered successfully - id = 649d7a378ab211f65b27cb7e {"timestamp":"2023-06-29T12:34:01.878Z"}
+info: User details:{"name":"my name","email":"myemail.@hotmail.com","username":"myuser","password":"testing","dob":{"month":"","day":"","year":""},"gender":"","_id":"649d7a378ab211f65b27cb7e"} {"timestamp":"2023-06-29T12:34:02.702Z"}
+info: am here {"timestamp":"2023-06-29T12:34:24.775Z"}
+info: User details:{"name":"my name","email":"myemail.@hotmail.com","username":"myuser","password":"testing","dob":{"month":"","day":"","year":""},"gender":"","_id":"649d7a378ab211f65b27cb7e"} {"timestamp":"2023-06-29T12:34:26.061Z"}
+info: User details:{"name":"my name","email":"myemail.@hotmail.com","username":"myuser","password":"testing","dob":{"month":"","day":"","year":""},"gender":"","_id":"649d7a378ab211f65b27cb7e"} {"timestamp":"2023-06-29T12:36:35.101Z"}
+info: am here {"timestamp":"2023-06-29T12:36:47.932Z"}
+info: am trying to sign up {"timestamp":"2023-06-29T12:38:10.724Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"333","password":"testing","username":"myuser"},"timestamp":"2023-06-29T12:38:10.748Z"}
+info: 1 {"timestamp":"2023-06-29T12:38:10.758Z"}
+info: 2 {"timestamp":"2023-06-29T12:38:11.252Z"}
+info: Document inserted: {"timestamp":"2023-06-29T12:38:11.254Z"}
+info: User registered successfully - id = 649d7b328ab211f65b27cb7f {"timestamp":"2023-06-29T12:38:11.256Z"}
+info: User details:{"name":"333","email":"","username":"myuser","password":"testing","dob":{"month":"","day":"","year":""},"gender":"","_id":"649d7b328ab211f65b27cb7f"} {"timestamp":"2023-06-29T12:38:11.353Z"}
+info: User details:{"name":"333","email":"","username":"myuser","password":"testing","dob":{"month":"","day":"","year":""},"gender":"","_id":"649d7b328ab211f65b27cb7f"} {"timestamp":"2023-06-29T12:38:16.908Z"}
+info: User details:{"name":"333","email":"","username":"myuser","password":"testing","dob":{"month":"","day":"","year":""},"gender":"","_id":"649d7b328ab211f65b27cb7f"} {"timestamp":"2023-06-29T12:38:22.241Z"}
+info: User details:{"name":"333","email":"","username":"myuser","password":"testing","dob":{"month":"","day":"","year":""},"gender":"","_id":"649d7b328ab211f65b27cb7f"} {"timestamp":"2023-06-29T12:39:15.957Z"}
+info: User details:{"name":"333","email":"","username":"myuser","password":"testing","dob":{"month":"","day":"","year":""},"gender":"","_id":"649d7b328ab211f65b27cb7f"} {"timestamp":"2023-06-29T13:52:14.603Z"}
+info: User details:{"name":"333","email":"","username":"myuser","password":"testing","dob":{"month":"","day":"","year":""},"gender":"","_id":"649d7b328ab211f65b27cb7f"} {"timestamp":"2023-06-29T13:52:23.432Z"}
+info: User details:{"name":"333","email":"","username":"myuser","password":"testing","dob":{"month":"","day":"","year":""},"gender":"","_id":"649d7b328ab211f65b27cb7f"} {"timestamp":"2023-06-29T13:52:43.263Z"}

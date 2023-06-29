@@ -51,7 +51,7 @@ export default {
         { text: 'Role', value: 'role', sortable: false },
         { text: 'Actions', value: 'actions', sortable: false },
         { text: 'Action #2', value: 'action2', sortable: false },
-        { text: 'Action #2', value: 'action3', sortable: false },
+        { text: 'Action #3', value: 'action3', sortable: false },
 
       ],
     };
@@ -108,13 +108,15 @@ export default {
 
     async deleteProfile(user) {
       try {
-        await fetch(`http://localhost:4000/users/${_id}`, {
+        await fetch(`http://localhost:4000/users/${user._id}`, {
           method: 'DELETE',
           headers: {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify(user),
         });
+        this.fetchUserDocuments();
+
       } catch (error) {
         console.error(error);
       }

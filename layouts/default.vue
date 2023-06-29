@@ -1,7 +1,6 @@
-
 <template>
   <v-app dark>
-    <v-app-bar :clipped-left="clipped" fixed app>
+    <v-app-bar :clipped-left="clipped" :class="{'hide-on-scroll': hideAppBar}" fixed app v-show="showAppBar">
       <v-toolbar-title>{{ $t('title') }}</v-toolbar-title>
       <v-spacer />
       <v-app-bar-nav-icon @click="clipped = !clipped"></v-app-bar-nav-icon>
@@ -25,6 +24,11 @@
     </v-app-bar>
     <v-main>
       <v-container>
+        <div class="toggle-button-container">
+          <v-btn icon @click="toggleAppBar" class="toggle-button">
+            <v-icon>{{ showAppBar ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+          </v-btn>
+        </div>
         <Nuxt />
       </v-container>
     </v-main>
@@ -37,6 +41,8 @@ export default {
   data() {
     return {
       clipped: false,
+      showAppBar: true,
+      hideAppBar: false,
       title: 'אתר של רב אבנר'
     };
   },
@@ -55,8 +61,33 @@ export default {
     },
     switchLanguage(locale) {
       this.$i18n.locale = locale;
+    },
+    toggleAppBar() {
+      this.showAppBar = !this.showAppBar;
+      this.hideAppBar = !this.hideAppBar;
     }
   }
 };
 </script>
 
+<style>
+.hide-on-scroll {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.hide-on-scroll.show-app-bar {
+  opacity: 1;
+}
+
+.toggle-button-container {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.toggle-button {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+</style>

@@ -26,7 +26,7 @@
                   type="text"></v-text-field>
                 <v-text-field id="email" :label="$t('emailLabel')" name="email" prepend-icon="mdi-email" v-model="email"
                   type="text"></v-text-field>
-                <v-text-field id="username" :label="$t('userNameLabel')" name="username" prepend-icon="mdi-account"
+                <v-text-field id="username" :label="$t('usernameLabel')" name="username" prepend-icon="mdi-account"
                   v-model="username" type="text"></v-text-field>
                 <v-text-field id="password" :label="$t('passwordLabel')" name="password" prepend-icon="mdi-lock"
                   v-model="password" type="password"></v-text-field>
@@ -88,7 +88,7 @@ function logToAPI(message) {
 
 
 export default {
-  name: 'Rav Avner Dating',
+  name: 'Rav-Avner-Dating',
   data() {
     return {
       valid: false,
@@ -142,7 +142,7 @@ export default {
         userData._id = insertedId;
         console.log('insertedId=' + insertedId);
         this.$router.push({
-          path: '/DatingProfilePage',
+          path: '/datingprofile',
           query: { user: JSON.stringify(userData) }
         });
       })

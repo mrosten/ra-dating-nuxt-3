@@ -92,6 +92,32 @@ async function startServer() {
 
 startServer();
 
+app.delete('/users/:_id', async (req, res) => {
+  try {
+    const userId = req.params._id;
+
+    const db = client.db("ra-dating"); // Get the default database
+    const usersCollection = db.collection('users'); // Access the 'users' collection
+
+    logger.info("trying to delete: " + userId);    
+
+    const { ObjectId } = require('mongodb');
+
+    const result = await usersCollection.deleteOne({ _id: new ObjectId(userId) });
+
+    if (result.deletedCount === 1) {
+      logger.info(`User with ID ${userId} deleted successfully`);
+      res.status(200).json({ message: 'User deleted successfully' });
+    } else {
+      logger.info(`User with ID ${userId} not found`);
+      res.status(404).json({ error: 'User not found' });
+    }
+  } catch (error) {
+    logger.error('Error deleting user:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
 
 // Patch Routes
 app.patch('/users/:_id', async (req, res) => {
@@ -127,6 +153,42 @@ app.get('/', (req, res) => {
   res.send('Welcome to the API');
 });
 
+app.get('/api/fillindata', async (req, res) => {
+  try {
+    const db = client.db("ra-dating"); // Get the default database
+    const usersCollection = db.collection('users'); // Access the 'users' collection
+
+    const users = await usersCollection.find().toArray();
+
+    // Iterate over each user and update missing gender and date of birth fields
+    for (const user of users) {
+      if (!user.gender) {
+        // Assign random gender (male or female)
+        user.gender = Math.random() < 0.5 ? 'male' : 'female';
+      }
+      if (!user.dob.month || !user.dob.day || !user.dob.year) {
+        // Generate random date of birth between 1970 and 2020
+        const year = Math.floor(Math.random() * (2021 - 1970)) + 1970;
+        const month = Math.floor(Math.random() * 12) + 1;
+        const day = Math.floor(Math.random() * 28) + 1; // Assuming all months have 28 days for simplicity
+
+        user.dob = {
+          month: month.toString(),
+          day: day.toString(),
+          year: year.toString()
+        };
+      }
+
+      // Update the user record in the collection
+      await usersCollection.updateOne({ _id: user._id }, { $set: user });
+    }
+
+    res.status(200).json({ message: 'Data filled successfully' });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
 
 
 app.get('/api/users', async (req, res) => {
@@ -167,7 +229,7 @@ app.post('/api/uploadProfilePicture', upload.single('profilePicture'), async (re
 
   // return;
 
-  logger.info("request userid: " + req.body.userID);
+  // logger.info("request userid: " + req.body.userID);
 
   try {
     const userId = req.body.userID;
@@ -179,6 +241,7 @@ app.post('/api/uploadProfilePicture', upload.single('profilePicture'), async (re
       fs.mkdirSync(directoryPath, { recursive: true });
     }
 
+    logger.info("about to write to the picture : " + picturePath);
     await fs.promises.writeFile(picturePath, req.file.buffer);
 
     console.log('File stored successfully');
@@ -210,13 +273,13 @@ app.post('/signup', async (req, res) => {
   try {
     logger.info('Signup request received', { requestBody: req.body });
 
-    const { name, email, password, dob, gender } = req.body;
+    const { name, username, email, password, dob, gender } = req.body;
     const db = client.db("ra-dating"); 
     const usersCollection = db.collection('users'); 
 
     logger.info('1');
     const result = await usersCollection.insertOne({
-      username: email,
+      username: username,
       email: email,
       password: password,
       dob: dob,
