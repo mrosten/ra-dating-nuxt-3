@@ -2,7 +2,7 @@
   <v-app id="inspire">
     <v-container fluid>
       <!-- The welcome banner -->
-      <v-row align="center" justify="center">
+      <v-row>
         <v-col cols="12">
           <v-card class="elevation-12" color="secondary" dark>
             <v-card-text class="text-center display-3">
@@ -13,10 +13,10 @@
       </v-row>
 
       <!-- The signup form -->
-      <v-row align="left" justify="left">
+      <v-row>
         <v-col cols="12" sm="8" md="6">
           <v-card class="elevation-12" color="white">
-            <v-toolbar align="left" color="primary" dark>
+            <v-toolbar color="primary" dark>
               <v-toolbar-title>{{ $t('signUpFormLabel') }}</v-toolbar-title>
               <v-spacer></v-spacer>
             </v-toolbar>
@@ -141,9 +141,14 @@ export default {
         const insertedId = response.data.userId;
         userData._id = insertedId;
         console.log('insertedId=' + insertedId);
+
+
+        this.$store.commit('setUserData', userData);
+
+        logToAPI('index page about to change to dating profile page');
         this.$router.push({
           path: '/datingprofile',
-          query: { user: JSON.stringify(userData) }
+          // query: { user: JSON.stringify(userData) }
         });
       })
       .catch(error => {

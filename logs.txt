@@ -348,3 +348,32 @@ info: User details:{"name":"333","email":"","username":"myuser","password":"test
 info: User details:{"name":"333","email":"","username":"myuser","password":"testing","dob":{"month":"","day":"","year":""},"gender":"","_id":"649d7b328ab211f65b27cb7f"} {"timestamp":"2023-06-29T13:52:14.603Z"}
 info: User details:{"name":"333","email":"","username":"myuser","password":"testing","dob":{"month":"","day":"","year":""},"gender":"","_id":"649d7b328ab211f65b27cb7f"} {"timestamp":"2023-06-29T13:52:23.432Z"}
 info: User details:{"name":"333","email":"","username":"myuser","password":"testing","dob":{"month":"","day":"","year":""},"gender":"","_id":"649d7b328ab211f65b27cb7f"} {"timestamp":"2023-06-29T13:52:43.263Z"}
+info: Connecting to the database {"timestamp":"2023-06-30T11:09:24.012Z"}
+error: Error connecting to the database: querySrv ESERVFAIL _mongodb._tcp.cluster0.nzxelpi.mongodb.net {"code":"ESERVFAIL","hostname":"_mongodb._tcp.cluster0.nzxelpi.mongodb.net","stack":"Error: querySrv ESERVFAIL _mongodb._tcp.cluster0.nzxelpi.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:251:17)","syscall":"querySrv","timestamp":"2023-06-30T11:09:24.022Z"}
+error: The Express server will continue running, but there may be issues accessing the database. {"timestamp":"2023-06-30T11:09:24.023Z"}
+info: Connecting to the database {"timestamp":"2023-06-30T11:10:10.691Z"}
+info: Connected to the database {"timestamp":"2023-06-30T11:10:13.685Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-06-30T11:10:13.690Z"}
+info: am here {"timestamp":"2023-06-30T11:10:18.894Z"}
+info: am here {"timestamp":"2023-06-30T11:10:19.533Z"}
+info: am trying to sign up {"timestamp":"2023-06-30T11:10:29.207Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"moshe","password":"","username":""},"timestamp":"2023-06-30T11:10:29.211Z"}
+info: 1 {"timestamp":"2023-06-30T11:10:29.214Z"}
+info: 2 {"timestamp":"2023-06-30T11:10:29.627Z"}
+info: Document inserted: {"timestamp":"2023-06-30T11:10:29.628Z"}
+info: User registered successfully - id = 649eb825e4f1b0bf29c35b83 {"timestamp":"2023-06-30T11:10:29.630Z"}
+info: index page about to change to dating profile page {"timestamp":"2023-06-30T11:10:29.652Z"}
+info: User details:null {"timestamp":"2023-06-30T11:10:29.737Z"}
+info: am here {"timestamp":"2023-06-30T11:11:12.458Z"}
+info: am here {"timestamp":"2023-06-30T11:11:14.740Z"}
+info: am here {"timestamp":"2023-06-30T11:11:15.384Z"}
+info: am trying to sign up {"timestamp":"2023-06-30T11:11:19.055Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"eeee","password":"","username":""},"timestamp":"2023-06-30T11:11:19.071Z"}
+info: 1 {"timestamp":"2023-06-30T11:11:19.072Z"}
+info: 2 {"timestamp":"2023-06-30T11:11:19.338Z"}
+info: Document inserted: {"timestamp":"2023-06-30T11:11:19.339Z"}
+info: User registered successfully - id = 649eb857e4f1b0bf29c35b84 {"timestamp":"2023-06-30T11:11:19.340Z"}
+info: index page about to change to dating profile page {"timestamp":"2023-06-30T11:11:19.356Z"}
+info: User details:{"name":"eeee","email":"","username":"","password":"","dob":{"month":"","day":"","year":""},"gender":"","_id":"649eb857e4f1b0bf29c35b84"} {"timestamp":"2023-06-30T11:11:19.431Z"}
+info: handlfilechange called {"timestamp":"2023-06-30T11:11:29.618Z"}
+info: handlfilechange called {"timestamp":"2023-06-30T11:11:50.800Z"}
