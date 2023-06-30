@@ -68,7 +68,7 @@ export default {
             this.selectedFile = null;
 
             this.$router.push({
-              path: '/ConfirmationPage',
+              path: '/mainpage',
               query: { userData: JSON.stringify(this.user) }
             });
 
