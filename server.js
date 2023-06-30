@@ -191,6 +191,74 @@ app.get('/api/fillindata', async (req, res) => {
 });
 
 
+app.get('/api/matchallmaleusers', async (req, res) => {
+  try {
+    const db = client.db("ra-dating"); // Get the default database
+    const usersCollection = db.collection('users'); // Access the 'users' collection
+    const matchesCollection = db.collection('matches'); // Access the 'matches' collection
+
+    // Find all matchless male users
+    const matchlessMales = await usersCollection.find({
+      gender: 'male', // Replace 'male' with the desired gender
+      matches: { $size: 0 } // Find users with an empty 'matches' array
+    }).toArray();
+
+    if (matchlessMales.length === 0) {
+      return res.status(404).json({ error: 'No available matchless male users found' });
+    }
+
+    let matchlessFemales = await usersCollection.find({
+      gender: 'female', // Replace 'female' with the desired gender
+      matches: { $size: 0 } // Find users with an empty 'matches' array
+    }).toArray();
+
+    if (matchlessFemales.length === 0) {
+      return res.status(404).json({ error: 'No available matchless female users found' });
+    }
+
+    // Assign matches to matchless male users until there are no more matchless females
+    for (const maleUser of matchlessMales) {
+      // Select a random female user as a match
+      const randomIndex = Math.floor(Math.random() * matchlessFemales.length);
+      const femaleUser = matchlessFemales[randomIndex];
+
+      // Create a new match entry
+      const newMatch = {
+        user1Id: maleUser._id,
+        user2Id: femaleUser._id,
+        matchedOn: new Date()
+      };
+
+      // Insert the match entry into the 'matches' collection
+      const insertedMatch = await matchesCollection.insertOne(newMatch);
+
+      // Update the 'matches' array field of both users
+      await usersCollection.updateOne(
+        { _id: maleUser._id },
+        { $push: { matches: insertedMatch.insertedId } }
+      );
+
+      await usersCollection.updateOne(
+        { _id: femaleUser._id },
+        { $push: { matches: insertedMatch.insertedId } }
+      );
+
+      // Remove the matched female user from the array
+      matchlessFemales.splice(randomIndex, 1);
+
+      if (matchlessFemales.length === 0) {
+        break; // Break the loop if there are no more matchless females
+      }
+    }
+
+    res.status(200).json({ message: 'Users matched successfully' });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+
 app.get('/api/users', async (req, res) => {
   try {
     const db = client.db("ra-dating"); // Get the default database
