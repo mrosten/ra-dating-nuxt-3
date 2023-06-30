@@ -53,8 +53,8 @@ export default {
     handleFileChange(event) {
       // event.preventDefault();
       //  
-      // this.selectedFile = event.target.files[0];
-      logToAPI("handlfilechange called");
+      this.selectedFile = event;
+      logToAPI("handlfilechange called" + event);
     },
     uploadProfilePicture() {
       if (this.selectedFile) {

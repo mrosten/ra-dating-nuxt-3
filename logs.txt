@@ -377,3 +377,20 @@ info: index page about to change to dating profile page {"timestamp":"2023-06-30
 info: User details:{"name":"eeee","email":"","username":"","password":"","dob":{"month":"","day":"","year":""},"gender":"","_id":"649eb857e4f1b0bf29c35b84"} {"timestamp":"2023-06-30T11:11:19.431Z"}
 info: handlfilechange called {"timestamp":"2023-06-30T11:11:29.618Z"}
 info: handlfilechange called {"timestamp":"2023-06-30T11:11:50.800Z"}
+info: User details:{"name":"eeee","email":"","username":"","password":"","dob":{"month":"","day":"","year":""},"gender":"","_id":"649eb857e4f1b0bf29c35b84"} {"timestamp":"2023-06-30T11:39:55.666Z"}
+info: handlfilechange called[object File] {"timestamp":"2023-06-30T11:40:04.288Z"}
+info: User details:{"name":"eeee","email":"","username":"","password":"","dob":{"month":"","day":"","year":""},"gender":"","_id":"649eb857e4f1b0bf29c35b84"} {"timestamp":"2023-06-30T11:40:52.155Z"}
+info: handlfilechange called[object File] {"timestamp":"2023-06-30T11:40:58.342Z"}
+info: about to write to the picture : /home/mrosten/projects/ra-dating-nuxt-3/profilePics/649eb857e4f1b0bf29c35b84/Fynx3gnXwAEz5hS.jpeg {"timestamp":"2023-06-30T11:41:10.635Z"}
+info: Connecting to the database {"timestamp":"2023-06-30T11:43:10.833Z"}
+info: Connected to the database {"timestamp":"2023-06-30T11:43:13.497Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-06-30T11:43:13.512Z"}
+info: User details:{"name":"eeee","email":"","username":"","password":"","dob":{"month":"","day":"","year":""},"gender":"","_id":"649eb857e4f1b0bf29c35b84"} {"timestamp":"2023-06-30T11:43:36.964Z"}
+info: handlfilechange called[object File] {"timestamp":"2023-06-30T11:43:43.951Z"}
+info: about to write to the picture path: /home/mrosten/projects/ra-dating-nuxt-3/profilePics/649eb857e4f1b0bf29c35b84/Fynx3gnXwAEz5hS.jpeg {"timestamp":"2023-06-30T11:43:45.972Z"}
+info: Connecting to the database {"timestamp":"2023-06-30T11:45:44.066Z"}
+info: Connected to the database {"timestamp":"2023-06-30T11:45:48.924Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-06-30T11:45:48.931Z"}
+info: handlfilechange called[object File] {"timestamp":"2023-06-30T11:45:54.095Z"}
+info: about to write to the picture path: /home/mrosten/projects/ra-dating-nuxt-3/profilePics/649eb857e4f1b0bf29c35b84/Fynx3gnXwAEz5hS.jpeg {"timestamp":"2023-06-30T11:45:56.101Z"}
+info: File stored successfully {"timestamp":"2023-06-30T11:45:56.107Z"}

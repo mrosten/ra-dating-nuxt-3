@@ -241,13 +241,13 @@ app.post('/api/uploadProfilePicture', upload.single('profilePicture'), async (re
       fs.mkdirSync(directoryPath, { recursive: true });
     }
 
-    logger.info("about to write to the picture : " + picturePath);
+    logger.info("about to write to the picture path: " + picturePath);
     await fs.promises.writeFile(picturePath, req.file.buffer);
 
-    console.log('File stored successfully');
+    logger.info('File stored successfully');
     return res.status(200).json({ success: true });
   } catch (error) {
-    console.log('Error:', error);
+    logger.info('Error:');
     return res.status(500).json({ error: 'Failed to save file' });
   }
 });
