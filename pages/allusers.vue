@@ -11,34 +11,54 @@
             <v-text-field v-model="search" label="Search" clearable solo-inverted></v-text-field>
           </v-toolbar>
         </template>
-        <template v-slot:item.actions="{ item }">
-          <v-icon small @click="toggleEdit(item)">{{ item.editing ? 'save' : 'edit' }}</v-icon>
+        <template v-slot:item="{ item }">
+          <tr @click="selectRow(item)">
+            <td>
+              <v-icon small @click="toggleEdit(item)">{{ item.editing ? 'save' : 'edit' }}</v-icon>
+            </td>
+            <td>
+              <v-icon small @click="goToProfilePage(item)">mdi-account-circle</v-icon>
+            </td>
+            <td>
+              <v-icon small @click="deleteProfile(item)">mdi-account-circle</v-icon>
+            </td>
+            <td>
+              <v-select v-model="item.role" :items="['user', 'admin']" :disabled="!item.editing" outlined></v-select>
+            </td>
+            <td>
+              <v-text-field v-model="item.username" :disabled="!item.editing" outlined></v-text-field>
+            </td>
+            <td>
+              <v-text-field v-model="item.email" :disabled="!item.editing" outlined></v-text-field>
+            </td>
+            <td>
+              <v-text-field v-model="item.password" :disabled="!item.editing" outlined></v-text-field>
+            </td>
+          </tr>
         </template>
-        <template v-slot:item.action2="{ item }">
-          <v-icon small @click="goToProfilePage(item)">mdi-account-circle</v-icon>
-        </template>
-        <template v-slot:item.action3="{ item }">
-          <v-icon small @click="deleteProfile(item)">mdi-account-circle</v-icon>
-        </template>
-        <template v-slot:item.role="{ item }">
-          <v-select v-model="item.role" :items="['user', 'admin']" :disabled="!item.editing" outlined></v-select>
-        </template>
-        <template v-slot:item.username="{ item }">
-          <v-text-field v-model="item.username" :disabled="!item.editing" outlined></v-text-field>
-        </template>
-        <template v-slot:item.email="{ item }">
-          <v-text-field v-model="item.email" :disabled="!item.editing" outlined></v-text-field>
-        </template>
-        <template v-slot:item.password="{ item }">
-          <v-text-field v-model="item.password" :disabled="!item.editing" outlined></v-text-field>
-        </template>
-
       </v-data-table>
     </v-card>
   </div>
 </template>
-  
+
 <script>
+
+import axios from 'axios';
+
+function logToAPI(message) {
+  const requestBody = {
+    message: message
+  };
+
+  axios.post('http://localhost:4000/logger', requestBody)
+    .then(response => {
+      console.log('Log entry created successfully');
+    })
+    .catch(error => {
+      console.error('Failed to create log entry:', error);
+    });
+}
+
 export default {
   data() {
     return {
@@ -128,6 +148,12 @@ export default {
         query: { user: JSON.stringify(user) },
       });
     },
+    selectRow(item) {
+      // Handle row selection logic here
+      // For example, you can toggle a selected property on the item
+      item.selected = !item.selected;
+      logToAPI("selected row");
+    }
   },
 };
 </script>
