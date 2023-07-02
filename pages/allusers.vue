@@ -22,13 +22,7 @@
           </v-toolbar>
         </template>
         <template v-slot:item="{ item }">
-          <tr :class="{ 'table-row-selected': item === selectedItem }" @click="selectItem(item)">
-            <td>{{ item.username }}</td>
-            <td>{{ item.email }}</td>
-            <td>{{ item.password }}</td>
-            <td>
-              <v-select v-model="item.role" :items="['user', 'admin']" :disabled="!item.editing" outlined></v-select>
-            </td>
+          <tr @click="selectRow(item)">
             <td>
               <v-icon small @click="toggleEdit(item)">{{ item.editing ? 'save' : 'edit' }}</v-icon>
             </td>
@@ -38,6 +32,18 @@
             <td>
               <v-icon small @click="deleteProfile(item)">mdi-account-circle</v-icon>
             </td>
+            <td>
+              <v-select v-model="item.role" :items="['user', 'admin']" :disabled="!item.editing" outlined></v-select>
+            </td>
+            <td>
+              <v-text-field v-model="item.username" :disabled="!item.editing" outlined></v-text-field>
+            </td>
+            <td>
+              <v-text-field v-model="item.email" :disabled="!item.editing" outlined></v-text-field>
+            </td>
+            <td>
+              <v-text-field v-model="item.password" :disabled="!item.editing" outlined></v-text-field>
+            </td>
           </tr>
         </template>
       </v-data-table>
@@ -46,6 +52,23 @@
 </template>
 
 <script>
+
+import axios from 'axios';
+
+function logToAPI(message) {
+  const requestBody = {
+    message: message
+  };
+
+  axios.post('http://localhost:4000/logger', requestBody)
+    .then(response => {
+      console.log('Log entry created successfully');
+    })
+    .catch(error => {
+      console.error('Failed to create log entry:', error);
+    });
+}
+
 export default {
   data() {
     return {
@@ -132,22 +155,12 @@ export default {
         query: { user: JSON.stringify(user) },
       });
     },
-    selectItem(item) {
-      this.selectedItem = item;
-    },
-    navigate(direction) {
-      if (!this.selectedItem) {
-        this.selectedItem = this.users[0];
-        return;
-      }
-
-      const currentIndex = this.users.indexOf(this.selectedItem);
-      const nextIndex = currentIndex + direction;
-
-      if (nextIndex >= 0 && nextIndex < this.users.length) {
-        this.selectedItem = this.users[nextIndex];
-      }
-    },
+    selectRow(item) {
+      // Handle row selection logic here
+      // For example, you can toggle a selected property on the item
+      item.selected = !item.selected;
+      logToAPI("selected row");
+    }
   },
 };
 </script>
