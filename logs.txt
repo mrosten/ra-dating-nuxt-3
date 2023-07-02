@@ -399,3 +399,28 @@ info: Connected to the database {"timestamp":"2023-06-30T12:03:22.140Z"}
 info: Server running on http://localhost:4000 {"timestamp":"2023-06-30T12:03:22.151Z"}
 info: User details:{} {"timestamp":"2023-06-30T12:05:08.510Z"}
 info: User details:{} {"timestamp":"2023-06-30T12:05:27.009Z"}
+info: Connecting to the database {"timestamp":"2023-06-30T12:47:02.957Z"}
+info: Connected to the database {"timestamp":"2023-06-30T12:47:06.746Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-06-30T12:47:06.756Z"}
+info: User details:{} {"timestamp":"2023-06-30T12:52:02.859Z"}
+info: trying to delete: 649eb825e4f1b0bf29c35b83 {"timestamp":"2023-06-30T12:52:32.638Z"}
+info: User with ID 649eb825e4f1b0bf29c35b83 deleted successfully {"timestamp":"2023-06-30T12:52:33.096Z"}
+info: trying to delete: 649eb857e4f1b0bf29c35b84 {"timestamp":"2023-06-30T12:52:34.578Z"}
+info: User with ID 649eb857e4f1b0bf29c35b84 deleted successfully {"timestamp":"2023-06-30T12:52:35.244Z"}
+info: Connecting to the database {"timestamp":"2023-06-30T12:57:51.025Z"}
+info: Connected to the database {"timestamp":"2023-06-30T12:57:55.873Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-06-30T12:57:55.886Z"}
+info: Connecting to the database {"timestamp":"2023-06-30T13:07:58.709Z"}
+info: Connected to the database {"timestamp":"2023-06-30T13:08:04.526Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-06-30T13:08:04.540Z"}
+info: User with ID 649d4a22b8c2c4f284f39063 and associated matches deleted successfully {"timestamp":"2023-06-30T13:08:21.115Z"}
+info: User with ID 649d8d6ef046374c0165975e and associated matches deleted successfully {"timestamp":"2023-06-30T13:08:26.474Z"}
+info: db=[object Object] {"timestamp":"2023-06-30T13:14:34.960Z"}
+info: beginning of patch userId = 649d7a378ab211f65b27cb7e updatedData = [object Object] {"timestamp":"2023-06-30T13:14:34.971Z"}
+info: Document updated: {"acknowledged":true,"matchedCount":1,"modifiedCount":0,"timestamp":"2023-06-30T13:14:35.520Z","upsertedCount":0,"upsertedId":null}
+info: db=[object Object] {"timestamp":"2023-06-30T13:18:07.090Z"}
+info: beginning of patch userId = 649da2e32d7b67c7bb8b6847 updatedData = [object Object] {"timestamp":"2023-06-30T13:18:07.111Z"}
+info: Document updated: {"acknowledged":true,"matchedCount":1,"modifiedCount":0,"timestamp":"2023-06-30T13:18:07.660Z","upsertedCount":0,"upsertedId":null}
+info: db=[object Object] {"timestamp":"2023-06-30T13:18:39.069Z"}
+info: beginning of patch userId = 649d7a378ab211f65b27cb7e updatedData = [object Object] {"timestamp":"2023-06-30T13:18:39.090Z"}
+info: Document updated: {"acknowledged":true,"matchedCount":1,"modifiedCount":0,"timestamp":"2023-06-30T13:18:39.396Z","upsertedCount":0,"upsertedId":null}

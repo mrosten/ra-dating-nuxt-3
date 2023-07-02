@@ -91,23 +91,42 @@ async function startServer() {
 }
 
 startServer();
-
 app.delete('/users/:_id', async (req, res) => {
   try {
     const userId = req.params._id;
 
     const db = client.db("ra-dating"); // Get the default database
     const usersCollection = db.collection('users'); // Access the 'users' collection
-
-    logger.info("trying to delete: " + userId);    
+    const matchesCollection = db.collection('matches'); // Access the 'matches' collection
 
     const { ObjectId } = require('mongodb');
 
-    const result = await usersCollection.deleteOne({ _id: new ObjectId(userId) });
+    // Find the user by ID
+    const user = await usersCollection.findOne({ _id: new ObjectId(userId) });
 
-    if (result.deletedCount === 1) {
-      logger.info(`User with ID ${userId} deleted successfully`);
-      res.status(200).json({ message: 'User deleted successfully' });
+    if (!user) {
+      return res.status(404).json({ error: 'User not found' });
+    }
+
+    // Delete the user from the 'users' collection
+    const deleteUserResult = await usersCollection.deleteOne({ _id: new ObjectId(userId) });
+
+    if (deleteUserResult.deletedCount === 1) {
+      // Delete any associated match IDs from the 'matches' collection and update the users' 'matches' arrays
+      await matchesCollection.deleteMany({
+        $or: [
+          { user1Id: new ObjectId(userId) },
+          { user2Id: new ObjectId(userId) }
+        ]
+      });
+
+      await usersCollection.updateMany(
+        { _id: { $ne: new ObjectId(userId) } },
+        { $pull: { matches: new ObjectId(userId) } }
+      );
+
+      logger.info(`User with ID ${userId} and associated matches deleted successfully`);
+      res.status(200).json({ message: 'User and associated matches deleted successfully' });
     } else {
       logger.info(`User with ID ${userId} not found`);
       res.status(404).json({ error: 'User not found' });
@@ -257,6 +276,38 @@ app.get('/api/matchallmaleusers', async (req, res) => {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
+
+app.delete('/api/matches/:matchId', async (req, res) => {
+  try {
+    const matchId = req.params.matchId;
+
+    const db = client.db("ra-dating"); // Get the default database
+    const usersCollection = db.collection('users'); // Access the 'users' collection
+    const matchesCollection = db.collection('matches'); // Access the 'matches' collection
+
+    // Find the match by its ID
+    const match = await matchesCollection.findOne({ _id: matchId });
+
+    if (!match) {
+      return res.status(404).json({ error: 'Match not found' });
+    }
+
+    // Delete the match from the 'matches' collection
+    await matchesCollection.deleteOne({ _id: matchId });
+
+    // Delete the match ID from the 'matches' array field of both users
+    await usersCollection.updateMany(
+      { _id: { $in: [match.user1Id, match.user2Id] } },
+      { $pull: { matches: matchId } }
+    );
+
+    res.status(200).json({ message: 'Match deleted successfully' });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
 
 
 app.get('/api/users', async (req, res) => {
