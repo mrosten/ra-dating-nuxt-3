@@ -84,7 +84,9 @@ function logToAPI(message) {
     message: message
   };
 
-  axios.post('http://localhost:4000/logger', requestBody)
+  console.log("about to do an axios.post");
+
+  axios.post(`${process.env.API_BASE_URL}/logger`, requestBody)
     .then(response => {
       console.log('Log entry created successfully');
     })
