@@ -1,0 +1,82 @@
+info: am here {"timestamp":"2023-07-02T18:58:28.949Z"}
+info: about to go to login {"timestamp":"2023-07-02T18:58:32.829Z"}
+info: about to go to login {"timestamp":"2023-07-02T18:59:14.931Z"}
+info: am here {"timestamp":"2023-07-02T19:00:57.824Z"}
+info: about to go to login {"timestamp":"2023-07-02T19:01:00.634Z"}
+info: am here {"timestamp":"2023-07-02T19:01:14.802Z"}
+info: am trying to sign up {"timestamp":"2023-07-02T19:01:22.639Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"rebe","password":"yipa","username":"yipa@yipa.com"},"timestamp":"2023-07-02T19:01:22.643Z"}
+info: 1 {"timestamp":"2023-07-02T19:01:22.649Z"}
+info: 2 {"timestamp":"2023-07-02T19:01:22.825Z"}
+info: Document inserted: {"timestamp":"2023-07-02T19:01:22.826Z"}
+info: User registered successfully - id = 64a1c9822b4fa87c94acf9df {"timestamp":"2023-07-02T19:01:22.829Z"}
+info: index page about to change to dating profile page {"timestamp":"2023-07-02T19:01:22.850Z"}
+info: am here {"timestamp":"2023-07-02T19:01:55.555Z"}
+info: about to go to login {"timestamp":"2023-07-02T19:01:59.283Z"}
+info: am trying to sign up {"timestamp":"2023-07-02T19:02:30.333Z"}
+info: about to go to login {"timestamp":"2023-07-02T19:02:33.918Z"}
+info: am here {"timestamp":"2023-07-02T19:04:45.064Z"}
+info: Connecting to the database {"timestamp":"2023-07-02T19:05:05.846Z"}
+info: Connected to the database {"timestamp":"2023-07-02T19:05:08.284Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-02T19:05:08.292Z"}
+info: am here {"timestamp":"2023-07-02T19:05:26.539Z"}
+info: am here {"timestamp":"2023-07-02T19:05:27.411Z"}
+info: am here {"timestamp":"2023-07-02T19:05:28.378Z"}
+info: about to go to login {"timestamp":"2023-07-02T19:05:29.532Z"}
+info: login just created {"timestamp":"2023-07-02T19:05:29.638Z"}
+info: am here {"timestamp":"2023-07-02T19:10:42.880Z"}
+info: Connecting to the database {"timestamp":"2023-07-02T19:10:58.363Z"}
+info: Connected to the database {"timestamp":"2023-07-02T19:11:00.676Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-02T19:11:00.685Z"}
+info: am here {"timestamp":"2023-07-02T19:11:13.774Z"}
+info: am here {"timestamp":"2023-07-02T19:11:14.892Z"}
+info: about to go to login {"timestamp":"2023-07-02T19:11:16.607Z"}
+info: login just created {"timestamp":"2023-07-02T19:11:16.679Z"}
+info: am here {"timestamp":"2023-07-02T19:11:18.968Z"}
+info: am trying to sign up {"timestamp":"2023-07-02T19:11:36.983Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"3","password":"yipa","username":"yipa@yipa.com"},"timestamp":"2023-07-02T19:11:36.995Z"}
+info: 1 {"timestamp":"2023-07-02T19:11:36.998Z"}
+info: 2 {"timestamp":"2023-07-02T19:11:37.170Z"}
+info: Document inserted: {"timestamp":"2023-07-02T19:11:37.171Z"}
+info: User registered successfully - id = 64a1cbe84a61acb51aca5abc {"timestamp":"2023-07-02T19:11:37.177Z"}
+info: index page about to change to dating profile page {"timestamp":"2023-07-02T19:11:37.200Z"}
+info: am here {"timestamp":"2023-07-02T19:12:29.857Z"}
+info: am trying to sign up {"timestamp":"2023-07-02T19:12:33.509Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"ddddddddd","password":"yipa","username":""},"timestamp":"2023-07-02T19:12:33.530Z"}
+info: 1 {"timestamp":"2023-07-02T19:12:33.533Z"}
+info: 2 {"timestamp":"2023-07-02T19:12:33.701Z"}
+info: Document inserted: {"timestamp":"2023-07-02T19:12:33.701Z"}
+info: User registered successfully - id = 64a1cc214a61acb51aca5abd {"timestamp":"2023-07-02T19:12:33.702Z"}
+info: index page about to change to dating profile page {"timestamp":"2023-07-02T19:12:33.722Z"}
+info: about to go to login {"timestamp":"2023-07-02T19:13:42.943Z"}
+info: am here {"timestamp":"2023-07-02T19:14:51.377Z"}
+info: am here {"timestamp":"2023-07-02T19:14:52.431Z"}
+info: am trying to sign up {"timestamp":"2023-07-02T19:14:56.062Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"4444","password":"yipa","username":"yipa@yipa.com"},"timestamp":"2023-07-02T19:14:56.078Z"}
+info: 1 {"timestamp":"2023-07-02T19:14:56.079Z"}
+info: 2 {"timestamp":"2023-07-02T19:14:56.256Z"}
+info: Document inserted: {"timestamp":"2023-07-02T19:14:56.256Z"}
+info: User registered successfully - id = 64a1ccb04a61acb51aca5abe {"timestamp":"2023-07-02T19:14:56.257Z"}
+info: index page about to change to dating profile page {"timestamp":"2023-07-02T19:14:56.280Z"}
+info: User details:{"name":"4444","email":"","username":"yipa@yipa.com","password":"yipa","dob":{"month":"","day":"","year":""},"gender":"","_id":"64a1ccb04a61acb51aca5abe"} {"timestamp":"2023-07-02T19:14:56.378Z"}
+info: am here {"timestamp":"2023-07-02T19:15:09.661Z"}
+info: about to go to login {"timestamp":"2023-07-02T19:15:10.905Z"}
+info: Connecting to the database {"timestamp":"2023-07-02T19:15:30.892Z"}
+info: Connected to the database {"timestamp":"2023-07-02T19:15:33.093Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-02T19:15:33.099Z"}
+info: am here {"timestamp":"2023-07-02T19:16:08.018Z"}
+info: am here {"timestamp":"2023-07-02T19:16:24.718Z"}
+info: am here {"timestamp":"2023-07-02T19:16:25.714Z"}
+info: about to go to login {"timestamp":"2023-07-02T19:16:28.072Z"}
+info: login just created {"timestamp":"2023-07-02T19:16:28.174Z"}
+info: am here {"timestamp":"2023-07-02T19:16:29.780Z"}
+info: am trying to sign up {"timestamp":"2023-07-02T19:16:34.666Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"eee","gender":"","name":"eeee","password":"yipa","username":"yipa@yipa.com"},"timestamp":"2023-07-02T19:16:34.676Z"}
+info: 1 {"timestamp":"2023-07-02T19:16:34.681Z"}
+info: 2 {"timestamp":"2023-07-02T19:16:35.018Z"}
+info: Document inserted: {"timestamp":"2023-07-02T19:16:35.019Z"}
+info: User registered successfully - id = 64a1cd1290482fb004cc6ab0 {"timestamp":"2023-07-02T19:16:35.020Z"}
+info: index page about to change to dating profile page {"timestamp":"2023-07-02T19:16:35.042Z"}
+info: User details:{"name":"eeee","email":"eee","username":"yipa@yipa.com","password":"yipa","dob":{"month":"","day":"","year":""},"gender":"","_id":"64a1cd1290482fb004cc6ab0"} {"timestamp":"2023-07-02T19:16:35.133Z"}
+info: am here {"timestamp":"2023-07-02T19:20:49.595Z"}
+info: am here {"timestamp":"2023-07-02T19:28:15.307Z"}

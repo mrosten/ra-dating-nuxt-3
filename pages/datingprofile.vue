@@ -3,19 +3,69 @@
     <v-toolbar color="indigo" dark>
       <v-toolbar-title>Profile Picture Setup</v-toolbar-title>
     </v-toolbar>
+    <v-row justify="center">
+      <v-col cols="12" sm="12" md="12">
 
-    <v-container>
-      <v-row>
-        <v-col>
-          <h1>Welcome, {{ user && user.username }}!</h1>
-          <p>Email: {{ user && user.email }}</p>
-          <h2>Profile Picture</h2>
-          <v-img v-if="profilePicture" :src="profilePicture" alt="Profile Picture" max-width="200px"></v-img>
-          <v-file-input ref="fileInput" accept="image/*" label="Upload file" @change="handleFileChange"></v-file-input>
-          <v-btn @click="uploadProfilePicture" :disabled="!selectedFile" color="primary">Upload</v-btn>
-        </v-col>
-      </v-row>
-    </v-container>
+        <v-card class="elevation-12" color="white">
+          <v-toolbar color="primary" dark>
+          </v-toolbar>
+
+          <v-row justify="left" class="mt-5">
+            <v-col cols="12" sm="6">
+              <h2 class="mb-3">Profile Picture</h2>
+              <v-img v-if="profilePicture" :src="profilePicture" alt="Profile Picture" max-width="200px"></v-img>
+              <v-file-input ref="fileInput" accept="image/*" label="Upload file"
+                @change="handleFileChange"></v-file-input>
+              <v-btn @click="uploadProfilePicture" :disabled="!selectedFile" color="primary">Upload</v-btn>
+            </v-col>
+            <v-col cols="12" sm="6" class="text-right pr-5">
+              <v-card class="elevation-2" height="200px" outlined>
+                <v-card-text class="text-center">
+                  <h3>Uploaded Picture</h3>
+                  <v-img v-if="uploadedPicture" :src="uploadedPicture" alt="Uploaded Picture" contain></v-img>
+                  <div v-else class="text-grey">No picture uploaded yet</div>
+                </v-card-text>
+              </v-card>
+            </v-col>
+          </v-row>
+
+          <v-row justify="center" class="mt-5">
+            <v-col cols="12">
+              <h2>Bio</h2>
+              <v-textarea v-model="bio" label="Bio" outlined></v-textarea>
+            </v-col>
+          </v-row>
+
+          <v-row justify="center">
+            <v-col cols="12">
+              <h2>Interests</h2>
+              <v-textarea v-model="interests" label="Interests" outlined></v-textarea>
+            </v-col>
+          </v-row>
+
+          <v-row justify="center">
+            <v-col cols="12">
+              <h2>Hobbies</h2>
+              <v-textarea v-model="hobbies" label="Hobbies" outlined></v-textarea>
+            </v-col>
+          </v-row>
+
+          <v-row justify="center">
+            <v-col cols="12">
+              <h2>Preferences</h2>
+              <v-textarea v-model="preferences" label="Preferences" outlined></v-textarea>
+            </v-col>
+          </v-row>
+
+          <v-row justify="center" class="mt-5">
+            <v-col cols="12" sm="6">
+              <v-btn block color="primary" class="mb-3">Submit</v-btn>
+              <v-btn @click="navigateToMainPage" block color="grey" class="mb-3">Fill In Later</v-btn>
+            </v-col>
+          </v-row>
+        </v-card>
+      </v-col>
+    </v-row>
   </v-app>
 </template>
 
@@ -39,9 +89,11 @@ function logToAPI(message) {
 export default {
   data() {
     return {
-      user: null,
-      profilePicture: null,
-      selectedFile: null,
+      uploadedPicture: '', // Initialize uploadedPicture property
+      bio: '', // Initialize bio property
+      interests: '', // Initialize interests property
+      hobbies: '', // Initialize hobbies property
+      preferences: '' // Initialize preferences property
     };
   },
   created() {
@@ -50,6 +102,13 @@ export default {
     logToAPI('User details:' + JSON.stringify(this.user));
   },
   methods: {
+    navigateToMainPage() {
+      this.$router.push({
+        path: '/mainpage',
+        query: { user: JSON.stringify(userData) }
+      });
+    },
+
     handleFileChange(event) {
       // event.preventDefault();
       //  
