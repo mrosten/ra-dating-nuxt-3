@@ -79,20 +79,21 @@
 import axios from 'axios';
 
 
-function logToAPI(message) {
+async function logToAPI(message) {
   const requestBody = {
     message: message
   };
 
-  console.log("about to do an axios.post");
+  try {
+    console.log('about to do an axios.post');
+    console.log('to: ' + `${process.env.API_BASE_URL}/logger`);
 
-  axios.post(`${process.env.API_BASE_URL}/logger`, requestBody)
-    .then(response => {
-      console.log('Log entry created successfully');
-    })
-    .catch(error => {
-      console.error('Failed to create log entry:', error);
-    });
+    const response = await axios.post(`${process.env.API_BASE_URL}/logger`, requestBody);
+    console.log('Log entry created successfully');
+  } catch (error) {
+    console.error('Failed to create log entry:', error);
+  }
+
 }
 
 
@@ -186,4 +187,5 @@ export default {
   margin-bottom: 20px;
   margin-left: 20px;
   /* Adjust the value as needed */
-}</style>
+}
+</style>

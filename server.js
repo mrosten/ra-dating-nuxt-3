@@ -7,9 +7,9 @@ const { ObjectId } = require('mongodb');
 const Grid = require('gridfs-stream');
 const mongoose = require('mongoose');
 const mongodb = require('mongodb');
+
 const fs = require('fs');
 const path = require('path');
-
 
 const multer = require('multer');
 
@@ -370,6 +370,7 @@ app.post('/api/uploadProfilePicture', upload.single('profilePicture'), async (re
     return res.status(500).json({ error: 'Failed to save file' });
   }
 });
+
 
 app.post('/logger', async (req, res) => {
   try {

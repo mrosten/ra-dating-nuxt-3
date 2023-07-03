@@ -85,3 +85,30 @@ info: Connected to the database {"timestamp":"2023-07-03T08:25:28.172Z"}
 info: Server running on http://localhost:4000 {"timestamp":"2023-07-03T08:25:28.176Z"}
 error: Error connecting to the database: EIO: i/o error, write {"code":"EIO","errno":-5,"stack":"Error: EIO: i/o error, write\n    at writeSync (node:fs:941:3)\n    at SyncWriteStream._write (node:internal/fs/sync_write_stream:26:3)\n    at writeOrBuffer (node:internal/streams/writable:399:12)\n    at _write (node:internal/streams/writable:340:10)\n    at Writable.write (node:internal/streams/writable:344:10)\n    at Console.log (/workspaces/ra-dating-nuxt-3/node_modules/winston/lib/winston/transports/console.js:79:23)\n    at Console._write (/workspaces/ra-dating-nuxt-3/node_modules/winston-transport/index.js:82:19)\n    at doWrite (/workspaces/ra-dating-nuxt-3/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)\n    at writeOrBuffer (/workspaces/ra-dating-nuxt-3/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:381:5)\n    at Writable.write (/workspaces/ra-dating-nuxt-3/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:302:11)","syscall":"write","timestamp":"2023-07-03T08:31:59.632Z"}
 error: The Express server will continue running, but there may be issues accessing the database. {"timestamp":"2023-07-03T08:31:59.633Z"}
+info: Connecting to the database {"timestamp":"2023-07-03T08:44:26.093Z"}
+info: Connected to the database {"timestamp":"2023-07-03T08:44:30.017Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-03T08:44:30.082Z"}
+info: am here {"timestamp":"2023-07-03T08:48:53.334Z"}
+info: am here {"timestamp":"2023-07-03T08:50:19.955Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"1122","gender":"","name":"1122","password":"testing","username":"myuser"},"timestamp":"2023-07-03T08:50:51.985Z"}
+info: 1 {"timestamp":"2023-07-03T08:50:52.017Z"}
+info: 2 {"timestamp":"2023-07-03T08:50:52.533Z"}
+info: Document inserted: {"timestamp":"2023-07-03T08:50:52.539Z"}
+info: User registered successfully - id = 64a28bec65b28e8e791ba47f {"timestamp":"2023-07-03T08:50:52.551Z"}
+info: User details:{"name":"1122","email":"1122","username":"myuser","password":"testing","dob":{"month":"","day":"","year":""},"gender":"","_id":"64a28bec65b28e8e791ba47f"} {"timestamp":"2023-07-03T08:51:06.459Z"}
+info: Connecting to the database {"timestamp":"2023-07-03T08:57:15.721Z"}
+info: Connected to the database {"timestamp":"2023-07-03T08:57:32.414Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-03T08:57:32.637Z"}
+info: am here {"timestamp":"2023-07-03T08:57:38.299Z"}
+info: am here {"timestamp":"2023-07-03T09:03:28.152Z"}
+info: Connecting to the database {"timestamp":"2023-07-03T09:05:36.747Z"}
+info: Connected to the database {"timestamp":"2023-07-03T09:05:40.764Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-03T09:05:40.795Z"}
+info: am here {"timestamp":"2023-07-03T09:06:10.307Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"444","password":"","username":""},"timestamp":"2023-07-03T09:54:34.160Z"}
+info: 1 {"timestamp":"2023-07-03T09:54:34.466Z"}
+info: 2 {"timestamp":"2023-07-03T09:54:36.465Z"}
+info: Document inserted: {"timestamp":"2023-07-03T09:54:36.467Z"}
+info: User registered successfully - id = 64a29ada8d2ed5f49289f15e {"timestamp":"2023-07-03T09:54:36.490Z"}
+info: User details:{"name":"444","email":"","username":"","password":"","dob":{"month":"","day":"","year":""},"gender":"","_id":"64a29ada8d2ed5f49289f15e"} {"timestamp":"2023-07-03T09:54:37.133Z"}
+info: User details:{} {"timestamp":"2023-07-03T09:57:46.550Z"}
