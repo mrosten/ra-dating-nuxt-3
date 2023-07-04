@@ -2,11 +2,16 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "chrome",
+      "type": "node",
       "request": "launch",
-      "name": "Launch Chrome against localhost",
-      "url": "http://localhost:4000",
-      "webRoot": "${workspaceFolder}"
+      "name": "Debug Express Server",
+      "runtimeExecutable": "nodemon",
+      "program": "${workspaceFolder}/server.js",
+      "restart": true,
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": ["<node_internals>/**"],
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"]
     }
   ]
 }

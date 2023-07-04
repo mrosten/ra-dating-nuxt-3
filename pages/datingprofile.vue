@@ -115,7 +115,7 @@ export default {
 
       this.$router.push({
         path: '/mainpage',
-        query: { userData: JSON.stringify(this.user) }
+        // query: { userData: JSON.stringify(this.user) }
       });
     },
 

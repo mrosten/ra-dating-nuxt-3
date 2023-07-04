@@ -15,7 +15,7 @@
 
 
       <v-row>
-        <!-- Left column -->
+        <!-- Left column --  Sign Up Form -->
         <v-col cols="12" sm="8" md="6" class="left-form">
           <!-- The signup form -->
           <v-card class="elevation-12" color="white">
@@ -74,7 +74,7 @@
           </v-card>
         </v-col>
 
-        <!-- Right column -->
+        <!-- Right column -- Login Form -->
         <v-col cols="12" sm="8" md="6" class="right-form">
           <!-- The login form -->
           <v-card class="elevation-12" color="white">
@@ -84,15 +84,15 @@
             </v-toolbar>
             <v-card-text>
               <v-form>
-                <v-text-field :label="$t('usernameLabel')" name="username" prepend-icon="mdi-account"
-                  type="text"></v-text-field>
+                <v-text-field v-model="userId" id="userId" label="UserId" name="username" prepend-icon="mdi-account" type="text"></v-text-field>
                 <v-text-field id="password" :label="$t('passwordLabel')" name="password" prepend-icon="mdi-lock"
                   type="password"></v-text-field>
               </v-form>
             </v-card-text>
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn color="primary" dark type="submit" @click="submitLoginForm" @keydown.enter="submitLoginForm">{{ $t('loginButtonLabel') }}</v-btn>
+              <v-btn color="primary" dark type="submit" @click="submitLoginForm" @keydown.enter="submitLoginForm">{{
+                $t('loginButtonLabel') }}</v-btn>
             </v-card-actions>
           </v-card>
         </v-col>
@@ -189,8 +189,9 @@ export default {
 
     submitLoginForm() {
       logToAPI('login');
+
       const userData = {
-        email: this.email,
+        userId: this.userId, // Use the actual user ID here
         password: this.password,
       };
 
@@ -200,9 +201,14 @@ export default {
           console.log(response.data);
           console.log("i'm about to try to get you to the admin paege");
 
+          localStorage.setItem('userData', JSON.stringify(userData));
+          // document.cookie = `userData=${JSON.stringify(userData)}; expires=Thu, 1 Jan 2030 00:00:00 UTC; path=/`;
+
+          this.$store.commit('setUserData', userData);
+
           this.$router.push({
             path: '/mainpage',
-            query: { userData: JSON.stringify(userData) }
+            // query: { userData: JSON.stringify(userData) }
           });
           // Redirect to the desired page after login
           // this.$router.push('/dashboard');

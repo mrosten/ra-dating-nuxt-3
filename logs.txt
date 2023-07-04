@@ -543,3 +543,567 @@ info: [{"user1Id":"64997f1378892faf027fbf8a","user2Id":"649983066eeeec4f49e35512
 info: undefined undefined {"timestamp":"2023-07-04T12:19:45.656Z"}
 info: null {"timestamp":"2023-07-04T12:19:45.824Z"}
 info: null {"timestamp":"2023-07-04T12:19:45.983Z"}
+info: Connecting to the database {"timestamp":"2023-07-04T14:03:00.889Z"}
+info: Connected to the database {"timestamp":"2023-07-04T14:03:04.472Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-04T14:03:04.491Z"}
+info: am trying to sign up {"timestamp":"2023-07-04T14:07:45.972Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"hiii","password":"","username":""},"timestamp":"2023-07-04T14:07:46.009Z"}
+info: 1 {"timestamp":"2023-07-04T14:07:46.024Z"}
+info: 2 {"timestamp":"2023-07-04T14:07:46.658Z"}
+info: Document inserted: {"timestamp":"2023-07-04T14:07:46.659Z"}
+info: User registered successfully - id = 64a427b21ea89bdb1817629a {"timestamp":"2023-07-04T14:07:46.661Z"}
+info: index page about to change to dating profile page {"timestamp":"2023-07-04T14:07:46.672Z"}
+info: User details:{"name":"hiii","email":"","username":"","password":"","dob":{"month":"","day":"","year":""},"gender":"","_id":"64a427b21ea89bdb1817629a"} {"timestamp":"2023-07-04T14:07:47.024Z"}
+info: navigatetomainpage {"timestamp":"2023-07-04T14:07:50.574Z"}
+info: [{"user1Id":"64997f1378892faf027fbf8a","user2Id":"649983066eeeec4f49e35512"}] {"timestamp":"2023-07-04T14:11:40.176Z"}
+info: undefined undefined {"timestamp":"2023-07-04T14:11:40.177Z"}
+info: null {"timestamp":"2023-07-04T14:11:40.385Z"}
+info: null {"timestamp":"2023-07-04T14:11:40.883Z"}
+info: [{"user1Id":"64997f1378892faf027fbf8a","user2Id":"649983066eeeec4f49e35512"}] {"timestamp":"2023-07-04T14:17:11.995Z"}
+info: undefined undefined {"timestamp":"2023-07-04T14:17:11.997Z"}
+info: null {"timestamp":"2023-07-04T14:17:12.463Z"}
+info: null {"timestamp":"2023-07-04T14:17:12.771Z"}
+info: Connecting to the database {"timestamp":"2023-07-04T14:19:22.449Z"}
+info: Connected to the database {"timestamp":"2023-07-04T14:19:27.248Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-04T14:19:27.258Z"}
+info: [{"user1Id":"64997f1378892faf027fbf8a","user2Id":"649983066eeeec4f49e35512"}] {"timestamp":"2023-07-04T14:34:30.626Z"}
+info: undefined undefined {"timestamp":"2023-07-04T14:34:30.632Z"}
+info: null {"timestamp":"2023-07-04T14:34:31.116Z"}
+info: null {"timestamp":"2023-07-04T14:34:31.624Z"}
+info: Connecting to the database {"timestamp":"2023-07-04T14:36:23.417Z"}
+info: Connected to the database {"timestamp":"2023-07-04T14:36:28.457Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-04T14:36:28.482Z"}
+info: undefined {"timestamp":"2023-07-04T14:36:30.944Z"}
+info: undefined undefined {"timestamp":"2023-07-04T14:36:30.949Z"}
+info: null {"timestamp":"2023-07-04T14:36:31.431Z"}
+info: null {"timestamp":"2023-07-04T14:36:31.732Z"}
+info: Connecting to the database {"timestamp":"2023-07-04T14:37:02.428Z"}
+info: Connected to the database {"timestamp":"2023-07-04T14:37:06.693Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-04T14:37:06.712Z"}
+info: userid: undefined {"timestamp":"2023-07-04T14:37:07.743Z"}
+info: undefined undefined {"timestamp":"2023-07-04T14:37:07.744Z"}
+info: null {"timestamp":"2023-07-04T14:37:07.921Z"}
+info: null {"timestamp":"2023-07-04T14:37:08.116Z"}
+info: Connecting to the database {"timestamp":"2023-07-04T14:37:28.267Z"}
+info: Connected to the database {"timestamp":"2023-07-04T14:37:31.855Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-04T14:37:31.875Z"}
+info: userid: undefined {"timestamp":"2023-07-04T14:37:36.282Z"}
+info: undefined undefined {"timestamp":"2023-07-04T14:37:36.283Z"}
+info: null {"timestamp":"2023-07-04T14:37:36.612Z"}
+info: null {"timestamp":"2023-07-04T14:37:36.963Z"}
+info: Connecting to the database {"timestamp":"2023-07-04T15:11:07.293Z"}
+info: Connected to the database {"timestamp":"2023-07-04T15:11:11.238Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-04T15:11:11.261Z"}
+info: am trying to sign up {"timestamp":"2023-07-04T15:11:11.380Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"dede","password":"","username":""},"timestamp":"2023-07-04T15:11:11.390Z"}
+info: Received variables: {"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"dede","password":"","timestamp":"2023-07-04T15:11:11.393Z","username":""}
+info: 1 {"timestamp":"2023-07-04T15:11:11.397Z"}
+info: 2 {"timestamp":"2023-07-04T15:11:11.643Z"}
+info: Document inserted: {"timestamp":"2023-07-04T15:11:11.646Z"}
+info: User registered successfully - id = 64a4368f3eaf4e50ff10647c {"timestamp":"2023-07-04T15:11:11.647Z"}
+info: index page about to change to dating profile page {"timestamp":"2023-07-04T15:11:11.667Z"}
+info: User details:{"name":"dede","email":"","username":"","password":"","dob":{"month":"","day":"","year":""},"gender":"","_id":"64a4368f3eaf4e50ff10647c"} {"timestamp":"2023-07-04T15:11:11.693Z"}
+info: navigatetomainpage {"timestamp":"2023-07-04T15:12:32.761Z"}
+info: userid: undefined {"timestamp":"2023-07-04T15:17:05.402Z"}
+info: undefined undefined {"timestamp":"2023-07-04T15:17:05.463Z"}
+info: null {"timestamp":"2023-07-04T15:17:05.786Z"}
+info: null {"timestamp":"2023-07-04T15:17:05.973Z"}
+info: userid: undefined {"timestamp":"2023-07-04T15:18:14.269Z"}
+info: undefined undefined {"timestamp":"2023-07-04T15:18:14.270Z"}
+info: null {"timestamp":"2023-07-04T15:18:14.462Z"}
+info: null {"timestamp":"2023-07-04T15:18:14.911Z"}
+info: Connecting to the database {"timestamp":"2023-07-04T15:18:25.120Z"}
+info: Connected to the database {"timestamp":"2023-07-04T15:18:28.855Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-04T15:18:28.865Z"}
+info: Match request received {"requestBody":[{"user1Id":"64997f1378892faf027fbf8a","user2Id":"649983066eeeec4f49e35512"}],"timestamp":"2023-07-04T15:18:30.911Z"}
+info: userid: undefined {"timestamp":"2023-07-04T15:18:30.915Z"}
+info: undefined undefined {"timestamp":"2023-07-04T15:18:30.916Z"}
+info: null {"timestamp":"2023-07-04T15:18:31.142Z"}
+info: null {"timestamp":"2023-07-04T15:18:31.347Z"}
+info: User details:{"name":"dede","email":"","username":"","password":"","dob":{"month":"","day":"","year":""},"gender":"","_id":"64a4368f3eaf4e50ff10647c"} {"timestamp":"2023-07-04T15:18:59.273Z"}
+info: am here {"timestamp":"2023-07-04T15:19:00.224Z"}
+info: mounted {"timestamp":"2023-07-04T15:19:00.345Z"}
+info: am trying to sign up {"timestamp":"2023-07-04T15:19:05.939Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"asdfadsfsd","password":"","username":""},"timestamp":"2023-07-04T15:19:05.950Z"}
+info: Received variables: {"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"asdfadsfsd","password":"","timestamp":"2023-07-04T15:19:05.953Z","username":""}
+info: 1 {"timestamp":"2023-07-04T15:19:05.957Z"}
+info: 2 {"timestamp":"2023-07-04T15:19:06.167Z"}
+info: Document inserted: {"timestamp":"2023-07-04T15:19:06.169Z"}
+info: User registered successfully - id = 64a43869993b4669b084ddf3 {"timestamp":"2023-07-04T15:19:06.173Z"}
+info: index page about to change to dating profile page {"timestamp":"2023-07-04T15:19:06.188Z"}
+info: User details:{"name":"asdfadsfsd","email":"","username":"","password":"","dob":{"month":"","day":"","year":""},"gender":"","_id":"64a43869993b4669b084ddf3"} {"timestamp":"2023-07-04T15:19:06.225Z"}
+info: Match request received {"requestBody":{"user1Id":"64997f1378892faf027fbf8a","user2Id":"649983066eeeec4f49e35512"},"timestamp":"2023-07-04T15:20:15.595Z"}
+info: userid: 64997f1378892faf027fbf8a {"timestamp":"2023-07-04T15:20:15.597Z"}
+info: "64997f1378892faf027fbf8a" 649983066eeeec4f49e35512 {"timestamp":"2023-07-04T15:20:15.597Z"}
+info: [object Object] {"timestamp":"2023-07-04T15:20:15.898Z"}
+info: [object Object] {"timestamp":"2023-07-04T15:20:16.095Z"}
+info: Connecting to the database {"timestamp":"2023-07-04T15:22:21.406Z"}
+info: Connected to the database {"timestamp":"2023-07-04T15:22:24.308Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-04T15:22:24.324Z"}
+info: navigatetomainpage {"timestamp":"2023-07-04T15:29:42.838Z"}
+info: User details:{"name":"asdfadsfsd","email":"","username":"","password":"","dob":{"month":"","day":"","year":""},"gender":"","_id":"64a43869993b4669b084ddf3"} {"timestamp":"2023-07-04T15:30:03.913Z"}
+info: am here {"timestamp":"2023-07-04T15:30:04.421Z"}
+info: mounted {"timestamp":"2023-07-04T15:30:04.510Z"}
+info: am trying to sign up {"timestamp":"2023-07-04T15:30:10.045Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"34343","password":"","username":""},"timestamp":"2023-07-04T15:30:10.073Z"}
+info: Received variables: {"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"34343","password":"","timestamp":"2023-07-04T15:30:10.075Z","username":""}
+info: 1 {"timestamp":"2023-07-04T15:30:10.098Z"}
+info: 2 {"timestamp":"2023-07-04T15:30:10.436Z"}
+info: Document inserted: {"timestamp":"2023-07-04T15:30:10.439Z"}
+info: User registered successfully - id = 64a43b02fcd8068a32fed519 {"timestamp":"2023-07-04T15:30:10.442Z"}
+info: index page about to change to dating profile page {"timestamp":"2023-07-04T15:30:10.452Z"}
+info: User details:{"name":"34343","email":"","username":"","password":"","dob":{"month":"","day":"","year":""},"gender":"","_id":"64a43b02fcd8068a32fed519"} {"timestamp":"2023-07-04T15:30:10.474Z"}
+info: User details:{"name":"34343","email":"","username":"","password":"","dob":{"month":"","day":"","year":""},"gender":"","_id":"64a43b02fcd8068a32fed519"} {"timestamp":"2023-07-04T15:31:13.672Z"}
+info: User details:{} {"timestamp":"2023-07-04T15:31:15.242Z"}
+info: User details:{} {"timestamp":"2023-07-04T15:31:17.635Z"}
+info: navigatetomainpage {"timestamp":"2023-07-04T15:31:20.938Z"}
+info: User details:{} {"timestamp":"2023-07-04T15:31:24.469Z"}
+info: am here {"timestamp":"2023-07-04T15:31:24.935Z"}
+info: mounted {"timestamp":"2023-07-04T15:31:25.031Z"}
+info: am trying to sign up {"timestamp":"2023-07-04T15:31:30.731Z"}
+info: Signup request received {"requestBody":{"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"rrrr","password":"","username":""},"timestamp":"2023-07-04T15:31:30.736Z"}
+info: Received variables: {"dob":{"day":"","month":"","year":""},"email":"","gender":"","name":"rrrr","password":"","timestamp":"2023-07-04T15:31:30.738Z","username":""}
+info: 1 {"timestamp":"2023-07-04T15:31:30.740Z"}
+info: 2 {"timestamp":"2023-07-04T15:31:31.136Z"}
+info: Document inserted: {"timestamp":"2023-07-04T15:31:31.137Z"}
+info: User registered successfully - id = 64a43b52fcd8068a32fed51a {"timestamp":"2023-07-04T15:31:31.139Z"}
+info: index page about to change to dating profile page {"timestamp":"2023-07-04T15:31:31.146Z"}
+info: User details:{"name":"rrrr","email":"","username":"","password":"","dob":{"month":"","day":"","year":""},"gender":"","_id":"64a43b52fcd8068a32fed51a"} {"timestamp":"2023-07-04T15:31:31.172Z"}
+info: navigatetomainpage {"timestamp":"2023-07-04T15:31:34.631Z"}
+info: in userMatches {"timestamp":"2023-07-04T15:36:00.037Z"}
+info: Connecting to the database {"timestamp":"2023-07-04T15:40:51.035Z"}
+info: Connected to the database {"timestamp":"2023-07-04T15:40:54.312Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-04T15:40:54.337Z"}
+info: Connecting to the database {"timestamp":"2023-07-04T15:42:56.440Z"}
+info: Connected to the database {"timestamp":"2023-07-04T15:43:00.785Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-04T15:43:00.795Z"}
+info: Connecting to the database {"timestamp":"2023-07-04T15:43:52.661Z"}
+info: Connected to the database {"timestamp":"2023-07-04T15:43:55.815Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-04T15:43:55.838Z"}
+info: in userMatches {"timestamp":"2023-07-04T15:44:26.070Z"}
+info: Connecting to the database {"timestamp":"2023-07-04T16:14:44.726Z"}
+info: Connected to the database {"timestamp":"2023-07-04T16:14:49.403Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-04T16:14:49.416Z"}
+info: Match request received {"requestBody":{"user1Id":"64997f1378892faf027fbf8a","user2Id":"64998a570978ef62d17fe56b"},"timestamp":"2023-07-04T16:16:24.865Z"}
+info: "64997f1378892faf027fbf8a" 64998a570978ef62d17fe56b {"timestamp":"2023-07-04T16:16:24.867Z"}
+info: [object Object] {"timestamp":"2023-07-04T16:16:25.155Z"}
+info: [object Object] {"timestamp":"2023-07-04T16:16:25.333Z"}
+info: Match request received {"requestBody":{"user1Id":"64997f1378892faf027fbf8a","user2Id":"64998ac80978ef62d17fe56c"},"timestamp":"2023-07-04T16:17:07.675Z"}
+info: "64997f1378892faf027fbf8a" 64998ac80978ef62d17fe56c {"timestamp":"2023-07-04T16:17:07.678Z"}
+info: [object Object] {"timestamp":"2023-07-04T16:17:07.961Z"}
+info: [object Object] {"timestamp":"2023-07-04T16:17:08.270Z"}
+info: Connecting to the database {"timestamp":"2023-07-04T16:28:09.129Z"}
+info: Connected to the database {"timestamp":"2023-07-04T16:28:12.617Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-04T16:28:12.629Z"}
+info: Match request received {"requestBody":{"user1Id":"64997f1378892faf027fbf8a","user2Id":"64998ac80978ef62d17fe56c"},"timestamp":"2023-07-04T16:28:29.759Z"}
+info: "64997f1378892faf027fbf8a" 64998ac80978ef62d17fe56c {"timestamp":"2023-07-04T16:28:29.761Z"}
+info: [object Object] {"timestamp":"2023-07-04T16:28:30.062Z"}
+info: [object Object] {"timestamp":"2023-07-04T16:28:30.359Z"}
+info: Match request received {"requestBody":{"user1Id":"64997f1378892faf027fbf8a","user2Id":"6499b2e86aed4522bbc48af4"},"timestamp":"2023-07-04T16:44:42.605Z"}
+info: "64997f1378892faf027fbf8a" 6499b2e86aed4522bbc48af4 {"timestamp":"2023-07-04T16:44:42.658Z"}
+info: [object Object] {"timestamp":"2023-07-04T16:44:43.156Z"}
+info: [object Object] {"timestamp":"2023-07-04T16:44:43.359Z"}
+info: Connecting to the database {"timestamp":"2023-07-04T17:07:57.453Z"}
+info: Connected to the database {"timestamp":"2023-07-04T17:08:01.713Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-04T17:08:01.724Z"}
+info: Connecting to the database {"timestamp":"2023-07-04T17:08:39.469Z"}
+info: Connected to the database {"timestamp":"2023-07-04T17:08:42.410Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-04T17:08:42.436Z"}
+info: Match request received {"requestBody":{"user1Id":"64997f1378892faf027fbf8a","user2Id":"64998ac80978ef62d17fe56c"},"timestamp":"2023-07-04T17:08:47.715Z"}
+info: "64997f1378892faf027fbf8a" 64998ac80978ef62d17fe56c {"timestamp":"2023-07-04T17:08:47.719Z"}
+info: [object Object] {"timestamp":"2023-07-04T17:08:48.090Z"}
+info: [object Object] {"timestamp":"2023-07-04T17:08:48.449Z"}
+info: Match request received {"requestBody":{"user1Id":"64997f1378892faf027fbf8a","user2Id":"64998ac80978ef62d12fe56c"},"timestamp":"2023-07-04T17:08:57.936Z"}
+info: "64997f1378892faf027fbf8a" 64998ac80978ef62d12fe56c {"timestamp":"2023-07-04T17:08:57.938Z"}
+info: [object Object] {"timestamp":"2023-07-04T17:08:58.660Z"}
+info: null {"timestamp":"2023-07-04T17:08:58.941Z"}
+info: Match request received {"requestBody":{"user1Id":"64997f1378892faf027fbf8a","user2Id":"649d5eaca378144588481ab4"},"timestamp":"2023-07-04T17:09:20.538Z"}
+info: "64997f1378892faf027fbf8a" 649d5eaca378144588481ab4 {"timestamp":"2023-07-04T17:09:20.542Z"}
+info: [object Object] {"timestamp":"2023-07-04T17:09:20.995Z"}
+info: [object Object] {"timestamp":"2023-07-04T17:09:21.497Z"}
+info: Connecting to the database {"timestamp":"2023-07-04T18:17:33.531Z"}
+info: Connected to the database {"timestamp":"2023-07-04T18:17:44.571Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-04T18:17:44.585Z"}
+info: Match request received {"requestBody":{"user1Id":"64997f1378892faf027fbf8a","user2Id":"64a29ada8d2ed5f49289f15e"},"timestamp":"2023-07-04T18:18:56.711Z"}
+info: "64997f1378892faf027fbf8a" 64a29ada8d2ed5f49289f15e {"timestamp":"2023-07-04T18:18:56.713Z"}
+info: [object Object] {"timestamp":"2023-07-04T18:18:57.006Z"}
+info: [object Object] {"timestamp":"2023-07-04T18:18:57.217Z"}
+info: Match request received {"requestBody":{"user1Id":"64997f1378892faf027fbf8a","user2Id":"64a3be2d18b14d218d760cdf"},"timestamp":"2023-07-04T18:19:33.221Z"}
+info: "64997f1378892faf027fbf8a" 64a3be2d18b14d218d760cdf {"timestamp":"2023-07-04T18:19:33.223Z"}
+info: [object Object] {"timestamp":"2023-07-04T18:19:33.486Z"}
+info: [object Object] {"timestamp":"2023-07-04T18:19:33.935Z"}
+info: Connecting to the database {"timestamp":"2023-07-04T18:27:02.531Z"}
+info: Connected to the database {"timestamp":"2023-07-04T18:27:05.931Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-04T18:27:05.946Z"}
+info: am here {"timestamp":"2023-07-04T18:27:57.757Z"}
+info: am here {"timestamp":"2023-07-04T18:28:01.639Z"}
+info: mounted {"timestamp":"2023-07-04T18:28:01.877Z"}
+info: login {"timestamp":"2023-07-04T18:28:15.490Z"}
+info: Login request received {"timestamp":"2023-07-04T18:28:15.507Z"}
+info: Error finding user: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer {"stack":"BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer\n    at new ObjectId (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\bson\\lib\\bson.cjs:2006:23)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\server.js:543:55\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\body-parser\\lib\\read.js:137:5","timestamp":"2023-07-04T18:28:15.543Z"}
+info: login {"timestamp":"2023-07-04T18:28:15.553Z"}
+info: Login request received {"timestamp":"2023-07-04T18:28:15.564Z"}
+info: Error finding user: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer {"stack":"BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer\n    at new ObjectId (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\bson\\lib\\bson.cjs:2006:23)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\server.js:543:55\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\body-parser\\lib\\read.js:137:5","timestamp":"2023-07-04T18:28:15.566Z"}
+info: login {"timestamp":"2023-07-04T18:28:20.587Z"}
+info: Login request received {"timestamp":"2023-07-04T18:28:20.598Z"}
+info: Error finding user: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer {"stack":"BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer\n    at new ObjectId (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\bson\\lib\\bson.cjs:2006:23)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\server.js:543:55\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\body-parser\\lib\\read.js:137:5","timestamp":"2023-07-04T18:28:20.601Z"}
+info: am here {"timestamp":"2023-07-04T18:40:34.268Z"}
+info: mounted {"timestamp":"2023-07-04T18:40:34.405Z"}
+info: am here {"timestamp":"2023-07-04T18:40:38.620Z"}
+info: am here {"timestamp":"2023-07-04T18:40:40.942Z"}
+info: mounted {"timestamp":"2023-07-04T18:40:41.109Z"}
+info: login {"timestamp":"2023-07-04T18:40:50.229Z"}
+info: Login request received {"timestamp":"2023-07-04T18:40:50.246Z"}
+info: User not found {"timestamp":"2023-07-04T18:40:50.591Z"}
+info: am here {"timestamp":"2023-07-04T18:41:18.029Z"}
+info: am here {"timestamp":"2023-07-04T18:41:19.910Z"}
+info: mounted {"timestamp":"2023-07-04T18:41:20.084Z"}
+info: login {"timestamp":"2023-07-04T18:41:26.388Z"}
+info: Login request received {"timestamp":"2023-07-04T18:41:26.395Z"}
+info: User not found {"timestamp":"2023-07-04T18:41:26.601Z"}
+info: Connecting to the database {"timestamp":"2023-07-04T18:48:28.707Z"}
+info: Connected to the database {"timestamp":"2023-07-04T18:48:40.263Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-04T18:48:40.277Z"}
+info: Login request received {"timestamp":"2023-07-04T18:50:17.698Z"}
+info: Connecting to the database {"timestamp":"2023-07-04T18:51:00.344Z"}
+info: Connected to the database {"timestamp":"2023-07-04T18:51:03.587Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-04T18:51:03.614Z"}
+info: Login request received {"timestamp":"2023-07-04T18:51:07.763Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T18:51:08.241Z","username":"yipa@yipa.com"}
+info: am here {"timestamp":"2023-07-04T18:51:38.113Z"}
+info: am here {"timestamp":"2023-07-04T18:51:39.904Z"}
+info: mounted {"timestamp":"2023-07-04T18:51:40.076Z"}
+info: login {"timestamp":"2023-07-04T18:51:43.818Z"}
+info: Login request received {"timestamp":"2023-07-04T18:51:43.832Z"}
+info: User not found {"timestamp":"2023-07-04T18:51:44.179Z"}
+info: login {"timestamp":"2023-07-04T18:51:52.577Z"}
+info: Login request received {"timestamp":"2023-07-04T18:51:52.586Z"}
+info: User not found {"timestamp":"2023-07-04T18:51:53.090Z"}
+info: login {"timestamp":"2023-07-04T18:52:06.116Z"}
+info: Connecting to the database {"timestamp":"2023-07-04T18:52:57.812Z"}
+info: Connected to the database {"timestamp":"2023-07-04T18:53:01.879Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-04T18:53:01.906Z"}
+info: login {"timestamp":"2023-07-04T18:53:04.440Z"}
+info: Login request received {"timestamp":"2023-07-04T18:53:04.462Z"}
+info: Connecting to the database {"timestamp":"2023-07-04T18:55:31.301Z"}
+info: Connected to the database {"timestamp":"2023-07-04T18:55:48.912Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-04T18:55:48.939Z"}
+info: login {"timestamp":"2023-07-04T18:55:53.493Z"}
+info: Login request received {"timestamp":"2023-07-04T18:55:53.516Z"}
+info: Connecting to the database {"timestamp":"2023-07-04T19:05:21.509Z"}
+info: Connected to the database {"timestamp":"2023-07-04T19:05:25.530Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-04T19:05:25.564Z"}
+info: login {"timestamp":"2023-07-04T19:05:30.055Z"}
+info: Login request received {"timestamp":"2023-07-04T19:05:30.065Z"}
+info: am here {"timestamp":"2023-07-04T19:06:23.124Z"}
+info: Login request received {"timestamp":"2023-07-04T19:06:23.149Z"}
+info: User not found {"timestamp":"2023-07-04T19:06:43.336Z"}
+info: am here {"timestamp":"2023-07-04T19:06:43.358Z"}
+info: mounted {"timestamp":"2023-07-04T19:06:43.365Z"}
+info: login {"timestamp":"2023-07-04T19:06:43.374Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T19:06:44.665Z","username":"yipa@yipa.com"}
+info: am here {"timestamp":"2023-07-04T19:12:58.142Z"}
+info: mounted {"timestamp":"2023-07-04T19:12:58.207Z"}
+info: login {"timestamp":"2023-07-04T19:13:00.955Z"}
+info: Login request received {"timestamp":"2023-07-04T19:13:00.968Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T19:13:01.399Z","username":"yipa@yipa.com"}
+info: am here {"timestamp":"2023-07-04T19:13:30.130Z"}
+info: mounted {"timestamp":"2023-07-04T19:13:30.252Z"}
+info: login {"timestamp":"2023-07-04T19:13:32.167Z"}
+info: Login request received {"timestamp":"2023-07-04T19:13:32.190Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T19:13:32.437Z","username":"yipa@yipa.com"}
+info: am here {"timestamp":"2023-07-04T19:14:32.738Z"}
+info: mounted {"timestamp":"2023-07-04T19:14:32.945Z"}
+info: login {"timestamp":"2023-07-04T19:14:35.204Z"}
+info: Login request received {"timestamp":"2023-07-04T19:14:35.216Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T19:14:35.516Z","username":"yipa@yipa.com"}
+info: {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T19:14:35.554Z"}
+info: created() mainpage: {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T19:15:18.083Z"}
+info: am here {"timestamp":"2023-07-04T19:15:18.981Z"}
+info: mounted {"timestamp":"2023-07-04T19:15:19.077Z"}
+info: login {"timestamp":"2023-07-04T19:15:20.930Z"}
+info: Login request received {"timestamp":"2023-07-04T19:15:20.942Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T19:15:21.186Z","username":"yipa@yipa.com"}
+info: created() mainpage: {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T19:15:21.231Z"}
+info: am here {"timestamp":"2023-07-04T19:17:14.319Z"}
+info: mounted {"timestamp":"2023-07-04T19:17:14.460Z"}
+info: login {"timestamp":"2023-07-04T19:17:17.490Z"}
+info: Login request received {"timestamp":"2023-07-04T19:17:17.502Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T19:17:17.713Z","username":"yipa@yipa.com"}
+info: created() mainpage: {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T19:17:17.764Z"}
+info: created() mainpage: {} {"timestamp":"2023-07-04T19:17:26.660Z"}
+info: created() mainpage: {} {"timestamp":"2023-07-04T19:17:29.171Z"}
+info: am here {"timestamp":"2023-07-04T19:17:31.260Z"}
+info: mounted {"timestamp":"2023-07-04T19:17:31.389Z"}
+info: login {"timestamp":"2023-07-04T19:17:33.971Z"}
+info: Login request received {"timestamp":"2023-07-04T19:17:33.989Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T19:17:34.241Z","username":"yipa@yipa.com"}
+info: created() mainpage: {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T19:17:34.322Z"}
+info: am here {"timestamp":"2023-07-04T19:18:24.161Z"}
+info: mounted {"timestamp":"2023-07-04T19:18:24.275Z"}
+info: login {"timestamp":"2023-07-04T19:18:25.939Z"}
+info: Login request received {"timestamp":"2023-07-04T19:18:26.050Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T19:18:26.517Z","username":"yipa@yipa.com"}
+info: created() mainpage: {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T19:18:26.562Z"}
+info: am here {"timestamp":"2023-07-04T19:18:45.332Z"}
+info: mounted {"timestamp":"2023-07-04T19:18:45.427Z"}
+info: am here {"timestamp":"2023-07-04T19:18:47.691Z"}
+info: am here {"timestamp":"2023-07-04T19:18:49.187Z"}
+info: mounted {"timestamp":"2023-07-04T19:18:49.324Z"}
+info: login {"timestamp":"2023-07-04T19:18:51.263Z"}
+info: Login request received {"timestamp":"2023-07-04T19:18:51.273Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T19:18:51.512Z","username":"yipa@yipa.com"}
+info: created() mainpage: {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T19:18:51.633Z"}
+info: created() mainpage: {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T19:19:51.356Z"}
+info: am here {"timestamp":"2023-07-04T19:20:37.733Z"}
+info: mounted {"timestamp":"2023-07-04T19:20:37.737Z"}
+info: login {"timestamp":"2023-07-04T19:20:37.740Z"}
+info: Login request received {"timestamp":"2023-07-04T19:20:37.744Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T19:20:37.928Z","username":"yipa@yipa.com"}
+info: created() mainpage: {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T19:20:39.592Z"}
+info: created() mainpage: {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T19:24:50.320Z"}
+info: am here {"timestamp":"2023-07-04T19:24:51.487Z"}
+info: mounted {"timestamp":"2023-07-04T19:24:51.637Z"}
+info: login {"timestamp":"2023-07-04T19:24:54.073Z"}
+info: Login request received {"timestamp":"2023-07-04T19:24:54.083Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T19:24:54.323Z","username":"yipa@yipa.com"}
+info: created() mainpage: {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T19:24:54.371Z"}
+info: created() mainpage: {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T19:25:52.707Z"}
+info: am here {"timestamp":"2023-07-04T19:25:53.818Z"}
+info: mounted {"timestamp":"2023-07-04T19:25:53.911Z"}
+info: login {"timestamp":"2023-07-04T19:25:55.887Z"}
+info: Login request received {"timestamp":"2023-07-04T19:25:55.907Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T19:25:56.267Z","username":"yipa@yipa.com"}
+info: created() mainpage: {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T19:25:56.312Z"}
+info: created() mainpage: {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T19:27:10.353Z"}
+info: am here {"timestamp":"2023-07-04T19:27:10.821Z"}
+info: mounted {"timestamp":"2023-07-04T19:27:10.927Z"}
+info: am here {"timestamp":"2023-07-04T19:27:15.503Z"}
+info: mounted {"timestamp":"2023-07-04T19:27:15.628Z"}
+info: login {"timestamp":"2023-07-04T19:27:17.723Z"}
+info: Login request received {"timestamp":"2023-07-04T19:27:17.745Z"}
+info: User not found {"timestamp":"2023-07-04T19:27:17.948Z"}
+info: login {"timestamp":"2023-07-04T19:27:22.919Z"}
+info: Login request received {"timestamp":"2023-07-04T19:27:22.926Z"}
+info: User not found {"timestamp":"2023-07-04T19:27:23.101Z"}
+info: login {"timestamp":"2023-07-04T19:27:47.821Z"}
+info: Login request received {"timestamp":"2023-07-04T19:27:47.824Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T19:27:48.087Z","username":"yipa@yipa.com"}
+info: created() mainpage: {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T19:27:48.179Z"}
+info: am here {"timestamp":"2023-07-04T19:28:48.850Z"}
+info: mounted {"timestamp":"2023-07-04T19:28:48.961Z"}
+info: am here {"timestamp":"2023-07-04T19:28:51.206Z"}
+info: mounted {"timestamp":"2023-07-04T19:28:51.415Z"}
+info: login {"timestamp":"2023-07-04T19:28:59.575Z"}
+info: Login request received {"timestamp":"2023-07-04T19:28:59.583Z"}
+info: User found: {"_id":"6499829a6eeeec4f49e35511","dob":{"day":"8","month":"3","year":"1986"},"email":"yipa@yipa.com","gender":"female","matches":["649eced4346d6450651a41c2"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T19:28:59.835Z","username":"yipa@yipa.com"}
+info: created() mainpage: {"userId":"6499829a6eeeec4f49e35511","password":"yipa"} {"timestamp":"2023-07-04T19:28:59.917Z"}
+info: created() mainpage: {} {"timestamp":"2023-07-04T19:30:54.806Z"}
+info: created() mainpage: {} {"timestamp":"2023-07-04T19:30:56.211Z"}
+info: Connecting to the database {"timestamp":"2023-07-04T19:38:24.110Z"}
+info: Connected to the database {"timestamp":"2023-07-04T19:38:28.169Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-04T19:38:28.200Z"}
+info: am here {"timestamp":"2023-07-04T19:38:50.742Z"}
+info: mounted {"timestamp":"2023-07-04T19:38:50.883Z"}
+info: login {"timestamp":"2023-07-04T19:38:53.756Z"}
+info: Login request received {"timestamp":"2023-07-04T19:38:53.786Z"}
+info: User found: {"_id":"6499829a6eeeec4f49e35511","dob":{"day":"8","month":"3","year":"1986"},"email":"yipa@yipa.com","gender":"female","matches":["649eced4346d6450651a41c2"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T19:38:54.509Z","username":"yipa@yipa.com"}
+info: created() mainpage: {"userId":"6499829a6eeeec4f49e35511","password":"yipa"} {"timestamp":"2023-07-04T19:38:54.574Z"}
+info: am here {"timestamp":"2023-07-04T19:54:12.882Z"}
+info: mounted {"timestamp":"2023-07-04T19:54:12.952Z"}
+info: login {"timestamp":"2023-07-04T19:54:19.384Z"}
+info: Login request received {"timestamp":"2023-07-04T19:54:19.411Z"}
+info: User not found {"timestamp":"2023-07-04T19:54:19.909Z"}
+info: login {"timestamp":"2023-07-04T19:54:30.781Z"}
+info: Login request received {"timestamp":"2023-07-04T19:54:30.793Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T19:54:31.412Z","username":"yipa@yipa.com"}
+info: am here {"timestamp":"2023-07-04T19:57:17.438Z"}
+info: mounted {"timestamp":"2023-07-04T19:57:17.790Z"}
+info: login {"timestamp":"2023-07-04T19:57:20.639Z"}
+info: Login request received {"timestamp":"2023-07-04T19:57:20.766Z"}
+info: Login request received {"timestamp":"2023-07-04T19:57:23.931Z"}
+info: login {"timestamp":"2023-07-04T19:57:23.941Z"}
+info: login {"timestamp":"2023-07-04T19:57:28.162Z"}
+info: Login request received {"timestamp":"2023-07-04T19:57:28.178Z"}
+info: am here {"timestamp":"2023-07-04T19:57:32.539Z"}
+info: am here {"timestamp":"2023-07-04T19:57:34.741Z"}
+info: mounted {"timestamp":"2023-07-04T19:57:35.020Z"}
+info: Login request received {"timestamp":"2023-07-04T19:57:41.454Z"}
+info: login {"timestamp":"2023-07-04T19:57:41.460Z"}
+info: Error finding user: getaddrinfo ENOTFOUND ac-2hkext6-shard-00-02.nzxelpi.mongodb.net {"reason":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":30,"maxElectionId":"7fffffff00000000000000a4","maxSetVersion":7,"servers":{},"setName":"atlas-fpof51-shard-0","stale":false,"type":"ReplicaSetNoPrimary"},"stack":"MongoServerSelectionError: getaddrinfo ENOTFOUND ac-2hkext6-shard-00-02.nzxelpi.mongodb.net\n    at Timeout._onTimeout (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\mongodb\\lib\\sdam\\topology.js:278:38)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)","timestamp":"2023-07-04T19:57:51.055Z"}
+info: Error finding user: getaddrinfo ENOTFOUND ac-2hkext6-shard-00-02.nzxelpi.mongodb.net {"reason":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":30,"maxElectionId":"7fffffff00000000000000a4","maxSetVersion":7,"servers":{},"setName":"atlas-fpof51-shard-0","stale":false,"type":"ReplicaSetNoPrimary"},"stack":"MongoServerSelectionError: getaddrinfo ENOTFOUND ac-2hkext6-shard-00-02.nzxelpi.mongodb.net\n    at Timeout._onTimeout (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\mongodb\\lib\\sdam\\topology.js:278:38)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)","timestamp":"2023-07-04T19:57:53.946Z"}
+info: Error finding user: getaddrinfo ENOTFOUND ac-2hkext6-shard-00-02.nzxelpi.mongodb.net {"reason":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":30,"maxElectionId":"7fffffff00000000000000a4","maxSetVersion":7,"servers":{},"setName":"atlas-fpof51-shard-0","stale":false,"type":"ReplicaSetNoPrimary"},"stack":"MongoServerSelectionError: getaddrinfo ENOTFOUND ac-2hkext6-shard-00-02.nzxelpi.mongodb.net\n    at Timeout._onTimeout (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\mongodb\\lib\\sdam\\topology.js:278:38)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)","timestamp":"2023-07-04T19:57:58.186Z"}
+info: Error finding user: getaddrinfo ENOTFOUND ac-2hkext6-shard-00-02.nzxelpi.mongodb.net {"reason":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":30,"maxElectionId":"7fffffff00000000000000a4","maxSetVersion":7,"servers":{},"setName":"atlas-fpof51-shard-0","stale":false,"type":"ReplicaSetNoPrimary"},"stack":"MongoServerSelectionError: getaddrinfo ENOTFOUND ac-2hkext6-shard-00-02.nzxelpi.mongodb.net\n    at Timeout._onTimeout (C:\\Users\\magnu\\projects\\ra-dating-nuxt-3\\node_modules\\mongodb\\lib\\sdam\\topology.js:278:38)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)","timestamp":"2023-07-04T19:58:11.469Z"}
+info: am here {"timestamp":"2023-07-04T21:45:43.394Z"}
+info: mounted {"timestamp":"2023-07-04T21:45:43.547Z"}
+info: login {"timestamp":"2023-07-04T21:45:47.982Z"}
+info: Login request received {"timestamp":"2023-07-04T21:45:47.996Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T21:45:50.531Z","username":"yipa@yipa.com"}
+info: am here {"timestamp":"2023-07-04T21:45:53.924Z"}
+info: am here {"timestamp":"2023-07-04T21:45:57.506Z"}
+info: mounted {"timestamp":"2023-07-04T21:45:58.000Z"}
+info: login {"timestamp":"2023-07-04T21:46:01.604Z"}
+info: Login request received {"timestamp":"2023-07-04T21:46:01.628Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T21:46:01.839Z","username":"yipa@yipa.com"}
+info: am here {"timestamp":"2023-07-04T21:47:24.267Z"}
+info: mounted {"timestamp":"2023-07-04T21:47:24.518Z"}
+info: login {"timestamp":"2023-07-04T21:47:28.162Z"}
+info: Login request received {"timestamp":"2023-07-04T21:47:28.171Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T21:47:28.362Z","username":"yipa@yipa.com"}
+info: userparam = {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T21:47:28.416Z"}
+info: created() mainpage: {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T21:47:28.419Z"}
+info: am here {"timestamp":"2023-07-04T21:52:10.362Z"}
+info: mounted {"timestamp":"2023-07-04T21:52:10.602Z"}
+info: login {"timestamp":"2023-07-04T21:52:13.213Z"}
+info: Login request received {"timestamp":"2023-07-04T21:52:13.250Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T21:52:13.755Z","username":"yipa@yipa.com"}
+info: userparam = {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T21:52:13.818Z"}
+info: created() mainpage: {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T21:52:13.822Z"}
+info: am here {"timestamp":"2023-07-04T21:52:19.028Z"}
+info: mounted {"timestamp":"2023-07-04T21:52:19.196Z"}
+info: am here {"timestamp":"2023-07-04T21:52:27.266Z"}
+info: am here {"timestamp":"2023-07-04T21:52:29.314Z"}
+info: mounted {"timestamp":"2023-07-04T21:52:29.455Z"}
+info: login {"timestamp":"2023-07-04T21:52:31.497Z"}
+info: Login request received {"timestamp":"2023-07-04T21:52:31.502Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T21:52:31.787Z","username":"yipa@yipa.com"}
+info: am here {"timestamp":"2023-07-04T21:52:57.218Z"}
+info: mounted {"timestamp":"2023-07-04T21:52:57.386Z"}
+info: login {"timestamp":"2023-07-04T21:52:59.175Z"}
+info: Login request received {"timestamp":"2023-07-04T21:52:59.185Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T21:52:59.428Z","username":"yipa@yipa.com"}
+info: userparam = {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T21:54:15.191Z"}
+info: created() mainpage: {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T21:54:15.200Z"}
+info: am here {"timestamp":"2023-07-04T21:54:16.590Z"}
+info: mounted {"timestamp":"2023-07-04T21:54:16.699Z"}
+info: login {"timestamp":"2023-07-04T21:54:19.935Z"}
+info: Login request received {"timestamp":"2023-07-04T21:54:19.941Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T21:54:20.212Z","username":"yipa@yipa.com"}
+info: userparam = {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T21:54:20.296Z"}
+info: created() mainpage: {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T21:54:20.307Z"}
+info: Connecting to the database {"timestamp":"2023-07-04T21:55:55.660Z"}
+info: Connected to the database {"timestamp":"2023-07-04T21:55:58.430Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-04T21:55:58.442Z"}
+info: am here {"timestamp":"2023-07-04T21:58:16.455Z"}
+info: mounted {"timestamp":"2023-07-04T21:58:16.517Z"}
+info: login {"timestamp":"2023-07-04T21:58:17.562Z"}
+info: Login request received {"timestamp":"2023-07-04T21:58:17.629Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T21:58:18.651Z","username":"yipa@yipa.com"}
+info: userparam = {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T21:58:19.057Z"}
+info: created() mainpage: {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T21:58:19.085Z"}
+info: am here {"timestamp":"2023-07-04T21:59:39.277Z"}
+info: mounted {"timestamp":"2023-07-04T21:59:39.403Z"}
+info: login {"timestamp":"2023-07-04T21:59:41.998Z"}
+info: Login request received {"timestamp":"2023-07-04T21:59:42.052Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T21:59:42.509Z","username":"yipa@yipa.com"}
+info: userparam = {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T21:59:42.564Z"}
+info: created() mainpage: {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T21:59:42.588Z"}
+info: userparam = {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T22:11:39.901Z"}
+info: created() mainpage: {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T22:11:40.042Z"}
+info: am here {"timestamp":"2023-07-04T22:11:48.632Z"}
+info: mounted {"timestamp":"2023-07-04T22:11:48.792Z"}
+info: login {"timestamp":"2023-07-04T22:11:50.994Z"}
+info: Login request received {"timestamp":"2023-07-04T22:11:51.008Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T22:11:51.279Z","username":"yipa@yipa.com"}
+info: userparam = {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T22:11:51.326Z"}
+info: created() mainpage: {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T22:11:51.332Z"}
+info: am here {"timestamp":"2023-07-04T22:13:36.644Z"}
+info: mounted {"timestamp":"2023-07-04T22:13:36.733Z"}
+info: login {"timestamp":"2023-07-04T22:13:39.289Z"}
+info: Login request received {"timestamp":"2023-07-04T22:13:39.299Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T22:13:39.658Z","username":"yipa@yipa.com"}
+info: am here {"timestamp":"2023-07-04T22:13:51.355Z"}
+info: mounted {"timestamp":"2023-07-04T22:13:51.463Z"}
+info: login {"timestamp":"2023-07-04T22:13:54.259Z"}
+info: Login request received {"timestamp":"2023-07-04T22:13:54.266Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T22:13:54.587Z","username":"yipa@yipa.com"}
+info: am here {"timestamp":"2023-07-04T22:13:57.984Z"}
+info: mounted {"timestamp":"2023-07-04T22:13:58.085Z"}
+info: login {"timestamp":"2023-07-04T22:14:00.157Z"}
+info: Login request received {"timestamp":"2023-07-04T22:14:00.169Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T22:14:00.370Z","username":"yipa@yipa.com"}
+info: am here {"timestamp":"2023-07-04T22:14:42.554Z"}
+info: mounted {"timestamp":"2023-07-04T22:14:42.936Z"}
+info: login {"timestamp":"2023-07-04T22:14:46.144Z"}
+info: Login request received {"timestamp":"2023-07-04T22:14:46.298Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T22:14:47.031Z","username":"yipa@yipa.com"}
+info: am here {"timestamp":"2023-07-04T22:15:52.484Z"}
+info: mounted {"timestamp":"2023-07-04T22:15:52.863Z"}
+info: login {"timestamp":"2023-07-04T22:15:54.412Z"}
+info: Login request received {"timestamp":"2023-07-04T22:15:54.452Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T22:15:54.685Z","username":"yipa@yipa.com"}
+info: am here {"timestamp":"2023-07-04T22:16:59.163Z"}
+info: mounted {"timestamp":"2023-07-04T22:16:59.382Z"}
+info: login {"timestamp":"2023-07-04T22:17:01.719Z"}
+info: Login request received {"timestamp":"2023-07-04T22:17:01.742Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T22:17:01.990Z","username":"yipa@yipa.com"}
+info: am here {"timestamp":"2023-07-04T22:17:31.112Z"}
+info: mounted {"timestamp":"2023-07-04T22:17:31.238Z"}
+info: login {"timestamp":"2023-07-04T22:17:33.601Z"}
+info: Login request received {"timestamp":"2023-07-04T22:17:33.621Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T22:17:33.873Z","username":"yipa@yipa.com"}
+info: am here {"timestamp":"2023-07-04T22:19:54.922Z"}
+info: mounted {"timestamp":"2023-07-04T22:19:55.058Z"}
+info: login {"timestamp":"2023-07-04T22:19:56.487Z"}
+info: Login request received {"timestamp":"2023-07-04T22:19:56.505Z"}
+info: User not found {"timestamp":"2023-07-04T22:19:57.185Z"}
+info: login {"timestamp":"2023-07-04T22:20:08.867Z"}
+info: Login request received {"timestamp":"2023-07-04T22:20:08.884Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T22:20:09.088Z","username":"yipa@yipa.com"}
+info: userparam = {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T22:20:09.326Z"}
+info: created() mainpage: {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T22:20:09.335Z"}
+info: am here {"timestamp":"2023-07-04T22:21:25.686Z"}
+info: mounted {"timestamp":"2023-07-04T22:21:25.912Z"}
+info: am here {"timestamp":"2023-07-04T22:21:27.098Z"}
+info: am here {"timestamp":"2023-07-04T22:21:28.885Z"}
+info: mounted {"timestamp":"2023-07-04T22:21:29.015Z"}
+info: login {"timestamp":"2023-07-04T22:21:29.066Z"}
+info: Login request received {"timestamp":"2023-07-04T22:21:29.301Z"}
+info: User not found {"timestamp":"2023-07-04T22:21:29.500Z"}
+info: login {"timestamp":"2023-07-04T22:21:32.983Z"}
+info: Login request received {"timestamp":"2023-07-04T22:21:32.989Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T22:21:33.230Z","username":"yipa@yipa.com"}
+info: am here {"timestamp":"2023-07-04T22:22:25.225Z"}
+info: mounted {"timestamp":"2023-07-04T22:22:25.333Z"}
+info: login {"timestamp":"2023-07-04T22:22:27.721Z"}
+info: Login request received {"timestamp":"2023-07-04T22:22:27.737Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T22:22:28.075Z","username":"yipa@yipa.com"}
+info: am here {"timestamp":"2023-07-04T22:27:20.292Z"}
+info: mounted {"timestamp":"2023-07-04T22:27:20.424Z"}
+info: login {"timestamp":"2023-07-04T22:27:22.486Z"}
+info: Login request received {"timestamp":"2023-07-04T22:27:22.502Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T22:27:22.800Z","username":"yipa@yipa.com"}
+info: userparam = {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T22:27:22.924Z"}
+info: created() mainpage: {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T22:27:22.931Z"}
+info: userparam = {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T22:28:11.611Z"}
+info: created() mainpage: {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T22:28:11.619Z"}
+info: am here {"timestamp":"2023-07-04T22:28:17.715Z"}
+info: mounted {"timestamp":"2023-07-04T22:28:17.839Z"}
+info: login {"timestamp":"2023-07-04T22:28:21.120Z"}
+info: Login request received {"timestamp":"2023-07-04T22:28:21.128Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T22:28:21.297Z","username":"yipa@yipa.com"}
+info: userparam = {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T22:28:21.341Z"}
+info: created() mainpage: {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T22:28:21.350Z"}
+info: am here {"timestamp":"2023-07-04T22:28:40.289Z"}
+info: mounted {"timestamp":"2023-07-04T22:28:40.397Z"}
+info: login {"timestamp":"2023-07-04T22:28:42.474Z"}
+info: Login request received {"timestamp":"2023-07-04T22:28:42.484Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T22:28:42.692Z","username":"yipa@yipa.com"}
+info: userparam = {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T22:28:42.732Z"}
+info: created() mainpage: {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T22:28:42.742Z"}
+info: created() mainpage: {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T22:29:14.719Z"}
+info: userparam = {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T22:29:14.738Z"}
+info: am here {"timestamp":"2023-07-04T22:29:19.782Z"}
+info: mounted {"timestamp":"2023-07-04T22:29:19.878Z"}
+info: login {"timestamp":"2023-07-04T22:29:21.968Z"}
+info: Login request received {"timestamp":"2023-07-04T22:29:21.989Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T22:29:22.215Z","username":"yipa@yipa.com"}
+info: userparam = {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T22:29:22.271Z"}
+info: created() mainpage: {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T22:29:22.282Z"}
+info: userparam = {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T22:29:44.679Z"}
+info: created() mainpage: {"userId":"64997f1378892faf027fbf8a","password":"yipa"} {"timestamp":"2023-07-04T22:29:44.693Z"}
+info: am here {"timestamp":"2023-07-04T22:34:04.206Z"}
+info: mounted {"timestamp":"2023-07-04T22:34:04.309Z"}
+info: login {"timestamp":"2023-07-04T22:34:06.435Z"}
+info: Login request received {"timestamp":"2023-07-04T22:34:06.459Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-04T22:34:06.689Z","username":"yipa@yipa.com"}

@@ -9,8 +9,8 @@
       <h2>Matches</h2>
       <v-row>
         <v-col cols="12" sm="6" md="4" v-for="(match, index) in initialMatches" :key="index">
-          <div class="match-card">
-            <h3>Match #{{ index + 1 }}</h3>
+          <div class="match-card" @click="openModal(index)">
+            <h3>{{ match.id }}</h3>
             <p>{{ match.body }}</p>
             <!-- Add match details and styling as per your requirements -->
           </div>
@@ -19,29 +19,66 @@
     </section>
 
     <!-- Rest of the component code... -->
+
+    <v-dialog v-model="showModal">
+      <v-card>
+        <v-card-title>
+          <span class="headline">Match Details</span>
+        </v-card-title>
+        <v-card-text>
+          <p>Match index: {{ modalIndex }}</p>
+          <!-- Add additional match details here -->
+        </v-card-text>
+        <v-card-actions>
+          <v-btn color="primary" @click="closeModal">Close</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
   </div>
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
   name: 'HomePage',
   data() {
     return {
       userData: {},
-      initialMatches: []
+      initialMatches: [],
+      showModal: false,
+      modalIndex: null
     };
   },
   created() {
-    const userParam = this.$store.getters.userData;
-    this.userData = userParam;
+    // Fetch user data and populate initial matches
+    this.userData = this.$store.getters.userData;
     this.populateInitialMatches();
   },
   methods: {
-    populateInitialMatches() {
-      // Populate initial matches with 9 matches
-      for (let i = 0; i < 9; i++) {
-        this.initialMatches.push({ id: i, title: `Match #${i + 1}`, body: `Body for Match #${i + 1}` });
+    async populateInitialMatches() {
+      try {
+        const userId = this.userData.userId;
+        const response = await axios.get(`http://localhost:4000/api/userMatches/${userId}`);
+        const { users } = response.data;
+
+        this.initialMatches = users.map((user, index) => ({
+          id: user._id,
+          title: `Match #${index + 1}`,
+          body: `Body for Match #${index + 1}`,
+          userName: user.userId
+        }));
+      } catch (error) {
+        console.error(error);
       }
+    },
+    openModal(index) {
+      this.modalIndex = index;
+      this.showModal = true;
+    },
+    closeModal() {
+      this.showModal = false;
+      this.modalIndex = null;
     }
   }
 }
