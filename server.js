@@ -34,7 +34,7 @@ const logger = winston.createLogger({
     new winston.transports.Console(), // Output logs to the console
     new winston.transports.File({ filename: 'logs.txt' }) // Output logs to a file
   ]
-}); 
+});
 
 // Middleware
 app.use(cors());
@@ -74,9 +74,9 @@ async function startServer() {
     //   logger.info('Error inserting document:', err);
     //   return res.status(500).send('Error inserting document');
     // }
-        
 
-    
+
+
 
     // Start the server after successful database connection
     app.listen(4000, () => {
@@ -154,7 +154,7 @@ app.patch('/users/:_id', async (req, res) => {
     const result = await usersCollection.updateOne(
       { _id: b }, // Filter based on the user ID
       { $set: updatedData }, // Update the fields with the new data
-      { returnOriginal: false}
+      { returnOriginal: false }
     );
 
     logger.info('Document updated:', result);
@@ -277,6 +277,96 @@ app.get('/api/matchallmaleusers', async (req, res) => {
   }
 });
 
+app.post('/api/assignmatch', async (req, res) => {
+  try {
+    const db = client.db("ra-dating"); // Get the default database
+    const usersCollection = db.collection('users'); // Access the 'users' collection
+    const matchesCollection = db.collection('matches'); // Access the 'matches' collection
+
+    const { user1Id, user2Id } = req.body;
+
+    // Find both users by their IDs
+
+    logger.info(user1Id + " " + user2Id);
+    const user1 = await usersCollection.findOne({ "_id": new ObjectId(user1Id) });
+
+    logger.info(user1);
+
+    const user2 = await usersCollection.findOne({ "_id": new ObjectId(user2Id) });
+
+    logger.info(user2);
+
+    if (!user1 || !user2) {
+      return res.status(404).json({ error: 'One or both users not found' });
+    }
+
+    // Create a new match entry
+    const newMatch = {
+      user1Id,
+      user2Id,
+      matchedOn: new Date()
+    };
+
+    // Insert the match entry into the 'matches' collection
+    const insertedMatch = await matchesCollection.insertOne(newMatch);
+
+    // Update the matches field of both users
+    await usersCollection.updateOne(
+      { _id: user1Id },
+      { $push: { matches: insertedMatch.insertedId } }
+    );
+
+    await usersCollection.updateOne(
+      { _id: user2Id },
+      { $push: { matches: insertedMatch.insertedId } }
+    );
+
+    res.status(200).json({ message: 'Match assigned successfully' });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+
+
+app.get('/api/abcde', async (req, res) => {
+  logger.info("HI");
+  res.status(200).json({ hello: "HI" });
+});
+
+app.get('/api/userMatches/:userId', async (req, res) => {
+  try {
+
+    logger.info("in userMatches");
+
+    const userId = req.params.userId;
+
+
+    const db = client.db("ra-dating"); // Get the default database
+    const usersCollection = db.collection('users'); // Access the 'users' collection
+
+    // Find the user by their ID
+    const user = await usersCollection.findOne({ _id: new ObjectId(userId) });
+
+    if (!user) {
+      return res.status(404).json({ error: 'User not found' });
+    }
+
+    // Retrieve the matches for the user
+    const matchesCollection = db.collection('matches'); // Access the 'matches' collection
+    const userMatches = await matchesCollection.find({
+      _id: { $in: user.matches }
+    }).toArray();
+
+    res.status(200).json({ matches: userMatches });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+
 app.delete('/api/matches/:matchId', async (req, res) => {
   try {
     const matchId = req.params.matchId;
@@ -342,7 +432,7 @@ app.post('/api/uploadProfilePicture', upload.single('profilePicture'), async (re
   if (!req.file) {
     return res.status(400).json({ error: 'No file uploaded' });
   }
- 
+
   console.log('1');
   // console.dir(res, { depth: null });
 
@@ -394,8 +484,8 @@ app.post('/signup', async (req, res) => {
     logger.info('Signup request received', { requestBody: req.body });
 
     const { name, username, email, password, dob, gender } = req.body;
-    const db = client.db("ra-dating"); 
-    const usersCollection = db.collection('users'); 
+    const db = client.db("ra-dating");
+    const usersCollection = db.collection('users');
 
     logger.info('1');
     const result = await usersCollection.insertOne({
@@ -407,7 +497,7 @@ app.post('/signup', async (req, res) => {
       profileInfo: "Some profile information",
       role: "user"
     });
-    
+
     logger.info('2');
     const insertedId = result.insertedId; // Retrieve the inserted document id
 
@@ -415,7 +505,7 @@ app.post('/signup', async (req, res) => {
     logger.info('User registered successfully - id = ' + insertedId);
 
     res.status(200).send({ message: 'User registered successfully', userId: insertedId });
-  } catch(err) {
+  } catch (err) {
     logger.info('Error inserting document:', err);
     res.status(500).send('Error inserting document');
   }

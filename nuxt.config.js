@@ -9,8 +9,10 @@ export default {
     titleTemplate: '%s - ra-dating-nuxt-3',
     title: 'ra-dating-nuxt-3',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'en',
+      // dir: 'rtl'
     },
+  
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -51,19 +53,18 @@ export default {
 
   i18n: {
     locales: [
-      { code: 'en', iso: 'en-US', name: 'English' },
-      { code: 'fr', iso: 'fr-FR', name: 'Français' },
-      { code: 'he', iso: 'he-IL', name: 'עברית' },
+      { code: 'en', iso: 'en-US', name: 'English', dir: 'ltr'},
+      { code: 'fr', iso: 'fr-FR', name: 'Français', dir: 'ltr' },
+      { code: 'he', iso: 'he-IL', name: 'עברית', dir: 'rtl'},
     ],
-    defaultLocale: 'en',
+    defaultLocale: 'he',
     vueI18n: {
-      fallbackLocale: 'en',
+      fallbackLocale: 'he',
       messages: {
         en: {
           "title": "Rav Avner Dating Site",
           "welcome": "Welcome",
           "home": "Home",
-          "Home": "zzzzz",
           "about": "About",
           "services": "Services",
           "loginFormLabel": "Login Form",
@@ -75,7 +76,6 @@ export default {
           "dobMonthLabel": "Month",
           "dobDayLabel": "Day",
           "dobYearLabel": "Year",
-          "loginLabel": "Login",
           "signUpButtonLabel": "Sign Up",
           "loginButtonLabel": "Login",
           "banner": "Welcome, May You Be Blessed"
@@ -96,7 +96,6 @@ export default {
           "dobMonthLabel": "Mois",
           "dobDayLabel": "Jour",
           "dobYearLabel": "Année",
-          "loginLabel": "Connexion",
           "signUpButtonLabel": "S'inscrire",
           "loginButtonLabel": "Connexion",
           "banner": "Bienvenue, Que Vous Soyez Béni(e)"
@@ -117,6 +116,7 @@ export default {
           "dobMonthLabel": "חודש",
           "dobDayLabel": "יום",
           "dobYearLabel": "שנה",
+
           "loginButtonLabel": "התחברות",
           "signUpButtonLabel": "הרשמה",
           "banner": "ברוכים הבאים, תהיו מבורכים"
@@ -143,6 +143,11 @@ export default {
   serverMiddleware: [
     '~/server/status.js'
   ],
+  
+  server: {
+    port: 3300, // Default port is usually 3000
+    // host: '0.0.0.0', // Set the host to '0.0.0.0' to make it accessible from outside
+  },
   
   
   // vuetify: {

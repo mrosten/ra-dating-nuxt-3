@@ -16,13 +16,16 @@
               <v-img v-if="profilePicture" :src="profilePicture" alt="Profile Picture" max-width="200px"></v-img>
               <v-file-input ref="fileInput" accept="image/*" label="Upload file"
                 @change="handleFileChange"></v-file-input>
-              <v-btn @click="uploadProfilePicture" :disabled="!selectedFile" color="primary">Upload</v-btn>
+              <!-- <v-btn @click="uploadProfilePicture" :disabled="!selectedFile" color="primary">Upload</v-btn> -->
+                <v-btn @click="uploadProfilePicture" v-if="showUploadButton" color="primary">Upload</v-btn>
             </v-col>
             <v-col cols="12" sm="6" class="text-right pr-5">
               <v-card class="elevation-2" height="200px" outlined>
                 <v-card-text class="text-center">
                   <h3>Uploaded Picture</h3>
+                  <!-- <v-img v-if="uploadedPicture" :src="uploadedPicture" alt="Uploaded Picture" contain></v-img> -->
                   <v-img v-if="uploadedPicture" :src="uploadedPicture" alt="Uploaded Picture" contain></v-img>
+
                   <div v-else class="text-grey">No picture uploaded yet</div>
                 </v-card-text>
               </v-card>
@@ -87,6 +90,11 @@ function logToAPI(message) {
 }
 
 export default {
+  computed: {
+    showUploadButton() {
+      return !!this.selectedFile;
+    }
+  },
   data() {
     return {
       uploadedPicture: '', // Initialize uploadedPicture property
@@ -103,9 +111,11 @@ export default {
   },
   methods: {
     navigateToMainPage() {
+      logToAPI('navigatetomainpage');
+
       this.$router.push({
         path: '/mainpage',
-        query: { user: JSON.stringify(userData) }
+        query: { userData: JSON.stringify(this.user) }
       });
     },
 
@@ -115,6 +125,32 @@ export default {
       this.selectedFile = event;
       logToAPI("handlfilechange called" + event);
     },
+
+
+    // uploadProfilePicture() {
+    //   if (this.selectedFile) {
+    //     const formData = new FormData();
+    //     formData.append('profilePicture', this.selectedFile);
+    //     formData.append('userID', this.user._id);
+
+    //     axios.post('http://localhost:4000/api/uploadProfilePicture', formData)
+    //       .then(response => {
+    //         this.uploadedPicture = response.data.profilePicture; // Set the uploaded picture URL
+
+    //         // Clear the selectedFile and profilePicture properties
+    //         this.selectedFile = null;
+    //         this.profilePicture = '';
+
+    //         // Log success message
+    //         console.log('Profile picture uploaded successfully');
+    //       })
+    //       .catch(error => {
+    //         logToAPI("ERROR" + JSON.stringify(error));
+    //       });
+    //   }
+    // },
+
+
     uploadProfilePicture() {
       if (this.selectedFile) {
         const formData = new FormData();
@@ -137,6 +173,12 @@ export default {
           });
       }
     },
+
+
+
+
+
+
   },
 };
 </script>

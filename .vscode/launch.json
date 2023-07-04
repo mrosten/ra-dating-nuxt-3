@@ -5,12 +5,8 @@
       "type": "chrome",
       "request": "launch",
       "name": "Launch Chrome against localhost",
-      "url": "http://localhost:3000",
-      "webRoot": "${workspaceFolder}",
-      "sourceMapPathOverrides": {
-        "webpack:///./*": "${webRoot}/*",
-        "webpack:///src/*": "${webRoot}/*",
-        "webpack:///*": "*"
-      }
-    ]
-  }
+      "url": "http://localhost:4000",
+      "webRoot": "${workspaceFolder}"
+    }
+  ]
+}

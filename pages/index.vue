@@ -12,9 +12,12 @@
         </v-col>
       </v-row>
 
-      <!-- The signup form -->
-      <v-row justify="center">
-        <v-col cols="12" sm="8" md="6">
+
+
+      <v-row>
+        <!-- Left column -->
+        <v-col cols="12" sm="8" md="6" class="left-form">
+          <!-- The signup form -->
           <v-card class="elevation-12" color="white">
             <v-toolbar color="primary" dark>
               <v-toolbar-title>{{ $t('signUpFormLabel') }}</v-toolbar-title>
@@ -51,17 +54,17 @@
               </v-form>
             </v-card-text>
             <v-card-actions>
-              <v-btn color="primary" dark type="submit" @click="submitForm">{{ $t('signUpButtonLabel') }}</v-btn>
-              <v-spacer></v-spacer>
-              <v-btn color="secondary" dark @click="navigateToLogin">{{ $t('loginButtonLabel') }}</v-btn>
+              <v-btn color="primary" dark type="submit" @click="submitSignUpForm">{{ $t('signUpButtonLabel') }}</v-btn>
+              <!-- <v-spacer></v-spacer> -->
+              <!-- <v-btn color="secondary" dark @click="navigateToLogin">{{ $t('loginButtonLabel') }}</v-btn> -->
             </v-card-actions>
             <v-card-text>
               <v-container fluid>
                 <v-row justify="center">
                   <v-col cols="12">
                     <div class="login-text text-center">
-                      Already have an account? Click on the login button below.
-                      <br>
+                      <!-- Already have an account? Click on the login button below. -->
+                      <!-- <br> -->
                       Complete your profile on the next page, including adding a profile picture.
                     </div>
                   </v-col>
@@ -70,7 +73,32 @@
             </v-card-text>
           </v-card>
         </v-col>
+
+        <!-- Right column -->
+        <v-col cols="12" sm="8" md="6" class="right-form">
+          <!-- The login form -->
+          <v-card class="elevation-12" color="white">
+            <v-toolbar color="primary" dark>
+              <v-toolbar-title>{{ $t('loginFormLabel') }}</v-toolbar-title>
+              <v-spacer></v-spacer>
+            </v-toolbar>
+            <v-card-text>
+              <v-form>
+                <v-text-field :label="$t('usernameLabel')" name="username" prepend-icon="mdi-account"
+                  type="text"></v-text-field>
+                <v-text-field id="password" :label="$t('passwordLabel')" name="password" prepend-icon="mdi-lock"
+                  type="password"></v-text-field>
+              </v-form>
+            </v-card-text>
+            <v-card-actions>
+              <v-spacer></v-spacer>
+              <v-btn color="primary" dark type="submit" @click="submitLoginForm" @keydown.enter="submitLoginForm">{{ $t('loginButtonLabel') }}</v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-col>
       </v-row>
+
+
     </v-container>
   </v-app>
 </template>
@@ -86,9 +114,9 @@ async function logToAPI(message) {
 
   try {
     console.log('about to do an axios.post');
-    console.log('to: ' + `${process.env.API_BASE_URL}/logger`);
 
-    const response = await axios.post(`${process.env.API_BASE_URL}/logger`, requestBody);
+
+    const response = await axios.post('http://localhost:4000/logger', requestBody);
     console.log('Log entry created successfully');
   } catch (error) {
     console.error('Failed to create log entry:', error);
@@ -115,6 +143,37 @@ export default {
       gender: '',
     };
   },
+  // watch: {
+
+  //   '$i18n.locale'(newLocale) {
+  //     if (newLocale === 'he') {
+  //       this.$nextTick(() => {
+  //         location.reload();
+  //       });
+  //     }
+  //   }
+  // },
+
+
+  // '$i18n.locale'(newLocale) {
+  //   if (newLocale === 'he') {
+  //     document.documentElement.setAttribute('dir', 'rtl');
+  //   } else {
+  //     document.documentElement.setAttribute('dir', 'ltr');
+  //   }
+  //   this.$nextTick(() => {
+  //     location.reload();
+  //   });
+  // }
+  // },
+
+  mounted() {
+    logToAPI('mounted');
+
+    if (this.$i18n.locale === 'he') {
+      this.isLTR = false; // Set direction to right-to-left (RTL)
+    }
+  },
   created() {
     logToAPI("am here");
   },
@@ -128,7 +187,32 @@ export default {
       });
     },
 
-    submitForm() {
+    submitLoginForm() {
+      logToAPI('login');
+      const userData = {
+        email: this.email,
+        password: this.password,
+      };
+
+      axios.post('http://localhost:4000/login', userData)
+        .then(response => {
+          // Handle the success response
+          console.log(response.data);
+          console.log("i'm about to try to get you to the admin paege");
+
+          this.$router.push({
+            path: '/mainpage',
+            query: { userData: JSON.stringify(userData) }
+          });
+          // Redirect to the desired page after login
+          // this.$router.push('/dashboard');
+        })
+        .catch(error => {
+          // Handle the error response
+          console.error(error);
+        });
+    },
+    submitSignUpForm() {
       logToAPI("am trying to sign up");
 
       // Perform input validation
@@ -187,5 +271,19 @@ export default {
   margin-bottom: 20px;
   margin-left: 20px;
   /* Adjust the value as needed */
+}
+
+.left-form {
+  justify-self: flex-start;
+}
+
+.right-form {
+  justify-self: flex-end;
+}
+
+[dir="rtl"] .left-form,
+[dir="rtl"] .right-form {
+  justify-self: initial;
+  /* Reset the justify-self property for RTL direction */
 }
 </style>
