@@ -283,11 +283,14 @@ app.post('/api/assignmatch', async (req, res) => {
     const usersCollection = db.collection('users'); // Access the 'users' collection
     const matchesCollection = db.collection('matches'); // Access the 'matches' collection
 
+    
     const { user1Id, user2Id } = req.body;
+    console.log(user1Id, user2Id);
 
+    logger.info(JSON.stringify(req.body));
     // Find both users by their IDs
 
-    logger.info(user1Id + " " + user2Id);
+    logger.info(JSON.stringify(user1Id) + " " + user2Id);
     const user1 = await usersCollection.findOne({ "_id": new ObjectId(user1Id) });
 
     logger.info(user1);

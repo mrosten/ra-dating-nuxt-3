@@ -513,3 +513,33 @@ info: null {"timestamp":"2023-07-04T11:52:34.045Z"}
 info: Connecting to the database {"timestamp":"2023-07-04T11:54:49.425Z"}
 info: Connected to the database {"timestamp":"2023-07-04T11:54:51.726Z"}
 info: Server running on http://localhost:4000 {"timestamp":"2023-07-04T11:54:51.734Z"}
+info: Connecting to the database {"timestamp":"2023-07-04T12:11:29.511Z"}
+info: Connected to the database {"timestamp":"2023-07-04T12:11:34.270Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-04T12:11:34.276Z"}
+info: undefined undefined {"timestamp":"2023-07-04T12:11:38.435Z"}
+info: null {"timestamp":"2023-07-04T12:11:38.598Z"}
+info: null {"timestamp":"2023-07-04T12:11:38.756Z"}
+info: Connecting to the database {"timestamp":"2023-07-04T12:12:40.560Z"}
+info: Connected to the database {"timestamp":"2023-07-04T12:12:43.572Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-04T12:12:43.579Z"}
+info: [{"user1Id":"64997f1378892faf027fbf8a","user2Id":"649983066eeeec4f49e35512"}] {"timestamp":"2023-07-04T12:12:47.459Z"}
+info: undefined undefined {"timestamp":"2023-07-04T12:12:47.459Z"}
+info: null {"timestamp":"2023-07-04T12:12:47.624Z"}
+info: null {"timestamp":"2023-07-04T12:12:47.790Z"}
+info: Connecting to the database {"timestamp":"2023-07-04T12:13:40.855Z"}
+info: Connected to the database {"timestamp":"2023-07-04T12:13:43.251Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-04T12:13:43.264Z"}
+info: [{"user1Id":"64997f1378892faf027fbf8a","user2Id":"649983066eeeec4f49e35512"}] {"timestamp":"2023-07-04T12:13:44.300Z"}
+info: undefined undefined {"timestamp":"2023-07-04T12:13:44.301Z"}
+info: null {"timestamp":"2023-07-04T12:13:44.465Z"}
+info: null {"timestamp":"2023-07-04T12:13:44.637Z"}
+info: Connecting to the database {"timestamp":"2023-07-04T12:15:06.962Z"}
+info: Connected to the database {"timestamp":"2023-07-04T12:15:09.257Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-04T12:15:09.262Z"}
+info: Connecting to the database {"timestamp":"2023-07-04T12:19:39.708Z"}
+info: Connected to the database {"timestamp":"2023-07-04T12:19:42.009Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-04T12:19:42.022Z"}
+info: [{"user1Id":"64997f1378892faf027fbf8a","user2Id":"649983066eeeec4f49e35512"}] {"timestamp":"2023-07-04T12:19:45.655Z"}
+info: undefined undefined {"timestamp":"2023-07-04T12:19:45.656Z"}
+info: null {"timestamp":"2023-07-04T12:19:45.824Z"}
+info: null {"timestamp":"2023-07-04T12:19:45.983Z"}
