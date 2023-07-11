@@ -9,11 +9,45 @@
       <h2>Matches</h2>
       <v-row>
         <v-col cols="12" sm="6" md="4" v-for="(match, index) in initialMatches" :key="index">
-          <div class="match-card" @click="openModal(index)">
-            <h3>{{ match.id }}</h3>
-            <p>{{ match.body }}</p>
-            <!-- Add match details and styling as per your requirements -->
-          </div>
+          <v-card @click="openModal(index)">
+            <v-card-item>
+              <template v-slot:prepend>
+                <v-card-title>
+                  <p>hihihi {{ match.body }}</p>
+                </v-card-title>
+              </template>
+
+              <v-divider vertical class="mx-2"></v-divider>
+
+              <template v-slot:append>
+                <v-btn icon="$close" size="large" variant="text"></v-btn>
+              </template>
+            </v-card-item>
+
+            <v-card-item>
+              <v-card-title class="text-body-2 d-flex align-center">
+                <span class="text-medium-emphasis font-weight-bold">{{ match.title }}</span>
+                <v-spacer></v-spacer>
+              </v-card-title>
+
+              <div class="py-2">
+                <div class="text-h6">{{ match.userName }}</div>
+                <div class="font-weight-light text-medium-emphasis">{{ match.userName }}</div>
+              </div>
+            </v-card-item>
+
+            <v-divider></v-divider>
+
+            <div class="pa-4 d-flex align-center">
+              <v-spacer></v-spacer>
+              <v-btn class="me-2 text-none" color="#4f545c" variant="flat">
+                Maybe not
+              </v-btn>
+              <v-btn border class="text-none" prepend-icon="mdi-check" variant="text">
+                Interested
+              </v-btn>
+            </div>
+          </v-card>
         </v-col>
       </v-row>
     </section>
@@ -65,8 +99,8 @@ export default {
         this.initialMatches = users.map((user, index) => ({
           id: user._id,
           title: `Match #${index + 1}`,
-          body: `Body for Match #${index + 1}`,
-          userName: user.userId
+          userName: user._id + `Beeody for Match #${index + 1}`,
+          body: user._id
         }));
       } catch (error) {
         console.error(error);
@@ -96,13 +130,6 @@ export default {
 .matches-section {
   text-align: center;
   padding: 2rem;
-}
-
-.match-card {
-  background-color: #f5f5f5;
-  padding: 1rem;
-  border-radius: 8px;
-  margin-bottom: 1rem;
 }
 
 /* Rest of the styles... */
