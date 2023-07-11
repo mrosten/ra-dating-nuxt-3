@@ -1,2 +1,31 @@
 how do i set up express.js?
 
+Now I need to format the profile editing page to make more margins, etc. 
+
+When I click on a match it needs to go to a dedicated page 
+
+Ability to correspond with user ...
+
+Ability to assign matches 
+
+Users Collection: This collection will store user profiles with the following fields:
+
+proposed structure of users table:
+    _id: A unique identifier for each user.
+    firstName: The user's first name.
+    lastName: The user's last name.
+    gender: The user's gender.
+    dateOfBirth: The user's date of birth.
+    email: The user's email address.
+    phone: The user's phone number.
+    location: The user's location (city, state, country).
+    profilePicture: The URL or file path of the user's profile picture.
+    bio: A brief description or bio of the user.
+    interests: An array of interests or hobbies.
+    harediLevel: The user's level of adherence to Haredi practices (e.g., Chassidic, Yeshivish, etc.).
+    education: The user's educational background.
+    occupation: The user's occupation or profession.
+    desiredPartner: A description of the desired partner (e.g., age range, religious level, values).
+    matches: An array of references to matched users.
+
+    

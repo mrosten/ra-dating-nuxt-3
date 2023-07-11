@@ -57,28 +57,6 @@ async function startServer() {
     await client.connect();
     await client.db("admin").command({ ping: 1 });
     logger.info('Connected to the database');
-
-    // try {
-    //   logger.info('1');
-    //   const result = await client.db("ra-dating").collection('users').insertOne({
-    //     username: "boo",
-    //     email: "boo@boo.boo",
-    //     password: "password",
-    //     dob: "08/08/1979",
-    //     gender: "m",
-    //     profileInfo: "Some profile information",
-    //     role: "user"
-    //   });
-    //   logger.info('2');
-    // } catch (err) {
-    //   logger.info('Error inserting document:', err);
-    //   return res.status(500).send('Error inserting document');
-    // }
-
-
-
-
-    // Start the server after successful database connection
     app.listen(4000, () => {
       logger.info('Server running on http://localhost:4000');
     });
@@ -94,14 +72,12 @@ startServer();
 app.delete('/users/:_id', async (req, res) => {
   try {
     const userId = req.params._id;
-
     const db = client.db("ra-dating"); // Get the default database
     const usersCollection = db.collection('users'); // Access the 'users' collection
     const matchesCollection = db.collection('matches'); // Access the 'matches' collection
 
     const { ObjectId } = require('mongodb');
 
-    // Find the user by ID
     const user = await usersCollection.findOne({ _id: new ObjectId(userId) });
 
     if (!user) {
@@ -165,9 +141,26 @@ app.patch('/users/:_id', async (req, res) => {
   }
 });
 
+app.get('/user/:_id', async (req, res) => {
+  const userId = req.params._id;
+  
+  const db = client.db("ra-dating"); // Get the default database
+  const usersCollection = db.collection('users'); // Access the 'users' collection
+  
+  const b = new ObjectId(userId);
+  
+  logger.info("in /user/id --- id = ");
+  const result = await usersCollection.findOne( {_id: b});
 
 
-// Get Routs
+  if (result) {
+    res.status(200).json(result); // Send the result with 200 OK status code
+  } else {
+    res.status(404).json({ message: 'User not found' }); // Send a 404 Not Found status code and an error message
+  }
+});
+
+
 app.get('/', (req, res) => {
   res.send('Welcome to the API');
 });
@@ -277,6 +270,7 @@ app.get('/api/matchallmaleusers', async (req, res) => {
   }
 });
 
+
 app.post('/api/assignmatch', async (req, res) => {
   try {
 
@@ -369,13 +363,41 @@ app.get('/api/userMatches/:userId', async (req, res) => {
         users.push(otherUser);
       }
     }
-
     res.status(200).json({ users });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Internal server error' });
   }
 });
+
+app.get('/api/getOtherUserId', async (req, res) => {
+  try {
+    const matchId = req.query.matchId;
+    const userId = req.query.userId;
+
+    const matchesCollection = client.db("ra-dating").collection('matches');
+    const match = await matchesCollection.findOne({ _id: new ObjectId(matchId) });
+
+    if (!match) {
+      return res.status(404).json({ error: 'Match not found' });
+    }
+
+    let otherUserId;
+    if (match.user1Id === userId) {
+      otherUserId = match.user2Id;
+    } else if (match.user2Id === userId) {
+      otherUserId = match.user1Id;
+    } else {
+      return res.status(404).json({ error: 'User is not part of the match' });
+    }
+
+    res.status(200).json({ otherUserId });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
 
 
 

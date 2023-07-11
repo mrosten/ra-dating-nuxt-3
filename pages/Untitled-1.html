@@ -1,0 +1,109 @@
+<template>
+  <div class="home-page">
+    <section class="hero-section">
+      <h1>Welcome {{ userData.name }} to Rav Avner Dating</h1>
+      <v-img src="/images/hero-image.jpg" alt="Dating App Hero Image"></v-img>
+    </section>
+
+    <section class="matches-section">
+      <h2>Matches</h2>
+      <v-row>
+        <v-col cols="12" sm="6" md="4" v-for="(match, index) in initialMatches" :key="index">
+          <div class="match-card" @click="openModal(index)">
+            <h3>Match #{{ index + 1 }}</h3>
+            <p>{{ match.body }}</p>
+            <!-- Add match details and styling as per your requirements -->
+          </div>
+        </v-col>
+      </v-row>
+    </section>
+
+    <!-- Rest of the component code... -->
+
+    <v-dialog v-model="showModal">
+      <v-card>
+        <v-card-title>
+          <span class="headline">Match Details</span>
+        </v-card-title>
+        <v-card-text>
+          <p>Match index: {{ modalIndex }}</p>
+          <!-- Add additional match details here -->
+        </v-card-text>
+        <v-card-actions>
+          <v-btn color="primary" @click="closeModal">Close</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
+  </div>
+</template>
+
+<script>
+import axios from 'axios';
+
+export default {
+  name: 'HomePage',
+  data() {
+    return {
+      userData: {},
+      initialMatches: [],
+      showModal: false,
+      modalIndex: null
+    };
+  },
+  created() {
+    // Fetch user data and populate initial matches
+    this.userData = this.$store.getters.userData;
+    this.populateInitialMatches();
+  },
+  methods: {
+    async populateInitialMatches() {
+      try {
+        const userId = this.userData.userId;
+        const response = await axios.get(`http://localhost:4000/api/userMatches/${userId}`);
+        const { users } = response.data;
+
+        this.initialMatches = users.map((user, index) => ({
+          id: index,
+          title: `Match #${index + 1}`,
+          body: `Body for Match #${index + 1}`,
+          userName: user.userId
+        }));
+      } catch (error) {
+        console.error(error);
+      }
+    },
+    openModal(index) {
+      this.modalIndex = index;
+      this.showModal = true;
+    },
+    closeModal() {
+      this.showModal = false;
+      this.modalIndex = null;
+    }
+  }
+}
+</script>
+
+<style scoped>
+/* Add your custom styles for the home page here */
+
+/* Example styles for the sections */
+.hero-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.matches-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.match-card {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Rest of the styles... */
+</style>

@@ -9,11 +9,11 @@
       <h2>Matches</h2>
       <v-row>
         <v-col cols="12" sm="6" md="4" v-for="(match, index) in initialMatches" :key="index">
-          <v-card @click="openModal(index)">
+            <v-card>
             <v-card-item>
               <template v-slot:prepend>
                 <v-card-title>
-                  <p>hihihi {{ match.body }}</p>
+                  <p> {{ match.body }}</p>
                 </v-card-title>
               </template>
 
@@ -26,7 +26,7 @@
 
             <v-card-item>
               <v-card-title class="text-body-2 d-flex align-center">
-                <span class="text-medium-emphasis font-weight-bold">{{ match.title }}</span>
+                <span class="text-medium-emphasis font-weight-bold">{{ match.id }}</span>
                 <v-spacer></v-spacer>
               </v-card-title>
 
@@ -99,7 +99,7 @@ export default {
         this.initialMatches = users.map((user, index) => ({
           id: user._id,
           title: `Match #${index + 1}`,
-          userName: user._id + `Beeody for Match #${index + 1}`,
+          userName: `Beeody for Match #${index + 1}`,
           body: user._id
         }));
       } catch (error) {
