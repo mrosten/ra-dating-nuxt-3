@@ -4,7 +4,7 @@ import colors from 'vuetify/es5/util/colors'
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
- 
+
   head: {
     titleTemplate: '%s - ra-dating-nuxt-3',
     title: 'ra-dating-nuxt-3',
@@ -12,13 +12,23 @@ export default {
       lang: 'en',
       // dir: 'rtl'
     },
-  
+
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
+
+    build: {
+      extend(config, { isDev, isClient }) {
+        // Enable devtools in development mode
+        if (isDev && isClient) {
+          config.devtool = 'source-map';
+        }
+      },
+      devtools: true
+    },
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
@@ -56,9 +66,9 @@ export default {
 
   i18n: {
     locales: [
-      { code: 'en', iso: 'en-US', name: 'English', dir: 'ltr'},
+      { code: 'en', iso: 'en-US', name: 'English', dir: 'ltr' },
       { code: 'fr', iso: 'fr-FR', name: 'Français', dir: 'ltr' },
-      { code: 'he', iso: 'he-IL', name: 'עברית', dir: 'rtl'},
+      { code: 'he', iso: 'he-IL', name: 'עברית', dir: 'rtl' },
     ],
     defaultLocale: 'he',
     vueI18n: {
@@ -127,7 +137,7 @@ export default {
       },
     },
   },
-  
+
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
@@ -141,20 +151,20 @@ export default {
     '/api2/': 'http://api.another-website.com'
   },
 
- 
+
 
   serverMiddleware: [
     '~/server/status.js'
   ],
-  
+
   server: {
-    port: 3300, // Default port is usually 3000
+    port: 3400, // Default port is usually 3000
     // host: '0.0.0.0', // Set the host to '0.0.0.0' to make it accessible from outside
   },
-  
-  
+
+
   // vuetify: {
-    // rtl: true,
+  // rtl: true,
   //   customVariables: ['~/assets/variables.scss'],
   //   theme: {
   //     dark: true,

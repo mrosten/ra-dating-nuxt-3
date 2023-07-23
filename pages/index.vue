@@ -33,20 +33,42 @@
                   v-model="username" type="text"></v-text-field>
                 <v-text-field id="password" :label="$t('passwordLabel')" name="password" prepend-icon="mdi-lock"
                   v-model="password" type="password"></v-text-field>
-                <v-row>
-                  <v-col>
-                    <v-text-field id="dob-month" :label="$t('dobMonthLabel')" v-model="dob.month" type="number" min="1"
-                      max="12" placeholder="Month"></v-text-field>
-                  </v-col>
-                  <v-col>
-                    <v-text-field id="dob-day" :label="$t('dobDayLabel')" v-model="dob.day" type="number" min="1" max="31"
-                      placeholder="Day"></v-text-field>
-                  </v-col>
-                  <v-col>
-                    <v-text-field id="dob-year" :label="$t('dobYearLabel')" v-model="dob.year" type="number" min="1900"
-                      max="2099" placeholder="Year"></v-text-field>
-                  </v-col>
-                </v-row>
+                  <v-row>
+  <v-col v-if="dob">
+    <v-text-field
+      id="dob-month"
+      :label="$t('dobMonthLabel')"
+      v-model="dob.month"
+      type="number"
+      min="1"
+      max="12"
+      placeholder="Month"
+    ></v-text-field>
+  </v-col>
+  <v-col v-if="dob">
+    <v-text-field
+      id="dob-day"
+      :label="$t('dobDayLabel')"
+      v-model="dob.day"
+      type="number"
+      min="1"
+      max="31"
+      placeholder="Day"
+    ></v-text-field>
+  </v-col>
+  <v-col v-if="dob">
+    <v-text-field
+      id="dob-year"
+      :label="$t('dobYearLabel')"
+      v-model="dob.year"
+      type="number"
+      min="1900"
+      max="2099"
+      placeholder="Year"
+    ></v-text-field>
+  </v-col>
+</v-row>
+
                 <v-radio-group v-model="gender" row>
                   <v-radio id="gender-male" label="Male" value="male"></v-radio>
                   <v-radio id="gender-female" label="Female" value="female"></v-radio>
@@ -84,7 +106,8 @@
             </v-toolbar>
             <v-card-text>
               <v-form>
-                <v-text-field v-model="userId" id="userId" label="UserId" name="username" prepend-icon="mdi-account" type="text"></v-text-field>
+                <v-text-field v-model="userId" id="userId" label="UserId" name="username" prepend-icon="mdi-account"
+                  type="text"></v-text-field>
                 <v-text-field id="password" :label="$t('passwordLabel')" name="password" prepend-icon="mdi-lock"
                   type="password"></v-text-field>
               </v-form>
@@ -106,25 +129,7 @@
 <script>
 import Vue from 'vue';
 import axios from 'axios';
-
-
-async function logToAPI(message) {
-  const requestBody = {
-    message: message
-  };
-
-  try {
-    console.log('about to do an axios.post');
-
-
-    const response = await axios.post('http://localhost:4000/logger', requestBody);
-    console.log('Log entry created successfully');
-  } catch (error) {
-    console.error('Failed to create log entry:', error);
-  }
-
-}
-
+import { mapGetters } from 'vuex';
 
 
 export default {
@@ -142,70 +147,74 @@ export default {
         year: '',
       },
       gender: '',
+      userId: '', // Define userId property
     };
   },
-  // watch: {
-
-  //   '$i18n.locale'(newLocale) {
-  //     if (newLocale === 'he') {
-  //       this.$nextTick(() => {
-  //         location.reload();
-  //       });
-  //     }
-  //   }
-  // },
-
-
-  // '$i18n.locale'(newLocale) {
-  //   if (newLocale === 'he') {
-  //     document.documentElement.setAttribute('dir', 'rtl');
-  //   } else {
-  //     document.documentElement.setAttribute('dir', 'ltr');
-  //   }
-  //   this.$nextTick(() => {
-  //     location.reload();
-  //   });
-  // }
-  // },
-
+  computed: {
+    ...mapGetters(['newAddress']),
+  },
   mounted() {
-    logToAPI('mounted');
+    // this.$store.commit('setServerAddress', 'http://localhost:4000');
+    this.$store.dispatch('setServerAddress', 'http://localhost:4000');
+
+    this.logToAPI('mounted');
 
     if (this.$i18n.locale === 'he') {
       this.isLTR = false; // Set direction to right-to-left (RTL)
     }
   },
   created() {
-    logToAPI("am here");
+    this.logToAPI("am here");
   },
-
   methods: {
+    async logToAPI(message) {
+      const requestBody = {
+        message: message
+      };
+
+      try {
+        console.log('about to do an axios.post');
+        const response = await axios.post('http://localhost:4000/logger', requestBody);
+        console.log('Log entry created successfully');
+      } catch (error) {
+        console.error('Failed to create log entry:', error);
+      }
+    },
     navigateToLogin() {
-      logToAPI("about to go to login");
+      this.logToAPI("about to go to login");
       this.$router.push({
         path: '/login',
         // query: { user: JSON.stringify(userData) }
       });
     },
-
     submitLoginForm() {
-      logToAPI('login');
+      this.logToAPI('login');
 
       const userData = {
         userId: this.userId, // Use the actual user ID here
         password: this.password,
       };
 
+      if (!this.dob.month) {
+        console.error('Month is required.');
+        return;
+      }
       axios.post('http://localhost:4000/login', userData)
         .then(response => {
           // Handle the success response
           console.log(response.data);
-          console.log("i'm about to try to get you to the admin paege");
+          console.log("I'm about to try to get you to the admin page");
 
           localStorage.setItem('userData', JSON.stringify(userData));
           // document.cookie = `userData=${JSON.stringify(userData)}; expires=Thu, 1 Jan 2030 00:00:00 UTC; path=/`;
 
+          const userData = {
+            userId: 123,
+            password: "examplepassword"
+          };
           this.$store.commit('setUserData', userData);
+
+          const userParam = this.$store.getters.userData;
 
           this.$router.push({
             path: '/mainpage',
@@ -220,7 +229,7 @@ export default {
         });
     },
     submitSignUpForm() {
-      logToAPI("am trying to sign up");
+      this.logToAPI("am trying to sign up");
 
       // Perform input validation
       if (!this.name) {
@@ -248,10 +257,9 @@ export default {
           userData._id = insertedId;
           console.log('insertedId=' + insertedId);
 
-
           this.$store.commit('setUserData', userData);
 
-          logToAPI('index page about to change to dating profile page');
+          this.logToAPI('index page about to change to dating profile page');
           this.$router.push({
             path: '/datingprofile',
             // query: { user: JSON.stringify(userData) }
@@ -262,9 +270,9 @@ export default {
         });
     }
   }
-
 };
-</script>
+
+
 
 <style scoped>
 #inspire {
