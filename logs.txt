@@ -1118,3 +1118,42 @@ info: mounted {"timestamp":"2023-07-11T12:45:06.332Z"}
 info: login {"timestamp":"2023-07-11T12:45:11.874Z"}
 info: Login request received {"timestamp":"2023-07-11T12:45:11.891Z"}
 info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-11T12:45:12.925Z","username":"yipa@yipa.com"}
+info: Connecting to the database {"timestamp":"2023-07-12T08:47:28.195Z"}
+info: Connected to the database {"timestamp":"2023-07-12T08:47:31.200Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-12T08:47:31.221Z"}
+info: am here {"timestamp":"2023-07-12T12:08:56.265Z"}
+info: am here {"timestamp":"2023-07-12T12:08:56.532Z"}
+info: mounted {"timestamp":"2023-07-12T12:08:56.631Z"}
+info: am here {"timestamp":"2023-07-12T12:17:55.647Z"}
+info: am here {"timestamp":"2023-07-12T12:17:59.191Z"}
+info: mounted {"timestamp":"2023-07-12T12:17:59.433Z"}
+info: am here {"timestamp":"2023-07-12T12:20:46.158Z"}
+info: am here {"timestamp":"2023-07-12T12:20:55.050Z"}
+info: mounted {"timestamp":"2023-07-12T12:20:55.512Z"}
+info: am here {"timestamp":"2023-07-12T12:21:24.193Z"}
+info: am here {"timestamp":"2023-07-12T12:21:29.669Z"}
+info: mounted {"timestamp":"2023-07-12T12:21:30.069Z"}
+info: am here {"timestamp":"2023-07-12T12:23:49.050Z"}
+info: am here {"timestamp":"2023-07-12T12:35:04.049Z"}
+info: am here {"timestamp":"2023-07-12T12:35:06.063Z"}
+info: am here {"timestamp":"2023-07-12T12:35:12.798Z"}
+info: mounted {"timestamp":"2023-07-12T12:35:14.648Z"}
+info: am here {"timestamp":"2023-07-12T12:36:18.063Z"}
+info: Connecting to the database {"timestamp":"2023-07-12T12:37:36.030Z"}
+info: Connected to the database {"timestamp":"2023-07-12T12:37:39.231Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-12T12:37:39.262Z"}
+info: am here {"timestamp":"2023-07-12T12:40:06.620Z"}
+info: am here {"timestamp":"2023-07-12T12:40:06.865Z"}
+info: am here {"timestamp":"2023-07-12T12:40:17.065Z"}
+info: mounted {"timestamp":"2023-07-12T12:40:17.774Z"}
+info: am here {"timestamp":"2023-07-12T12:40:52.895Z"}
+info: mounted {"timestamp":"2023-07-12T12:40:58.411Z"}
+info: am here {"timestamp":"2023-07-12T12:47:11.820Z"}
+info: am here {"timestamp":"2023-07-12T12:50:31.173Z"}
+info: am here {"timestamp":"2023-07-12T13:01:31.239Z"}
+info: mounted {"timestamp":"2023-07-12T13:01:31.610Z"}
+info: am here {"timestamp":"2023-07-12T16:43:39.245Z"}
+info: am here {"timestamp":"2023-07-12T16:46:33.894Z"}
+info: am here {"timestamp":"2023-07-12T18:03:38.094Z"}
+info: mounted {"timestamp":"2023-07-12T18:03:38.316Z"}
+info: am here {"timestamp":"2023-07-12T18:51:45.230Z"}

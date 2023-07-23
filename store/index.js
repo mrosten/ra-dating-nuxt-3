@@ -1,5 +1,6 @@
 export const state = () => ({
-    userData: {}
+    userData: {},
+    raServer: 'http://localhost:4000'
   })
   
   export const mutations = {
@@ -11,4 +12,3 @@ export const state = () => ({
   export const getters = {
     userData: state => state.userData
   }
-  
