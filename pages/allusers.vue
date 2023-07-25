@@ -123,7 +123,7 @@ export default {
     goToProfilePage(user) {
       this.$router.push({
         path: '/profile',
-        query: { user: JSON.stringify(user) },
+        query: { userData: JSON.stringify(user) }
       });
     },
   },

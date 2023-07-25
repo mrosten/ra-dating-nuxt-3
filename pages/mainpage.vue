@@ -86,13 +86,18 @@ export default {
   },
   created() {
     // Fetch user data and populate initial matches
-    this.userData = this.$store.getters.userData;
+    
+    const userDataString = this.$route.query.userData;
+    if (userDataString) {
+      this.userData = JSON.parse(userDataString);
+    }
+    // this.userData = this.$store.getters.userData;
     this.populateInitialMatches();
   },
   methods: {
     async populateInitialMatches() {
       try {
-        const userId = this.userData.userId;
+        const userId = this.userData._id;
         const response = await axios.get(`http://localhost:4000/api/userMatches/${userId}`);
         const { users } = response.data;
 

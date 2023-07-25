@@ -106,8 +106,7 @@
             </v-toolbar>
             <v-card-text>
               <v-form>
-                <v-text-field v-model="userId" id="userId" label="UserId" name="username" prepend-icon="mdi-account"
-                  type="text"></v-text-field>
+                <v-text-field v-model="userId" id="userId" label="UserId" name="username" prepend-icon="mdi-account" type="text"></v-text-field>
                 <v-text-field id="password" :label="$t('passwordLabel')" name="password" prepend-icon="mdi-lock"
                   type="password"></v-text-field>
               </v-form>
@@ -187,10 +186,10 @@ export default {
       });
     },
     submitLoginForm() {
-      this.logToAPI('login');
+      logToAPI('login');
 
       const userData = {
-        userId: this.userId, // Use the actual user ID here
+        _id: this.userId, // Use the actual user ID here
         password: this.password,
       };
 
@@ -215,6 +214,11 @@ export default {
 
           const userParam = this.$store.getters.userData;
 
+          // localStorage.setItem('userData', JSON.stringify(userData));
+          // document.cookie = `userData=${JSON.stringify(userData)}; expires=Thu, 1 Jan 2030 00:00:00 UTC; path=/`;
+
+          // this.$store.commit('setUserData', userData);
+
           this.$router.push({
             path: '/mainpage',
             // query: { userData: JSON.stringify(userData) }
@@ -224,6 +228,7 @@ export default {
         })
         .catch(error => {
           // Handle the error response
+          logToAPI(error);
           console.error(error);
         });
     },

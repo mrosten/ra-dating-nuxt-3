@@ -363,6 +363,7 @@ app.get('/api/userMatches/:userId', async (req, res) => {
         users.push(otherUser);
       }
     }
+
     res.status(200).json({ users });
   } catch (error) {
     console.error(error);
@@ -397,6 +398,7 @@ app.get('/api/getOtherUserId', async (req, res) => {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
+
 
 
 
@@ -555,14 +557,14 @@ app.post('/login', async (req, res) => {
 
   // ... rest of the code ...
 
-  const { userId, password } = req.body;
+  const { _id, password } = req.body;
 
   try {
     const db = client.db("ra-dating"); // Get the default database
     const usersCollection = db.collection('users'); // Create or access the 'users' collection
 
 
-    const user = await usersCollection.findOne({ _id: new ObjectId(userId), password: password });
+    const user = await usersCollection.findOne({ _id: new ObjectId(_id) });
 
     console.log("After findOne");
 

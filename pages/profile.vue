@@ -1,166 +1,141 @@
 <template>
-  <v-app>
-    <v-toolbar-component color="indigo" dark>
-      <v-toolbar-title style="background-color: rgb(138, 96, 168)" dark class="profile-title">Profile</v-toolbar-title>
-    </v-toolbar-component>
-    <v-row justify="center">
-      <v-col cols="12" sm="12" md="12">
-        <v-card class="elevation-12" color="white">
-          <p><strong>Username:</strong> {{ user.username || 'Loading...' }}</p>
-          <p><strong>Email:</strong> {{ user.email || 'Loading...' }}</p>
-          <p v-if="user.dob"><strong>Date of Birth:</strong> {{ user.dob.month }}/{{ user.dob.day }}/{{ user.dob.year }}
-          </p>
-          <p><strong>Gender:</strong> {{ user.gender || 'Loading...' }}</p>
-          <p><strong>Profile Info:</strong> {{ user.profileInfo || 'Loading...' }}</p>
-          <p><strong>Role:</strong> {{ user.role || 'Loading...' }}</p>
-          <p><strong>Matches:</strong></p>
-
-
-          <ul>
-            <li v-for="(match, index) in user.matches" :key="match">
-              <strong>ID:</strong> {{ match }} <br>
-              <div v-if="users[match]">
-                <!-- Display user data from API -->
-                <strong>Name:</strong> {{ users[match].name }} <br>
-                <strong>Email:</strong> {{ users[match].email }} <br>
-                <!-- Add more properties as needed -->
+    <div class="home-page">
+      <section class="hero-section">
+        <h1>Welcome {{ userData.name }} to Rav Avner Dating</h1>
+        <v-img src="/images/hero-image.jpg" alt="Dating App Hero Image"></v-img>
+      </section>
+  
+      <section class="matches-section">
+        <h2>Matches {{ match.userData._id }}</h2>
+        <v-row>
+          <v-col cols="12" sm="6" md="4" v-for="(match, index) in initialMatches" :key="index">
+              <v-card>
+              <v-card-item>
+                <template v-slot:prepend>
+                  <v-card-title>
+                    <p> {{ match.body }}</p>
+                  </v-card-title>
+                </template>
+  
+                <v-divider vertical class="mx-2"></v-divider>
+  
+                <template v-slot:append>
+                  <v-btn icon="$close" size="large" variant="text"></v-btn>
+                </template>
+              </v-card-item>
+  
+              <v-card-item>
+                <v-card-title class="text-body-2 d-flex align-center">
+                  <span class="text-medium-emphasis font-weight-bold">{{ match.id }}</span>
+                  <v-spacer></v-spacer>
+                </v-card-title>
+  
+                <div class="py-2">
+                  <div class="text-h6">{{ match.userName }}</div>
+                  <div class="font-weight-light text-medium-emphasis">{{ match.userName }}</div>
+                </div>
+              </v-card-item>
+  
+              <v-divider></v-divider>
+  
+              <div class="pa-4 d-flex align-center">
+                <v-spacer></v-spacer>
+                <v-btn class="me-2 text-none" color="#4f545c" variant="flat">
+                  Maybe not
+                </v-btn>
+                <v-btn border class="text-none" prepend-icon="mdi-check" variant="text">
+                  Interested
+                </v-btn>
               </div>
-            </li>
-          </ul>
-
-
-
+            </v-card>
+          </v-col>
+        </v-row>
+      </section>
+  
+      <!-- Rest of the component code... -->
+  
+      <v-dialog v-model="showModal">
+        <v-card>
+          <v-card-title>
+            <span class="headline">Match Details</span>
+          </v-card-title>
+          <v-card-text>
+            <p>Match index: {{ modalIndex }}</p>
+            <!-- Add additional match details here -->
+          </v-card-text>
+          <v-card-actions>
+            <v-btn color="primary" @click="closeModal">Close</v-btn>
+          </v-card-actions>
         </v-card>
-      </v-col>
-    </v-row>
-  </v-app>
-</template>
-
-<script>
-import axios from 'axios';
-
-function logToAPI(message) {
-  const requestBody = {
-    message: message
-  };
-
-  axios.post('http://localhost:4000/logger', requestBody)
-    .then(response => {
-      console.log('Log entry created successfully');
-    })
-    .catch(error => {
-      console.error('Failed to create log entry:', error);
-    });
-}
-
-export default {
-  methods: {
-
-    getAllMatchInfo(index) {
-      logToAPI("All Match Info: " + JSON.stringify(this.matchUsers[index]))
+      </v-dialog>
+    </div>
+  </template>
+  
+  <script>
+  import axios from 'axios';
+  
+  export default {
+    name: 'HomePage',
+    data() {
+      return {
+        userData: {},
+        initialMatches: [],
+        showModal: false,
+        modalIndex: null
+      };
     },
-
-    async fetchUsers() {
-      for (const match of this.user.matches) {
-        const response = await fetch(`http://localhost:4000/user/${match}`);
-        const userData = await response.json();
-        this.$set(this.users, match, userData);
+    mounted() {
+      // Fetch user data and populate initial matches
+      
+      const userDataString = this.$route.query.userData;
+      if (userDataString) {
+        this.userData = JSON.parse(userDataString);
+        this.populateInitialMatches();
       }
+      // this.userData = this.$store.getters.userData;
     },
-
-    fetchMatchUsers() {
-      const matchUsers = [];
-
-      const promises = this.user.matches.map(match => {
-        logToAPI('about to call this: ' + `http://localhost:4000/api/getOtherUserId?matchId=${match}&userId=${this.profileId}`);
-        return fetch(`http://localhost:4000/api/getOtherUserId?matchId=${match}&userId=${this.profileId}`)
-          .then(response => {
-            if (response.ok) {
-              return response.json();
-            } else {
-              throw new Error('Failed to fetch other user');
-            }
-          })
-          .then(data => {
-            if (data.error) {
-              // Handle the case when the match or user is not found
-              console.error(data.error);
-              matchUsers.push(null); // Assign null or other default value to matchUsers
-            } else {
-
-              logToAPI("otherid: " + data.otherUserId);
-              matchUsers.push(data); // Add the other user's data to matchUsers array
-
-            }
-          })
-          .catch(error => {
-            console.error('Error fetching other user:', error);
-            matchUsers.push(null); // Assign null or other default value to matchUsers
-          });
-      });
-
-      Promise.all(promises)
-        .then(() => {
-          console.log('All match users fetched');
-          this.matchUsers = matchUsers; // Assign the matchUsers array to a data property
-        })
-        .catch(error => {
-          console.error('Error fetching match users:', error);
-          this.matchUsers = []; // Assign an empty array or other default value
-        });
-    },
-  },
-  computed: {
-    profileId() {
-      return this.$route.query.userId;
-    },
-  },
-  data() {
-    return {
-      user: {
-        username: '',
-        email: '',
-        dob: {},
-        gender: '',
-        profileInfo: '',
-        role: '',
-        matches: []
-      },
-      users: {} // Initialize an empty array to store match users
-    };
-  },
-  mounted() {
-    this.fetchUsers();
-  },
-  created() {
-    logToAPI('User id: ' + this.profileId);
-
-    fetch('http://localhost:4000/user/' + this.profileId)
-      .then(response => {
-        if (response.ok) {
-          return response.json();
-        } else {
-          throw new Error('Failed to fetch user documents');
+    methods: {
+      async populateInitialMatches() {
+        try {
+          const userId = this.userData._id;
+          const response = await axios.get(`http://localhost:4000/api/userMatches/${_id}`);
+          const { users } = response.data;
+  
+          this.initialMatches = users.map((user, index) => ({
+            id: user._id,
+            title: `Match #${index + 1}`,
+            userName: `Beeody for Match #${index + 1}`,
+            body: user._id
+          }));
+        } catch (error) {
+          console.error(error);
         }
-      })
-      .then(data => {
-        this.user = data;
-        logToAPI("about to fetch:");
-        this.fetchMatchUsers();
-        logToAPI(JSON.stringify(this.matchUsers));
-      })
-      .catch(error => {
-        console.error('Failed to fetch user documents:', error);
-      });
-
-    logToAPI(JSON.stringify(this.user));
+      },
+      openModal(index) {
+        this.modalIndex = index;
+        this.showModal = true;
+      },
+      closeModal() {
+        this.showModal = false;
+        this.modalIndex = null;
+      }
+    }
   }
-}
-</script>
-
-<style>
-.profile-title {
-  font-size: 20px;
-  height: 48px;
-}
-</style>
+  </script>
+  
+  <style scoped>
+  /* Add your custom styles for the home page here */
+  
+  /* Example styles for the sections */
+  .hero-section {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .matches-section {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  /* Rest of the styles... */
+  </style>
