@@ -279,15 +279,20 @@ app.get('/api/matchallmaleusers', async (req, res) => {
 
 app.post('/api/assignmatch', async (req, res) => {
   try {
+
     const db = client.db("ra-dating"); // Get the default database
     const usersCollection = db.collection('users'); // Access the 'users' collection
     const matchesCollection = db.collection('matches'); // Access the 'matches' collection
+    
+    logger.info('Match request received', { requestBody: req.body });
 
     const { user1Id, user2Id } = req.body;
+    // console.log(user1Id, user2Id);
 
+    // logger.info("userid: " + req.body.user1Id);
     // Find both users by their IDs
 
-    logger.info(user1Id + " " + user2Id);
+    logger.info(JSON.stringify(user1Id) + " " + user2Id);
     const user1 = await usersCollection.findOne({ "_id": new ObjectId(user1Id) });
 
     logger.info(user1);
@@ -312,12 +317,12 @@ app.post('/api/assignmatch', async (req, res) => {
 
     // Update the matches field of both users
     await usersCollection.updateOne(
-      { _id: user1Id },
+      { _id: new ObjectId(user1Id) },
       { $push: { matches: insertedMatch.insertedId } }
     );
 
     await usersCollection.updateOne(
-      { _id: user2Id },
+      { _id: new ObjectId(user2Id) },
       { $push: { matches: insertedMatch.insertedId } }
     );
 
@@ -335,36 +340,43 @@ app.get('/api/abcde', async (req, res) => {
   res.status(200).json({ hello: "HI" });
 });
 
+
 app.get('/api/userMatches/:userId', async (req, res) => {
   try {
-
-    logger.info("in userMatches");
-
     const userId = req.params.userId;
 
+    const usersCollection = client.db("ra-dating").collection('users');
+    const matchesCollection = client.db("ra-dating").collection('matches');
 
-    const db = client.db("ra-dating"); // Get the default database
-    const usersCollection = db.collection('users'); // Access the 'users' collection
-
-    // Find the user by their ID
     const user = await usersCollection.findOne({ _id: new ObjectId(userId) });
 
     if (!user) {
       return res.status(404).json({ error: 'User not found' });
     }
 
-    // Retrieve the matches for the user
-    const matchesCollection = db.collection('matches'); // Access the 'matches' collection
     const userMatches = await matchesCollection.find({
       _id: { $in: user.matches }
     }).toArray();
 
-    res.status(200).json({ matches: userMatches });
+    const users = [];
+
+    for (const match of userMatches) {
+      const otherUserId = match.user1Id == user._id ? match.user2Id : match.user1Id;
+
+      const otherUser = await usersCollection.findOne({ _id: new ObjectId(otherUserId) });
+
+      if (otherUser) {
+        users.push(otherUser);
+      }
+    }
+
+    res.status(200).json({ users });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Internal server error' });
   }
 });
+
 
 
 app.delete('/api/matches/:matchId', async (req, res) => {
@@ -484,6 +496,9 @@ app.post('/signup', async (req, res) => {
     logger.info('Signup request received', { requestBody: req.body });
 
     const { name, username, email, password, dob, gender } = req.body;
+    logger.info('Received variables:', { name, username, email, password, dob, gender });
+
+
     const db = client.db("ra-dating");
     const usersCollection = db.collection('users');
 
@@ -518,14 +533,14 @@ app.post('/login', async (req, res) => {
 
   // ... rest of the code ...
 
-  const { email, password } = req.body;
+  const { _id, password } = req.body;
 
   try {
     const db = client.db("ra-dating"); // Get the default database
     const usersCollection = db.collection('users'); // Create or access the 'users' collection
 
 
-    const user = await usersCollection.findOne({ email: email, password: password });
+    const user = await usersCollection.findOne({ _id: new ObjectId(_id) });
 
     console.log("After findOne");
 

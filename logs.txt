@@ -513,3 +513,29 @@ info: null {"timestamp":"2023-07-04T11:52:34.045Z"}
 info: Connecting to the database {"timestamp":"2023-07-04T11:54:49.425Z"}
 info: Connected to the database {"timestamp":"2023-07-04T11:54:51.726Z"}
 info: Server running on http://localhost:4000 {"timestamp":"2023-07-04T11:54:51.734Z"}
+info: Connecting to the database {"timestamp":"2023-07-25T00:34:12.288Z"}
+info: Connected to the database {"timestamp":"2023-07-25T00:34:14.462Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-25T00:34:14.481Z"}
+info: login {"timestamp":"2023-07-25T00:34:14.607Z"}
+info: Login request received {"timestamp":"2023-07-25T00:34:14.648Z"}
+info: User found: {"_id":"649da2e32d7b67c7bb8b6847","dob":{"day":"4","month":"1","year":"1989"},"email":"","gender":"male","matches":["649ecf53346d6450651a41cc"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-25T00:34:14.831Z","username":"yipa@yipa.com"}
+info: am here {"timestamp":"2023-07-25T00:36:45.252Z"}
+info: mounted {"timestamp":"2023-07-25T00:36:45.329Z"}
+info: am here {"timestamp":"2023-07-25T00:36:46.877Z"}
+info: am here {"timestamp":"2023-07-25T00:36:48.161Z"}
+info: mounted {"timestamp":"2023-07-25T00:36:48.361Z"}
+info: Connecting to the database {"timestamp":"2023-07-25T00:38:11.414Z"}
+info: Connected to the database {"timestamp":"2023-07-25T00:38:13.329Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-25T00:38:13.333Z"}
+info: am here {"timestamp":"2023-07-25T00:40:05.801Z"}
+info: am here {"timestamp":"2023-07-25T00:40:09.394Z"}
+info: mounted {"timestamp":"2023-07-25T00:40:09.578Z"}
+info: Connecting to the database {"timestamp":"2023-07-25T00:41:05.586Z"}
+info: Connected to the database {"timestamp":"2023-07-25T00:41:07.526Z"}
+info: Server running on http://localhost:4000 {"timestamp":"2023-07-25T00:41:07.534Z"}
+info: am here {"timestamp":"2023-07-25T00:41:31.589Z"}
+info: am here {"timestamp":"2023-07-25T00:41:32.854Z"}
+info: mounted {"timestamp":"2023-07-25T00:41:32.947Z"}
+info: login {"timestamp":"2023-07-25T00:41:36.658Z"}
+info: Login request received {"timestamp":"2023-07-25T00:41:36.669Z"}
+info: User found: {"_id":"64997f1378892faf027fbf8a","dob":{"day":"15","month":"3","year":"1998"},"email":"yipa@yipa.com","gender":"female","matches":["649eca44b71ea10b050e1252","649f2b32a791d9d4d0c5cbb9","649e6fa6b1d3e56e0abf2b38","64a44fff6567c6652f7645dc","64a4504f6567c6652f7645dd","64a45220dd7896399cb3b320","64a45241dd7896399cb3b321","64a462918cdc467b017d1478","64a462b58cdc467b017d1479"],"password":"yipa","profileInfo":"Some profile information","role":"user","timestamp":"2023-07-25T00:41:36.849Z","username":"yipa@yipa.com"}
