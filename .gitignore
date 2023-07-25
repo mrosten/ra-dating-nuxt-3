@@ -4,6 +4,7 @@
 logs.txt
 /logs
 *.log
+*.lock
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
